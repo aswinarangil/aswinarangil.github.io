@@ -1,47 +1,64 @@
 <!DOCTYPE html>
-
 <!-- saved from url=(0017)http://haxzie.me/ -->
-<html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<!--Import Google Icon Font-->
-<link href="./res/icon" rel="stylesheet"/>
-<!--Import materialize.css-->
-<link href="./res/materialize.css" media="screen,projection" rel="stylesheet" type="text/css"/>
-<link href="./res/style.css" rel="stylesheet" type="text/css"/>
-<!--Let browser know website is optimized for mobile-->
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Aswin's Portfolio. IT Support / Help Desk Support Engineer." name="description"/>
-<title>Aswin's Portfolio</title>
-<!-- <meta property="og:site_name" content="haxzie.me"> -->
-<meta content="Aswin's Portfolio" property="og:title"/>
-<meta content="Hi, Iam Aswin, Help Desk Support Engineer." property="og:description"/>
-<meta content="http://haxzie.me/images/musthu.png" itemprop="image" property="og:image"/>
-<meta content="website" property="og:type"/>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <!--Import Google Icon Font-->
+     <link href="./res/icon" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="./res/materialize.css" media="screen,projection">
+      <link type="text/css" rel="stylesheet" href="./res/style.css">
 
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Aswin's Portfolio. IT Support / Help Desk Support Engineer.">
+     <title>Aswin's Portfolio</title>
+     <!-- <meta property="og:site_name" content="haxzie.me"> -->
+      <meta property="og:title" content="Aswin&#39;s Portfolio">
+      <meta property="og:description" content="Hi, Iam Aswin, Help Desk Support Engineer.">
+      <meta property="og:image" itemprop="image" content="http://haxzie.me/images/musthu.png">
+      <meta property="og:type" content="website">
 
-<style id="custom-fixes">
-  /* Make square logos look good */
-  .logo-fit{
-    width: 70px !important;
-    height: 70px !important;
-    object-fit: contain;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.92);
-    padding: 6px;
-  }
-  /* Reduce top whitespace on About tab */
-  #about .row.pad20top{ margin-top: 0; }
-</style>
+     <script>
+  $(document).ready(function () {
+    $('.materialboxed').materialbox();
+    $(".button-collapse").sideNav();
+
+    // init tabs + scroll to top when tab changes
+    $('.tabs').tabs({
+      onShow: function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  });
+     </script>
 </head>
-  <script type="text/javascript" src="./res/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="./res/materialize.min.js"></script>
-<body>
-<!--Import jQuery before materialize.js-->
-<script src="./res/jquery-2.1.1.min.js.download" type="text/javascript"></script>
-<script src="./res/materialize.min.js.download" type="text/javascript"></script>
 
-<!-- navigation bar -->
-<nav class="nav-extended">
-<!-- <div class="nav-wrapper  #212121 grey darken-4">
+   <body>
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="./res/jquery-2.1.1.min.js.download"></script>
+     <script type="text/javascript" src="./res/materialize.min.js.download"></script>
+     <script>
+     jQuery(document).ready(function(){
+         $('.materialboxed').materialbox();
+         $(".button-collapse").sideNav();
+    	jQuery('.skillbar').each(function(){
+    		jQuery(this).find('.skillbar-bar').animate({
+    			width:jQuery(this).attr('data-percent')
+    		},2000);
+    	});
+    });
+
+    $(document).ready(function(){
+
+    });
+
+         $(".button-collapse").sideNav();
+     </script>
+
+
+
+     <!-- navigation bar -->
+     <nav class="nav-extended">
+   <!-- <div class="nav-wrapper  #212121 grey darken-4">
      <a href="http://haxzie.me/#" class="brand-logo"><img src="./res/main_logo.png" class="responsive-img logo"></a>
      <a href="http://haxzie.me/#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul id="slide-out" class="side-nav teal center" style="transform: translateX(-100%);">
@@ -66,432 +83,431 @@
        <li><a href="https://github.com/haxzie">Github</a></li>
      </ul>
    </div> -->
-<div class="nav-content #212121 grey darken-4">
-<ul class="tabs tabs-transparent">
-  <li class="tab"><a class="active" href="#home">Home</a></li>
-  <li class="tab"><a href="#projects">Experience</a></li>
-  <li class="tab"><a href="#about">About</a></li>
-</ul>
-</div>
-</nav>
-<div class="col s12 active" id="home" style="display: block;">
-<!-- Page Layout here -->
-<div class="col s12 m4 l3">
-<div class="row">
-<div class="card grey darken-4 z-index-4 pad20top">
-<div class="container center-align">
-<img alt="" class="circle responsive-img center-align" src="./res/aswn.jpg"/>
-</div>
-<div class="card-content">
-<p class="card-title white-text center-align">Aswin Arangil</p>
-<p class="white-text center-align">
-.
-             </p>
-</div>
-<div class="card-action center-align">
-<div class="row center">
-<ul class="icons">
-<li class="icon"><a href="https://www.facebook.com/aswin.arangil"><img class="responsive-img" src="./res/facebook-logo.svg"/></a></li>
-<li class="icon"><a href="https://in.linkedin.com/in/aswin-a-arangil"><img class="responsive-img" src="./res/dribbble-logo.svg"/></a></li>
-<li class="icon"><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=aswina30@gmail.com/"><img class="responsive-img" src="./res/wordpress-logo.svg"/></a></li>
-<li class="icon"><a href="https://www.instagram.com/_i_am_aswin_/"><img class="responsive-img" src="./res/insta-logo.svg"/></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<!-- skill set -->
-<div class="row">
-<div class="card grey darken-4 z-index-4">
-<div class="card-content">
-<p class="card-title white-text center-align">Skills</p>
-        href="#projects"learfix " data-percent="85%"&gt;
-                  <div class="skillbar-title" style="background: #88cd2a;"><span>Outlook</span></div>
-<div class="skillbar-bar" style="background: rgb(136, 205, 42); width: 85%;"></div>
-<div class="skill-bar-percent">85%</div>
-</div>
-<!---  CSS --->
-<div class="skillbar clearfix" data-percent="75%">
-<div class="skillbar-title" style="background: #00a8ff;"><span>Louts Notes</span></div>
-<div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 75%;"></div>
-<div class="skill-bar-percent">75%</div>
-</div>
-<div class="skillbar clearfix" data-percent="50%">
-<div class="skillbar-title" style="background: #43a047;"><span>Active Directory</span></div>
-<div class="skillbar-bar" style="background: rgb(67, 160, 71); width: 50%;"></div>
-<div class="skill-bar-percent">50%</div>
-</div>
-<!-- /CSS --->
-<!--- jQuery  ------->
-<div class="skillbar clearfix" data-percent="65%">
-<div class="skillbar-title" style="background: #00695c;"><span>Remote Support</span></div>
-<div class="skillbar-bar" style="background: rgb(0, 105, 92); width: 65%;"></div>
-<div class="skill-bar-percent">65%</div>
-</div>
-<!--- /jQuery  ------->
-<div class="skillbar clearfix" data-percent="75%">
-<div class="skillbar-title" style="background: #00acc1;"><span>Linux</span></div>
-<div class="skillbar-bar" style="background: rgb(0, 172, 193); width: 75%;"></div>
-<div class="skill-bar-percent">75%</div>
-</div>
-<div class="skillbar clearfix" data-percent="80%">
-<div class="skillbar-title" style="background: #00a8ff;"><span>Windows</span></div>
-<div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 80%;"></div>
-<div class="skill-bar-percent">80%</div>
-</div>
-<div class="skillbar clearfix" data-percent="70%">
-<div class="skillbar-title" style="background: #01579b;"><span>RHEL6</span></div>
-<div class="skillbar-bar" style="background: rgb(1, 87, 155); width: 70%;"></div>
-<div class="skill-bar-percent">70%</div>
-</div>
-<div class="skillbar clearfix" data-percent="80%">
-<div class="skillbar-title" style="background: #fb8c00;"><span>MS Office 2007,8,10</span></div>
-<div class="skillbar-bar" style="background: rgb(251, 140, 0); width: 80%;"></div>
-<div class="skill-bar-percent">80%</div>
-</div>
-<div class="skillbar clearfix" data-percent="55%">
-<div class="skillbar-title" style="background: #88cd2a;"><span>CCNA</span></div>
-<div class="skillbar-bar" style="background: rgb(136, 205, 42); width: 55%;"></div>
-<div class="skill-bar-percent">55%</div>
-</div>
-<div class="skillbar clearfix" data-percent="70%">
-<div class="skillbar-title" style="background: #01579b;"><span>Group Policy</span></div>
-<div class="skillbar-bar" style="background: rgb(1, 87, 155); width: 70%;"></div>
-<div class="skill-bar-percent">70%</div>
-</div>
-<div class="skillbar clearfix" data-percent="45%">
-<div class="skillbar-title" style="background: #00acc1;"><span>Sophos</span></div>
-<div class="skillbar-bar" style="background: rgb(0, 172, 193); width: 45%;"></div>
-<div class="skill-bar-percent">45%</div>
-</div>
-<div class="skillbar clearfix" data-percent="85%">
-<div class="skillbar-title" style="background: #fb8c00;"><span>Lan Desk</span></div>
-<div class="skillbar-bar" style="background: rgb(251, 140, 0); width: 85%;"></div>
-<div class="skill-bar-percent">85%</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col s12 m8 l9">
-<div class="row">
-<div class="card-panel grey darken-4">
-<span class="white-text row">Expertise
-              </span>
-<div class="row tabled"><!--first card row begins -->
-<!-- first card --->
-<div class="col s12 m4 l4 celled">
-<div class="card-panel teal hoverable center">
-<div class="row center">
-<img height="100px" src="./res/Computer_Settings-128.png" width="100px"/>
-</div><span class="white-text">
-<b>End User Support</b></span><span class="teal-text text-lighten-5"><br/>Expertise in problem solving, level of customer satisfaction is high.
-                     </span>
-</div>
-</div>
-<!-- second card --->
-<div class="col s12 m4 l4 celled">
-<div class="card-panel teal hoverable center">
-<div class="row center">
-<img height="100px" src="./res/redhat.png" width="100px"/>
-</div><span class="white-text">
-<b> REDHAT CERTIFIED ENGINEER</b></span><span class="teal-text text-lighten-5"><br/>RHCSA and RHCSE redhat certified engineer with certification no : 140-223-637
-                     </span>
-</div>
-</div>
-<!-- third card --->
-<div class="col s12 m4 l4 celled">
-<div class="card-panel teal hoverable center">
-<div class="row center">
-<img height="100px" src="./res/redhat-system_settings.png" width="100px"/>
-</div><span class="white-text">
-<b>Operating System</b></span><span class="teal-text text-lighten-5"><br/> Expertise in Troubleshootig of windows xp,7,8, and 10 &amp; Linux
-                     </span>
-</div>
-</div>
-</div> <!--first card row ends -->
-</div>
-</div>
-<div class="row">
-<div class="card-panel grey darken-4">
-<div>
-<span class="white-text row">Education
-              </span>
-<div class="row"><!--first card row begins -->
-<!-- first card --->
-<div class="col 12 m4">
-<div class="card-panel teal hoverable center">
-<div class="row center">
-<img height="100px" src="./res/graduation.svg" width="100px"/>
-</div><span class="white-text">
-<b>Diploma in Applied Electronics</b></span><span class="teal-text text-lighten-5"><br/>Model polytechnic College Vadakara 2008-2011 Batch
-                     </span>
-</div>
-</div>
-<!-- second card --->
-<div class="col s12 m4">
-<div class="card-panel teal hoverable center">
-<div class="row center">
-<img height="100px" src="./res/preuniversity.svg" width="100px"/>
-</div>
-<span class="white-text">
-<b>Class 12</b></span><span class="teal-text text-lighten-5"><br/>JNM Govt HSS Puthuppanam class 2006 - 2008.
-                     </span>
-</div>
-</div>
-<!-- third card --->
-<div class="col s12 m4">
-<div class="card-panel teal hoverable center">
-<div class="row center">
-<img height="100px" src="./res/highschool.svg" width="100px"/>
-</div>
-<span class="white-text">
-<b>HighSchool/SSLC</b></span><span class="teal-text text-lighten-5"><br/>JNM Govt HSS Puthuppanam class 2005 - 2006.
-                     </span>
-</div>
-</div>
-</div> <!--first card row ends -->
-</div>
-</div>
-</div>
-</div>
+   <div class="nav-content #212121 grey darken-4">
+     <ul class="tabs tabs-transparent">
+       <li class="tab"><a class="active" href="#home">Home</a></li>
+<li class="tab"><a href="#projects">Experience</a></li>
+<li class="tab"><a href="#about">About</a></li>
+     <div class="indicator" style="right: 1261px; left: 0px;"></div></ul>
+   </div>
+ </nav>
+ <div id="home" class="col s12 active" style="display: block;">
+   <!-- Page Layout here -->
 
-<footer class="page-footer #212121 grey darken-4">
-<div class="footer-copyright">
-<div class="container">
+     
+
+  <div class="row pad20top #333333">
+<div class="col s12 m4 l3 ">
+
+       <div class="row">
+         <div class="card grey darken-4 z-index-4 pad20top">
+           <div class="container center-align">
+             <img src="./res/aswn.jpg" alt="" class="circle responsive-img center-align">
+            </div>
+           <div class="card-content">
+             <p class="card-title white-text center-align">Aswin Arangil</p>
+             <p class="white-text center-align">
+.
+             </p> 
+           </div>
+             <div class="card-action center-align">
+               <div class="row center">
+                 <ul class="icons">
+                    <li class="icon"><a href="https://www.facebook.com/aswin.arangil"><img src="./res/facebook-logo.svg" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://in.linkedin.com/in/aswin-a-arangil"><img src="./res/dribbble-logo.svg" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aswina30@gmail.com/"><img src="./res/wordpress-logo.svg" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://www.instagram.com/_i_am_aswin_/"><img src="./res/insta-logo.svg" class="responsive-img"></a></li>
+                </ul>
+              </div>
+             </div>
+         </div>
+       </div>
+
+       <!-- skill set -->
+       <div class="row">
+         <div class="card grey darken-4 z-index-4">
+           <div class="card-content">
+             <p class="card-title white-text center-align">Skills</p>
+        href="#projects"learfix " data-percent="85%">
+                  <div class="skillbar-title" style="background: #88cd2a;"><span>Outlook</span></div>
+                  <div class="skillbar-bar" style="background: rgb(136, 205, 42); width: 85%;"></div>
+                  <div class="skill-bar-percent">85%</div>
+                  </div>
+                  <!---  CSS --->
+                  <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #00a8ff;"><span>Louts Notes</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 75%;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="50%">
+                  <div class="skillbar-title" style="background: #43a047;"><span>Active Directory</span></div>
+                  <div class="skillbar-bar" style="background: rgb(67, 160, 71); width: 50%;"></div>
+                  <div class="skill-bar-percent">50%</div>
+                  </div>
+                  <!-- /CSS --->
+                  <!--- jQuery  ------->
+                  <div class="skillbar clearfix " data-percent="65%">
+                  <div class="skillbar-title" style="background: #00695c;"><span>Remote Support</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 105, 92); width: 65%;"></div>
+                  <div class="skill-bar-percent">65%</div>
+                  </div>
+                  <!--- /jQuery  ------->
+                  <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #00acc1;"><span>Linux</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 172, 193); width: 75%;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="80%">
+                  <div class="skillbar-title" style="background: #00a8ff;"><span>Windows</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 80%;"></div>
+                  <div class="skill-bar-percent">80%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="70%">
+                  <div class="skillbar-title" style="background: #01579b;"><span>RHEL6</span></div>
+                  <div class="skillbar-bar" style="background: rgb(1, 87, 155); width: 70%;"></div>
+                  <div class="skill-bar-percent">70%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="80%">
+                  <div class="skillbar-title" style="background: #fb8c00;"><span>MS Office 2007,8,10</span></div>
+                  <div class="skillbar-bar" style="background: rgb(251, 140, 0); width: 80%;"></div>
+                  <div class="skill-bar-percent">80%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="55%">
+                  <div class="skillbar-title" style="background: #88cd2a;"><span>CCNA</span></div>
+                  <div class="skillbar-bar" style="background: rgb(136, 205, 42); width: 55%;"></div>
+                  <div class="skill-bar-percent">55%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="70%">
+                  <div class="skillbar-title" style="background: #01579b;"><span>Group Policy</span></div>
+                  <div class="skillbar-bar" style="background: rgb(1, 87, 155); width: 70%;"></div>
+                  <div class="skill-bar-percent">70%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="45%">
+                  <div class="skillbar-title" style="background: #00acc1;"><span>Sophos</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 172, 193); width: 45%;"></div>
+                  <div class="skill-bar-percent">45%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="85%">
+                  <div class="skillbar-title" style="background: #fb8c00;"><span>Lan Desk</span></div>
+                  <div class="skillbar-bar" style="background: rgb(251, 140, 0); width: 85%;"></div>
+                  <div class="skill-bar-percent">85%</div>
+                  </div>
+
+
+           </div>
+         </div>
+       </div>
+
+   </div>
+
+     <div class="col s12 m8 l9">
+
+       <div class="row">
+
+          <div class="card-panel grey darken-4">
+
+              <span class="white-text row">Expertise
+              </span>
+              <div class="row tabled"><!--first card row begins -->
+                  <!-- first card --->
+                 <div class="col s12 m4 l4 celled">
+                   <div class="card-panel teal hoverable center">
+                     <div class="row center">
+                        <img src="./res/Computer_Settings-128.png" height="100px" width="100px">
+                     </div><span class="white-text">
+                       <b>End User Support</b></span><span class="teal-text text-lighten-5"><br>Expertise in problem solving, level of customer satisfaction is high.
+                     </span>
+                   </div>
+                 </div>
+                 <!-- second card --->
+                 <div class="col s12 m4 l4 celled">
+                   <div class="card-panel teal hoverable center">
+                     <div class="row center">
+                        <img src="./res/redhat.png" height="100px" width="100px">
+                     </div><span class="white-text">
+                       <b> REDHAT CERTIFIED ENGINEER</b></span><span class="teal-text text-lighten-5"><br>RHCSA and RHCSE redhat certified engineer with certification no : 140-223-637
+                     </span>
+                   </div>
+                 </div>
+                 <!-- third card --->
+                 <div class="col s12 m4 l4 celled">
+                   <div class="card-panel teal hoverable center">
+                     <div class="row center">
+                        <img src="./res/redhat-system_settings.png" height="100px" width="100px">
+                     </div><span class="white-text">
+                       <b>Operating System</b></span><span class="teal-text text-lighten-5"><br> Expertise in Troubleshootig of windows xp,7,8, and 10 & Linux
+                     </span>
+                   </div>
+                 </div>
+              </div> <!--first card row ends -->
+
+         </div>
+       </div>
+       <div class="row">
+          <div class="card-panel grey darken-4">
+            <div>
+              <span class="white-text row">Education
+              </span>
+              <div class="row"><!--first card row begins -->
+                  <!-- first card --->
+                 <div class="col 12 m4">
+                   <div class="card-panel teal hoverable center">
+                     <div class="row center">
+                        <img src="./res/graduation.svg" height="100px" width="100px">
+                     </div><span class="white-text">
+                       <b>Diploma in Applied Electronics</b></span><span class="teal-text text-lighten-5"><br>Model polytechnic College Vadakara 2008-2011 Batch
+                     </span>
+                   </div>
+                 </div>
+                 <!-- second card --->
+                 <div class="col s12 m4">
+                   <div class="card-panel teal hoverable center">
+
+                     <div class="row center">
+                        <img src="./res/preuniversity.svg" height="100px" width="100px">
+                     </div>
+                     <span class="white-text">
+                       <b>Class 12</b></span><span class="teal-text text-lighten-5"><br>JNM Govt HSS Puthuppanam class 2006 - 2008.
+                     </span>
+                   </div>
+                 </div>
+                 <!-- third card --->
+                 <div class="col s12 m4">
+                   <div class="card-panel teal hoverable center">
+
+                     <div class="row center">
+                        <img src="./res/highschool.svg" height="100px" width="100px">
+                     </div>
+                     <span class="white-text">
+                       <b>HighSchool/SSLC</b></span><span class="teal-text text-lighten-5"><br>JNM Govt HSS Puthuppanam class 2005 - 2006.
+                     </span>
+                   </div>
+                 </div>
+              </div> <!--first card row ends -->
+            </div>
+
+
+        </div>
+      </div>
+
+</div>
+  </div>
+
+      <footer class="page-footer #212121 grey darken-4">
+          <div class="footer-copyright">
+            <div class="container">
              aswinarangil.github.io © 2017
             <a class="grey-text text-lighten-4 right" href="http://materializecss.com/">Made with ❤ Materialize</a>
-</div>
-</div>
-</footer>
-</div>
-<!-- end of home -->
+            </div>
+          </div>
+        </footer>
+ <!-- end of home -->
+ </div>
 
-<!-- third tab starts -->
-<div class="col s12" id="projects" style="display: none;">
-<div class="row #333333 pad20top">
-<!-- Row 1 (Latest) -->
-<div class="row">
-<!-- Team Computers -->
-<div class="col s12 m6">
-<div class="card-panel #212121 grey darken-4">
-<div class="row">
-<div class="col s4 m4 l4">
-<img alt="Team Computers" class="responsive-img project-img logo-fit" src="./res/team.jpeg"/>
-</div>
-<div class="col s8 m8 l8">
-<span class="white-text">Team Computers Pvt Ltd – Apr 2022 – Jan 2023</span><br/>
-<span class="teal-text text-lighten-5">Role: IT Support / Helpdesk</span>
-</div>
-</div>
-<span class="white-text">Key Responsibilities</span>
-<ul class="white-text">
-<li>• Active Directory user management / ADDS support.</li>
-<li>• Group Policy support and troubleshooting.</li>
-<li>• Ticketing tool / Service Desk handling and documentation.</li>
-<li>• Remote support using Webex; asset &amp; vendor coordination.</li>
-<li>• McAfee encryption/decryption &amp; antivirus support; VPN/token reset.</li>
-<li>• Mobile@Work support and configuration (Android).</li>
-</ul>
-</div>
-</div>
-<!-- Linksys -->
-<div class="col s12 m6">
-<div class="card-panel #212121 grey darken-4">
-<div class="row">
-<div class="col s4 m4 l4">
-<img alt="Linksys" class="circle responsive project-img" src="./res/linksys.jpg"/>
-</div>
-<div class="col s8 m8 l8">
-<span class="white-text">Linksys Technologies Pvt Ltd – 10 Mar 2019 – 20 Jan 2021</span><br/>
-<span class="teal-text text-lighten-5">Client: State Bank of India (SBI)</span>
-</div>
-</div>
-<span class="white-text">Role: Remote Desktop Support Engineer</span><br/>
-<span class="white-text">Project: End User IT Support – State Bank of India (SBI)</span>
-<ul class="white-text">
-<li>• Responded to technical support calls from end users regarding desktop systems and software applications.</li>
-<li>• Managed Windows updates, performed domain join to local Active Directory, and configured user systems.</li>
-<li>• Installed and troubleshot network printers and peripheral devices.</li>
-<li>• Diagnosed and resolved network connectivity issues, hardware faults, and software errors.</li>
-<li>• Maintained detailed records of issues and resolutions for future reference and SLA compliance.</li>
-<li>• Configured Digital Signature Certificates (DSC), biometric devices, and GCC devices for banking operations.</li>
-</ul>
-</div>
-</div>
-</div>
-<!-- Row 2 -->
-<div class="row">
-<!-- Vara -->
-<div class="col s12 m6">
-<div class="card-panel #212121 grey darken-4">
-<div class="row">
-<div class="col s4 m4 l4">
-<img alt="Vara Infotech" class="circle responsive project-img" src="./res/vara.png"/>
-</div>
-<div class="col s8 m8 l8">
-<span class="white-text">Vara Infotech Pvt Ltd – Aug 2016 – 09 Nov 2017</span><br/>
-<span class="teal-text text-lighten-5">Client: ICICI Bank</span>
-</div>
-</div>
+
+
+ <!-- third tab starts -->
+ <div id="projects" class="col s12" style="display: none;">
+  <div class="row #333333 pad20top">
+    
+
+      <!-- Row 1 (Latest) -->
+      <div class="row">
+        <!-- Team Computers -->
+        <div class="col s12 m6">
+          <div class="card-panel #212121 grey darken-4">
+            <div class="row">
+              <div class="col s4 m4 l4">
+                <img src="./res/team.jpeg" class="responsive-img project-img logo-fit" alt="Team Computers">
+              </div>
+              <div class="col s8 m8 l8">
+                <span class="white-text">Team Computers Pvt Ltd – Apr 2022 – Jan 2023</span><br>
+                <span class="teal-text text-lighten-5">Role: IT Support / Helpdesk</span>
+              </div>
+            </div>
+
+            <span class="white-text">Key Responsibilities</span>
+            <ul class="white-text">
+              <li>• Active Directory user management / ADDS support.</li>
+              <li>• Group Policy support and troubleshooting.</li>
+              <li>• Ticketing tool / Service Desk handling and documentation.</li>
+              <li>• Remote support using Webex; asset & vendor coordination.</li>
+              <li>• McAfee encryption/decryption & antivirus support; VPN/token reset.</li>
+              <li>• Mobile@Work support and configuration (Android).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Linksys -->
+        <div class="col s12 m6">
+          <div class="card-panel #212121 grey darken-4">
+            <div class="row">
+              <div class="col s4 m4 l4">
+                <img src="./res/linksys.jpg" class="circle responsive project-img" alt="Linksys">
+              </div>
+              <div class="col s8 m8 l8">
+                <span class="white-text">Linksys Technologies Pvt Ltd – 10 Mar 2019 – 20 Jan 2021</span><br>
+                <span class="teal-text text-lighten-5">Client: State Bank of India (SBI)</span>
+              </div>
+            </div>
+
+            <span class="white-text">Role: Remote Desktop Support Engineer</span><br>
+            <span class="white-text">Project: End User IT Support – State Bank of India (SBI)</span>
+
+            <ul class="white-text">
+              <li>• Responded to technical support calls from end users regarding desktop systems and software applications.</li>
+              <li>• Managed Windows updates, performed domain join to local Active Directory, and configured user systems.</li>
+              <li>• Installed and troubleshot network printers and peripheral devices.</li>
+              <li>• Diagnosed and resolved network connectivity issues, hardware faults, and software errors.</li>
+              <li>• Maintained detailed records of issues and resolutions for future reference and SLA compliance.</li>
+              <li>• Configured Digital Signature Certificates (DSC), biometric devices, and GCC devices for banking operations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row">
+        <!-- Vara -->
+        <div class="col s12 m6">
+          <div class="card-panel #212121 grey darken-4">
+            <div class="row">
+              <div class="col s4 m4 l4">
+                <img src="./res/vara.png" class="circle responsive project-img" alt="Vara Infotech">
+              </div>
+              <div class="col s8 m8 l8">
+                <span class="white-text">Vara Infotech Pvt Ltd – Aug 2016 – 09 Nov 2017</span><br>
+                <span class="teal-text text-lighten-5">Client: ICICI Bank</span>
+              </div>
+            </div>
 <span class="white-text">Project: End User IT Support – ICICI Bank</span>
 <ul class="white-text">
-<li>• Delivered L1/L2 helpdesk support and resolved incidents within defined SLA.</li>
-<li>• Managed desktop deployment, OS installation, and software upgrades.</li>
-<li>• Troubleshot hardware issues, printer connectivity, and network failures.</li>
-<li>• Provided remote troubleshooting using support tools.</li>
-<li>• Assisted in system hardening and endpoint security configuration.</li>
-<li>• Documented recurring issues and recommended preventive solutions.</li>
+  <li>• Delivered L1/L2 helpdesk support and resolved incidents within defined SLA.</li>
+  <li>• Managed desktop deployment, OS installation, and software upgrades.</li>
+  <li>• Troubleshot hardware issues, printer connectivity, and network failures.</li>
+  <li>• Provided remote troubleshooting using support tools.</li>
+  <li>• Assisted in system hardening and endpoint security configuration.</li>
+  <li>• Documented recurring issues and recommended preventive solutions.</li>
 </ul>
-</div>
-</div>
-<!-- 3i -->
-<div class="col s12 m6">
-<div class="card-panel #212121 grey darken-4">
-<!-- Top Row: Image + Company -->
-<div class="row">
-<div class="col s4 m4 l4">
-<img class="circle responsive project-img" src="./res/3I-Infotech.jpg"/>
-</div>
-<div class="col s8 m8 l8">
-<span class="white-text">
+            
+            
+          </div>
+        </div>
+
+        <!-- 3i -->
+        <div class="col s12 m6">
+  <div class="card-panel #212121 grey darken-4">
+    
+    <!-- Top Row: Image + Company -->
+    <div class="row">
+      <div class="col s4 m4 l4">
+        <img src="./res/3I-Infotech.jpg" class="circle responsive project-img">
+      </div>
+      <div class="col s8 m8 l8">
+        <span class="white-text">
           3i Infotech – March 2015 – August 2016
-        </span><br/>
-<span class="teal-text text-lighten-5">
+        </span><br>
+        <span class="teal-text text-lighten-5">
           Client: ICICI Bank
         </span>
-</div>
-</div>
-<!-- Full width content BELOW image -->
-<span class="white-text"><b>3i Infotech – March 2015 – August 2016</b></span><br/>
+      </div>
+    </div>
+
+    <!-- Full width content BELOW image -->
+    <span class="white-text"><b>3i Infotech – March 2015 – August 2016</b></span><br>
 <span class="teal-text text-lighten-5">Client: ICICI Bank</span>
-<br/><br/>
+
+<br><br>
 <span class="white-text"><b>Role: IT Support Engineer (End User Support)</b></span>
+
 <ul class="white-text">
-<li>• Provided L1/L2 desktop support to bank users across branches.</li>
-<li>• Installed, configured and troubleshot Windows OS, MS Office and banking applications.</li>
-<li>• Managed Outlook configuration and email issue resolution.</li>
-<li>• Provided remote support using LANDesk tool.</li>
-<li>• Performed asset management and hardware troubleshooting.</li>
-<li>• Managed hard disk encryption using Sophos Encryption.</li>
-<li>• Resolved LAN connectivity and network-related issues.</li>
-<li>• Ensured SLA compliance and timely issue resolution.</li>
+  <li>• Provided L1/L2 desktop support to bank users across branches.</li>
+  <li>• Installed, configured and troubleshot Windows OS, MS Office and banking applications.</li>
+  <li>• Managed Outlook configuration and email issue resolution.</li>
+  <li>• Provided remote support using LANDesk tool.</li>
+  <li>• Performed asset management and hardware troubleshooting.</li>
+  <li>• Managed hard disk encryption using Sophos Encryption.</li>
+  <li>• Resolved LAN connectivity and network-related issues.</li>
+  <li>• Ensured SLA compliance and timely issue resolution.</li>
 </ul>
-</div>
-</div>
-<!-- Row 3 -->
-<div class="row">
-<!-- Prudent -->
-<div class="col s12 m6">
-<div class="card-panel #212121 grey darken-4">
-<!-- Top Row: Image + Company -->
-<div class="row">
-<div class="col s4 m4 l4">
-<img src="./res/prutech.jpg" class="responsive project-img logo-fit">
-</div>
-<div class="col s8 m8 l8">
-<span class="white-text">
+
+  </div>
+        </div>
+
+      <!-- Row 3 -->
+      <div class="row">
+        <!-- Prudent -->
+        <div class="col s12 m6">
+  <div class="card-panel #212121 grey darken-4">
+    
+    <!-- Top Row: Image + Company -->
+    <div class="row">
+      <div class="col s4 m4 l4">
+      <img src="./res/prutech.jpg" class="circle responsive project-img">
+      </div>
+      <div class="col s8 m8 l8">
+        <span class="white-text">
           Prudent Technologies Pvt Ltd – March 2012 – August 2014
-        </span><br/>
-<span class="teal-text text-lighten-5">
+        </span><br>
+        <span class="teal-text text-lighten-5">
           Project: End User IT Support – Muthoot Fincorp Ltd
         </span>
-</div>
-</div>
-<!-- Full width content BELOW image -->
-<ul class="white-text">
-<li>• Provided L1/L2 desktop and branch IT support across multiple locations.</li>
-<li>• Diagnosed and resolved hardware, software, and network-related issues within SLA.</li>
-<li>• Installed and configured Windows OS, MS Office, printers, and banking applications.</li>
-<li>• Performed basic LAN troubleshooting and switch connectivity checks.</li>
-<li>• Maintained incident logs and ensured timely issue resolution.</li>
-<li>• Coordinated with vendors for hardware replacement and support.</li>
-<li>• Ensured regular system backups and adherence to IT policies.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row pad20top #333333">
-<div class="col s12 m12 l12">
-<div class="card-panel grey darken-4">
-<h4 class="white-text center-align"></h4>
-<p class="white-text" style="text-align: justify; line-height: 1.8;">
-</p>
-<p class="white-text" style="text-align: justify; line-height: 1.8;">
-</p>
-<p class="white-text" style="text-align: justify; line-height: 1.8;">
-</p>
-</div>
-</div>
-</div>
-<p>
-            I am an experienced IT Support Engineer with over 8 years of hands-on experience in desktop support,
-            helpdesk operations, and IT infrastructure assistance. I have worked in banking and enterprise
-            environments supporting end users, troubleshooting systems, and ensuring smooth IT operations.
-          </p>
-<p>
-            My expertise includes Active Directory user management, Windows administration, Group Policy,
-            remote troubleshooting, VPN support, endpoint security tools, and service desk ticketing systems.
-            I consistently maintain SLA compliance while delivering high-quality technical support.
-          </p>
-<p>
-            I am committed to continuous learning and professional growth, with a strong focus on
-            reliability, problem-solving, and customer satisfaction.
-          </p>
+      </div>
+    </div>
 
+    <!-- Full width content BELOW image -->
+    <ul class="white-text">
+  <li>• Provided L1/L2 desktop and branch IT support across multiple locations.</li>
+  <li>• Diagnosed and resolved hardware, software, and network-related issues within SLA.</li>
+  <li>• Installed and configured Windows OS, MS Office, printers, and banking applications.</li>
+  <li>• Performed basic LAN troubleshooting and switch connectivity checks.</li>
+  <li>• Maintained incident logs and ensured timely issue resolution.</li>
+  <li>• Coordinated with vendors for hardware replacement and support.</li>
+  <li>• Ensured regular system backups and adherence to IT policies.</li>
+</ul> 
+            
+          </div>
+        </div>
+      </div>
 
-
-
-
-<p class="white-text" style="line-height:1.8;">
-<br/><br/>
-<br/><br/>
-<br/><br/>
-</p>
-
-<!-- About Tab -->
-<!-- About tab -->
-<div class="col s12" id="about" style="display: none;">
-<div class="row pad20top #333333">
-<div class="col s12 m12 l12">
-<div class="card-panel grey darken-4" style="max-width: 920px; margin: 0 auto; padding: 26px;">
-<h4 class="white-text center-align" style="margin-top: 0; font-weight: 700; letter-spacing: .5px;">About Me</h4>
-<div class="divider" style="background: #26a69a; opacity: .65; margin: 16px 0 22px;"></div>
-<p class="white-text" style="text-align: justify; line-height: 1.9; font-size: 1.05rem; margin-top: 0;">
-        Hi, I’m <b>Aswin</b>. I have experience in all facets of troubleshooting, installations, and maintenance for various desktop operations, hardware, and software.
-        I have a strong ability to explain complex technical information in terms that end users can easily understand.
-      </p>
-<p class="white-text" style="text-align: justify; line-height: 1.9; font-size: 1.05rem;">
-        I am multi-task oriented, enjoy a challenge, and continually stay abreast of the latest advancements in the IT field.
-      </p>
-<p class="white-text" style="text-align: justify; line-height: 1.9; font-size: 1.05rem; margin-bottom: 0;">
-        If you are seeking an IT professional with strong people skills and problem-solving ability who can provide optimum support to your MIS operations,
-        please contact me.
-      </p>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
-<script>
-  $(document).ready(function () {
-    $('.materialboxed').materialbox();
-    $(".button-collapse").sideNav();
 
-    // Skills animation
-    $('.skillbar').each(function () {
-      $(this).find('.skillbar-bar').animate({ width: $(this).attr('data-percent') }, 2000);
-    });
+<div id="about" class="col s12" style="display: none;">
+  <div class="row #333333 pad20top">
+    <div class="col s12 m8 l9">
+      <div class="card-panel #212121 grey darken-4">
+        <span class="white-text row"><b>About Me</b></span>
 
-    // Tabs
-    $('.tabs').tabs({
-      onShow: function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    });
-  });
-</script>
-</body></html>
+        <p class="white-text flow-text" style="margin-top: 10px;">
+          Hi, I’m <b>Aswin</b>.
+        </p>
+
+        <p class="white-text">
+          I have experience in all facets of troubleshooting, installations, and maintenance for various desktop operations, hardware, and software.
+          I possess a unique talent for delivering highly complex technical information into terms and concepts that end users can readily grasp.
+        </p>
+
+        <p class="white-text">
+          Furthermore, I am multi‑task oriented, enjoy a challenge, and continually stay abreast of the latest advancements in the IT field.
+        </p>
+
+        <p class="white-text" style="margin-bottom: 0;">
+          If you are seeking an IT professional who has excellent people and problem‑solving skills and can provide optimum support to your MIS operations,
+          please contact me.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
