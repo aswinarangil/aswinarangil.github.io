@@ -28,42 +28,22 @@
 
         </script>
    </head>
-  
+
    <body>
-     <nav class="nav-extended">
-  <div class="nav-content grey darken-4">
-    <ul class="tabs tabs-transparent">
-      <li class="tab"><a class="active" href="#home">Home</a></li>
-      <li class="tab"><a href="#projects">Experience</a></li>
-      <li class="tab"><a href="#about">About</a></li>
-      <li class="tab"><a href="#softskills">Soft Skills</a></li>
-      <li class="tab"><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-     </nav>
-        <div class="row">
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="./res/jquery-2.1.1.min.js.download"></script>
+     <script type="text/javascript" src="./res/materialize.min.js.download"></script>
+     <script>
+     jQuery(document).ready(function(){
+         $('.materialboxed').materialbox();
+         $(".button-collapse").sideNav();
+    	jQuery('.skillbar').each(function(){
+    		jQuery(this).find('.skillbar-bar').animate({
+    			width:jQuery(this).attr('data-percent')
+    		},2000);
+    	});
+    });
 
-  <div id="home" class="col s12">
-    <!-- HOME CONTENT HERE -->
-  </div>
-
-  <div id="projects" class="col s12">
-    <!-- EXPERIENCE CONTENT HERE -->
-  </div>
-
-  <div id="about" class="col s12">
-    <!-- ABOUT CONTENT HERE -->
-  </div>
-
-  <div id="softskills" class="col s12">
-    <!-- SOFT SKILLS CONTENT HERE -->
-  </div>
-
-  <div id="contact" class="col s12">
-    <!-- CONTACT CONTENT HERE -->
-  </div>
-
-        </div>
     $(document).ready(function(){
 
     });
@@ -74,101 +54,31 @@
 
 
      <!-- navigation bar -->
-     
-  
+     <nav class="nav-extended">
+  <div class="nav-wrapper grey darken-4">
+    <a href="#" class="brand-logo" style="margin-left:15px;">Aswin A</a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Experience</a></li>
+      <li><a href="#about">About</a></li>
+      <li>
+        <a href="mailto:aswina30@gmail.com">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <div class="nav-content grey darken-4">
     <ul class="tabs tabs-transparent">
       <li class="tab"><a class="active" href="#home">Home</a></li>
       <li class="tab"><a href="#projects">Experience</a></li>
       <li class="tab"><a href="#about">About</a></li>
-         <li class="tab"><a href="#softskills">Soft Skills</a></li>
       <li class="tab"><a href="#contact">Contact</a></li>
     </ul>
   </div>
      </nav>
-
-<div class="row">
-
-  <div id="home" class="col s12">
-
-  <div class="row pad20top #333333">
-
-    <!-- LEFT COLUMN -->
-    <div class="col s12 m4 l3">
-
-      <div class="card grey darken-4 z-index-4 pad20top">
-        <div class="container center-align">
-          <img src="./res/aswn.jpg" alt="" class="circle responsive-img center-align">
-        </div>
-
-        <div class="card-content">
-          <p class="card-title white-text center-align">Aswin Arangil</p>
-          <p class="white-text center-align">
-            IT Support Engineer with experience in desktop support, system troubleshooting,
-            Active Directory management, and basic networking.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="col s12 m8 l9">
-      <!-- Put your Expertise + Education here -->
-    </div>
-
-  </div>
-
-</div>
-
-  <div id="projects" class="col s12">
-    <!-- experience content -->
-  </div>
-
-  <div id="about" class="col s12">
-    <!-- about content -->
-  </div>
-
-  <div id="softskills" class="col s12">
-    <!-- soft skills content -->
-  </div>
-
-  <div id="contact" class="col s12">
-    <!-- contact content -->
-  </div>
-
-</div>
-<!-- Soft Skills Section -->
-<div id="softskills" class="col s12" style="display:none;">
-  <div class="row pad20top">
-    <div class="col s12 m8 offset-m2">
-      <div class="card-panel grey darken-4">
-
-        <h4 class="white-text center-align">SOFT SKILLS</h4>
-        <div class="divider teal" style="margin:20px 0;"></div>
-
-        <ul class="white-text" style="line-height:1.8;">
-          <li>• Strong Communication Skills</li>
-          <li>• Excellent Problem-Solving Ability</li>
-          <li>• Customer Service Orientation</li>
-          <li>• Time & SLA Management</li>
-          <li>• Team Collaboration</li>
-          <li>• Adaptability to New Technologies</li>
-        </ul>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div id="contact" class="col s12" style="display:none;">
-  <div class="row pad20top">
-    <div class="col s12 m8 offset-m2">
-      <div class="card-panel grey darken-4">
-        <h4 class="white-text center-align">CONTACT</h4>
         <div id="contact" class="col s12" style="display:none;">
   <div class="row pad20top">
     <div class="col s12 m8 offset-m2">
@@ -201,8 +111,33 @@
  <div id="home" class="col s12 active" style="display: block;">
    <!-- Page Layout here -->
 
-   
+   <div class="row pad20top #333333">
 
+     <div class="col s12 m4 l3 ">
+
+       <div class="row">
+         <div class="card grey darken-4 z-index-4 pad20top">
+           <div class="container center-align">
+             <img src="./res/aswn.jpg" alt="" class="circle responsive-img center-align">
+            </div>
+           <div class="card-content">
+             <p class="card-title white-text center-align">Aswin Arangil</p>
+             <p class="white-text center-align">
+IT Support Engineer with experience in desktop support, system troubleshooting, Active Directory management, and basic networking. Skilled in resolving end-user technical issues efficiently while maintaining high service quality and SLA standards. Passionate about continuous learning and IT infrastructure support.
+             </p> 
+           </div>
+             <div class="card-action center-align">
+               <div class="row center">
+                 <ul class="icons">
+                    <li class="icon"><a href="https://www.facebook.com/aswin.arangil"><img src="./res/facebook-logo.svg" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://in.linkedin.com/in/aswin-a-arangil"><img src="./res/linkedin.jpeg" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aswina30@gmail.com/"><img src="./res/gm.jpg" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://www.instagram.com/aswin_arangil/"><img src="./res/insta-logo.svg" class="responsive-img"></a></li>
+                </ul>
+              </div>
+             </div>
+         </div>
+       </div>
 
        <!-- skill set -->
        <div class="row">
