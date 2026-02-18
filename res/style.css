@@ -136,3 +136,13 @@
 	color:#444;
 	color:rgba(0, 0, 0, 0.4);
 }
+.premium-card{
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.45);
+}
