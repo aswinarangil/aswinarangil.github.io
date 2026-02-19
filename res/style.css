@@ -308,3 +308,10 @@ html {
 html {
   scroll-behavior: smooth;
 }
+/* ===== Glass Card Effect ===== */
+.glass-card{
+  background: rgba(40,40,40,0.55) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
