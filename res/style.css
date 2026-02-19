@@ -245,3 +245,19 @@ html {
   flex-direction: column;
   justify-content: flex-start;
 }
+/* Tabs premium look */
+.tabs .indicator {
+  background-color: #26a69a !important;
+  height: 3px !important;
+  border-radius: 3px;
+}
+
+.tabs .tab a {
+  color: #e0e0e0 !important;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.tabs .tab a.active {
+  color: #26a69a !important;
+}
