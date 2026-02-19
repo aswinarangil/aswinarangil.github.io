@@ -213,3 +213,8 @@ h4{
 .row.pad20top{
   margin-top: 18px;
 }
+
+.card-panel:hover{
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
