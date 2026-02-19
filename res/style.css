@@ -261,3 +261,15 @@ html {
 .tabs .tab a.active {
   color: #26a69a !important;
 }
+.avail-badge{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color:#eaeaea;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.2px;
+}
