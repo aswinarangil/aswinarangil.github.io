@@ -238,3 +238,10 @@ html {
 .home-card {
   animation: fadeUp 0.35s ease both;
 }
+/* Equal-height expertise cards */
+.celled .card-panel {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
