@@ -300,3 +300,7 @@ html {
   min-width: 160px;
   text-align: center;
 }
+/* ===== Hero background gradient (Top section) ===== */
+.nav-extended .nav-content{
+  background: linear-gradient(180deg, rgba(0,150,136,0.22) 0%, rgba(0,0,0,0) 70%);
+}
