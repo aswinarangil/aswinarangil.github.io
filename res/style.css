@@ -232,6 +232,6 @@ h4{
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.card, .card-panel {
+.home-card {
   animation: fadeUp 0.35s ease both;
 }
