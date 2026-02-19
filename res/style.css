@@ -315,3 +315,11 @@ html {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.08);
 }
+.action-btn {
+  transition: all 0.25s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 26px rgba(38,166,154,0.35);
+}
