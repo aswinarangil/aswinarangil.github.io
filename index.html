@@ -39,21 +39,26 @@
 
    <body>
      <!--Import jQuery before materialize.js-->
-     <script type="text/javascript" src="./res/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="./res/materialize.min.js"></script>
-jQuery(document).ready(function(){
-  $('.materialboxed').materialbox();
-  $(".button-collapse").sideNav();
+     <script type="text/javascript" src="./res/jquery-2.1.1.min.js.download"></script>
+     <script type="text/javascript" src="./res/materialize.min.js.download"></script>
+     <script>
+     jQuery(document).ready(function(){
+         $('.materialboxed').materialbox();
+         $(".button-collapse").sideNav();
+          $('ul.tabs').tabs();
+    	jQuery('.skillbar').each(function(){
+    		jQuery(this).find('.skillbar-bar').animate({
+    			width:jQuery(this).attr('data-percent')
+    		},2000);
+    	});
+    });
 
-  $('ul.tabs').tabs();   // ✅ ADD THIS
+    $(document).ready(function(){
 
-  jQuery('.skillbar').each(function(){
-    jQuery(this).find('.skillbar-bar').animate({
-      width:jQuery(this).attr('data-percent')
-    },2000);
-  });
-});
-</script>
+    });
+
+         $(".button-collapse").sideNav();
+     </script>
 
 
 
@@ -220,37 +225,27 @@ jQuery(document).ready(function(){
 </div>
 
 <div class="card-content">
-<h1 class="white-text center-align" style="font-size:28px; margin-bottom:6px; font-weight:700;">
+<h1 class="white-text center-align" style="font-size:28px; font-weight:800; margin-bottom:6px;">
   Aswin Arangil
 </h1>
 
-<div class="center-align white-text"
-     style="font-size:19px; 
-            font-weight:700; 
-            letter-spacing:0.6px; 
-            margin:10px 0 16px 0;
-            text-transform:uppercase;">
-  IT Infrastructure & Desktop Support Engineer  
-</div>
+<div style="text-align:center; margin-bottom:14px;">
+  <span style="display:inline-block; padding:6px 12px; border-radius:999px; background:#26a69a; color:#ffffff; font-weight:700; font-size:13px;">
+    IT Support Engineer • L1/L2 Desktop Support
+  </span>
 
-<div class="center-align teal-text text-lighten-3"
-     style="font-size:14px; 
-            letter-spacing:1px;">
-  L1 / L2 Support  •  Immediate Joiner
-</div>
-
-<div class="center-align" style="margin-bottom:12px;">
-  <span class="teal-text text-lighten-2" style="font-weight:600;">Open to relocate to Bangalore</span>
+  <!-- 🔽 PASTE IT RIGHT HERE -->
+<div style="text-align:center; margin-top:12px;">
+  <span style="display:inline-block; padding:6px 14px; border-radius:6px; background:#1e1e1e; color:#ffffff; font-size:14.5px; font-weight:600;">
+    📍 Open to Relocate to Bangalore | Immediate Joiner
+  </span>
 </div>
 
 </div>
+<p style="color:#ffffff; font-size:15px; line-height:1.9; margin:14px 0 0 0; letter-spacing:0.2px;">
      <div style="margin-top:20px; padding:16px; background:#1e1e1e; border-radius:10px;">
-  
+<div class="card grey darken-4 z-index-4 pad20top premium-card" style="padding:18px 16px;">
 
-    <!-- Core Competencies -->
-    <!-- Summary Text -->
-
-  </div>   <!-- closes premium-card -->
 
   
 
@@ -284,8 +279,10 @@ jQuery(document).ready(function(){
 
     <!-- Strong Summary -->
     <p class="white-text left-align" style="font-size:15px; line-height:1.8; margin-top:18px;">
-      Results-driven IT Infrastructure & Desktop Support Engineer with 8+ years of experience supporting enterprise and banking environments. Proven expertise in L1/L2 troubleshooting, Windows systems, Outlook configuration, LAN/VPN connectivity, and SLA-driven incident management. Recognized for structured problem-solving, minimal downtime delivery, and high end-user satisfaction.
+      IT Support Engineer with 8+ years of experience delivering L1/L2 desktop and remote support in banking and enterprise environments.
+      Strong in troubleshooting, SLA-driven ticket handling, and ensuring minimal downtime with high end-user satisfaction.
     </p>
+
   </div>
 </div>
 </div>
