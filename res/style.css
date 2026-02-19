@@ -200,3 +200,16 @@ body {
   font-weight:800;
   letter-spacing:0.5px;
 }
+h4{
+  letter-spacing: 0.6px;
+  font-weight: 800 !important;
+}
+
+.card-panel{
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.row.pad20top{
+  margin-top: 18px;
+}
