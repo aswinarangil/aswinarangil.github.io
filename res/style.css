@@ -162,3 +162,27 @@ body {
   background: linear-gradient(135deg, #121212, #1c1c1c, #0f2027);
   background-attachment: fixed;
 }
+/* Premium Action Buttons */
+.action-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:10px 18px;
+  margin:6px;
+  border-radius:999px;
+  background: rgba(38,166,154,0.18);
+  border: 1px solid rgba(38,166,154,0.55);
+  color:#ffffff;
+  font-size:14px;
+  font-weight:700;
+  text-decoration:none;
+  letter-spacing:0.2px;
+  transition: all 0.25s ease;
+}
+
+.action-btn:hover{
+  background: rgba(38,166,154,0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.45);
+}
