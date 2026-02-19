@@ -339,3 +339,37 @@ html {
 .exp-meta .muted{
   color: rgba(255,255,255,0.75);
 }
+/* ===== Experience Timeline ===== */
+.timeline {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255,255,255,0.12);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 18px;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0,150,136,0.85);
+  box-shadow: 0 0 0 4px rgba(0,150,136,0.18);
+}
