@@ -296,3 +296,7 @@ html {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0,255,200,0.25);
 }
+.action-btn {
+  min-width: 160px;
+  text-align: center;
+}
