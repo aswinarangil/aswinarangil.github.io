@@ -655,3 +655,21 @@ ul.white-text li{
   color: #26a69a;
   font-weight: 700;
 }
+/* Premium grey info box */
+.meta-box {
+  background: linear-gradient(145deg, #1f1f1f, #181818);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Green labels */
+.label-green {
+  color: #1fb7a6;
+  font-weight: 700;
+}
