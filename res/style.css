@@ -584,3 +584,15 @@ ul.white-text li{
   object-fit: cover;
   border: 2px solid rgba(38,166,154,0.5);
 }
+/* EXPERIENCE FULL BLACK BACKGROUND */
+#projects {
+  background: #121212 !important;
+  padding: 40px 0;
+}
+
+/* Remove gradient feel inside cards */
+#projects .card-panel {
+  background: #1b1b1b !important;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
