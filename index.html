@@ -970,24 +970,21 @@ body {
 💬
 </a>
 <script>
-  (function(){
+document.addEventListener("DOMContentLoaded", function() {
     var el = document.getElementById("expCount");
-    if(!el) return;
+    if (!el) return;
 
-    var target = 8;      // change if needed
+    var target = 8;
     var current = 0;
 
-    var step = function(){
-      current += 1;
-      el.textContent = current;
-      if(current < target){
-        setTimeout(step, 80);
-      }
-    };
-
-    // small delay so it animates after load
-    setTimeout(step, 400);
-  })();
+    var interval = setInterval(function() {
+        current++;
+        el.textContent = current;
+        if (current >= target) {
+            clearInterval(interval);
+        }
+    }, 100);
+});
 </script>
 
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
