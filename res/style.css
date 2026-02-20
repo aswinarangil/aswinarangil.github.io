@@ -1,0 +1,488 @@
+.icons{
+  width: 100%;
+  display: table;
+  margin: auto;
+}
+
+.icons li{
+  width: 25%;
+  text-align: center;
+  display: table-cell;
+  padding: 0px;
+  list-style:none;
+  overflow: hidden;
+  box-sizing: border-box;
+  float: left;
+}
+
+.pad20top{
+  padding-top: 20px;
+}
+.mar5top{
+  margin-top: 5px;
+}
+.pad10bottom{
+  padding-bottom: 10px;
+}
+.pad10left{
+  padding-left: 15px;
+}
+
+.project-img{
+  height: 60px;
+  width: 60px;
+}
+.icon img{
+  width: 45px;
+  height: 45px;
+  padding: 0 0.75rem;
+  min-height: 1px;
+}
+
+.img-git{
+  width: 100px;
+  height: 100px;
+}
+
+.tabled{
+  display: table;
+}
+.tabled .celled{
+  display: table-cell;
+}
+
+.portfolio-img{
+  width: 300px;
+  height: auto;
+
+}
+.logo {
+  width: 150px;
+  height: auto;
+  margin:auto;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
+.premium-card{
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.45);
+}
+.home-card {
+  background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  padding: 22px;
+  transition: all 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.5);
+}
+body {
+  background: linear-gradient(135deg, #121212, #1c1c1c, #0f2027);
+  background-attachment: fixed;
+}
+/* Premium Action Buttons */
+.action-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:10px 18px;
+  margin:6px;
+  border-radius:999px;
+  background: rgba(38,166,154,0.18);
+  border: 1px solid rgba(38,166,154,0.55);
+  color:#ffffff;
+  font-size:14px;
+  font-weight:700;
+  text-decoration:none;
+  letter-spacing:0.2px;
+  transition: all 0.25s ease;
+}
+
+.action-btn:hover{
+  background: rgba(38,166,154,0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.45);
+}
+.nav-wrapper{
+  background: rgba(0,0,0,0.65) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-content{
+  background: transparent !important;
+}
+
+.brand-logo{
+  font-weight:800;
+  letter-spacing:0.5px;
+}
+h4{
+  letter-spacing: 0.6px;
+  font-weight: 800 !important;
+}
+
+.card-panel{
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.row.pad20top{
+  margin-top: 18px;
+}
+
+.card-panel:hover{
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+.tabs .tab a{
+  font-weight:600;
+  letter-spacing:0.3px;
+}
+
+.tabs .tab a.active{
+  color:#26a69a !important;
+  font-weight:800;
+}
+html {
+  scroll-behavior: smooth;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.home-card {
+  animation: fadeUp 0.35s ease both;
+}
+/* Equal-height expertise cards */
+.celled .card-panel {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* Tabs premium look */
+.tabs .indicator {
+  background-color: #26a69a !important;
+  height: 3px !important;
+  border-radius: 3px;
+}
+
+.tabs .tab a {
+  color: #e0e0e0 !important;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.tabs .tab a.active {
+  color: #26a69a !important;
+}
+.avail-badge{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color:#eaeaea;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.2px;
+}
+/* Premium glass effect */
+.glass-card{
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.main-btn{
+  min-width:160px;
+  height:50px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:30px;
+  font-weight:600;
+  letter-spacing:0.5px;
+  transition:0.3s ease;
+}
+
+.main-btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,255,200,0.25);
+}
+.action-btn {
+  min-width: 160px;
+  text-align: center;
+}
+/* ===== Hero background gradient (Top section) ===== */
+.nav-extended .nav-content{
+  background: linear-gradient(180deg, rgba(0,150,136,0.22) 0%, rgba(0,0,0,0) 70%);
+}
+/* ===== Smooth Scroll ===== */
+html {
+  scroll-behavior: smooth;
+}
+/* ===== Glass Card Effect ===== */
+.glass-card{
+  background: rgba(40,40,40,0.55) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.action-btn {
+  transition: all 0.25s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 26px rgba(38,166,154,0.35);
+}
+/* ===== Experience blocks ===== */
+.exp-meta{
+  margin-top:10px;
+  padding:12px 14px;
+  border-radius:12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.exp-meta b{
+  color:#ffffff;
+}
+
+.exp-meta .muted{
+  color: rgba(255,255,255,0.75);
+}
+/* ===== Experience Timeline ===== */
+.timeline {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255,255,255,0.12);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 18px;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0,150,136,0.85);
+  box-shadow: 0 0 0 4px rgba(0,150,136,0.18);
+}
+.timeline-item {
+  margin-bottom: 40px;
+}
+.card-panel.premium-card {
+  border-radius: 16px;
+}
+/* Experience Card Hover Effect */
+.premium-card {
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+/* ===== Experience Timeline (Projects Tab) ===== */
+
+/* Make the projects tab a positioning context */
+#projects{
+  position: relative;
+}
+
+/* Vertical timeline line */
+#projects::before{
+  content:"";
+  position:absolute;
+  left: 26px;
+  top: 92px;          /* starts below the heading */
+  bottom: 30px;       /* ends above page bottom */
+  width: 2px;
+  background: rgba(0,150,136,0.45);
+}
+
+/* Each timeline item */
+.timeline-item{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* Timeline dot for each card */
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  left: 17px;
+  top: 26px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #009688;                 /* teal */
+  box-shadow: 0 0 0 5px rgba(0,150,136,0.18);
+}
+/* ===== Action Buttons ===== */
+.action-btn{
+  display:inline-block;
+  padding:10px 18px;
+  margin:6px 6px 0 0;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  transition: all 0.3s ease;
+  letter-spacing:0.4px;
+}
+
+.action-btn.primary{
+  background:#009688;
+  color:#ffffff;
+}
+
+.action-btn.secondary{
+  background:rgba(255,255,255,0.08);
+  color:#ffffff;
+  border:1px solid rgba(255,255,255,0.15);
+}
+
+.action-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(0,0,0,0.35);
+}
+/* ===== Home Profile Typography ===== */
+.profile-name{
+  font-size:28px;
+  font-weight:900;
+  margin:14px 0 6px 0;
+  letter-spacing:0.4px;
+}
+
+.profile-role{
+  font-size:16px;
+  font-weight:700;
+  color:#9ee7df;
+  margin:0 0 12px 0;
+}
+
+.profile-summary{
+  font-size:15px;
+  line-height:1.85;
+  margin-top:14px;
+  color:#ffffff;
+  opacity:0.95;
+}
+/* ===== Premium Card Hover Upgrade ===== */
+.premium-card{
+  border-radius:18px;
+  transition: all 0.35s ease;
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+.premium-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,150,136,0.25);
+  border:1px solid rgba(0,150,136,0.35);
+}
