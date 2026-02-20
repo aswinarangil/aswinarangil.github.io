@@ -1343,3 +1343,13 @@ h1.hero-name{
     0 0 0 5px rgba(0,150,136,0.18),
     0 0 18px rgba(0,150,136,0.45);
 }
+.exp-pill{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color:#ffffff !important;
+  font-weight:800;
+  font-size:13px;
+}
