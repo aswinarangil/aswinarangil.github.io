@@ -1237,7 +1237,9 @@ h4::after{
 .hero-name{
   white-space: nowrap;
   display: inline-block;
-  font-size: 30px !important;
+  font-size: 26px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.8px;
 }
   font-size: 34px !important;
   font-weight: 900 !important;
