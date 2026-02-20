@@ -1256,3 +1256,7 @@ h4::after{
   line-height: 1.1 !important;
   margin: 8px 0 !important;
 }
+/* FINAL HERO SIZE CONTROL */
+h1.hero-name{
+  font-size: 27px !important;
+}
