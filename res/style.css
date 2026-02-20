@@ -379,3 +379,12 @@ html {
 .card-panel.premium-card {
   border-radius: 16px;
 }
+/* Experience Card Hover Effect */
+.premium-card {
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
