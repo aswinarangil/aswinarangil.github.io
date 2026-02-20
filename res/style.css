@@ -610,3 +610,31 @@ ul.white-text li{
   inset: 0;
   background: #0f0f0f;   /* pure black */
   z-index: 0
+/* Make Role/Client/Environment box same everywhere */
+.exp-meta-box, .meta-box, .exp-details-box {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  margin-top: 14px !important;
+}
+
+/* Green label style (Role/Client/Environment) */
+.exp-meta-box b,
+.meta-box b,
+.exp-details-box b,
+.exp-meta-box strong,
+.meta-box strong,
+.exp-details-box strong {
+  color: #1fb7a6 !important;
+  font-weight: 700 !important;
+}
+
+/* Make the text inside the box clean */
+.exp-meta-box,
+.meta-box,
+.exp-details-box {
+  color: #eaeaea !important;
+  line-height: 1.6 !important;
+  font-size: 15px !important;
+}
