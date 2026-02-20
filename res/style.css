@@ -574,3 +574,13 @@ ul.white-text li{
     padding-right: 14px !important;
   }
 }
+.exp-meta b {
+  color: #26a69a;
+}
+
+.project-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid rgba(38,166,154,0.5);
+}
