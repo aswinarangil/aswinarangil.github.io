@@ -1233,14 +1233,6 @@ h4::after{
 .card:hover::before, .card-panel:hover::before{
   opacity: 1;
 }
-/* ===== Silicon Valley Hero Name ===== */
-.hero-name{
-  white-space: nowrap;
-  font-size: 30px !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.8px;
-  margin: 8px 0;
-}
   font-size: 34px !important;
   font-weight: 900 !important;
   letter-spacing: 1px;
@@ -1257,4 +1249,11 @@ h4::after{
       0 0 10px rgba(38,166,154,0.25),
       0 0 25px rgba(38,166,154,0.15);
   }
-
+.hero-name{
+  white-space: nowrap !important;
+  font-size: clamp(26px, 5vw, 32px) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.3px !important;
+  line-height: 1.1 !important;
+  margin: 8px 0 !important;
+}
