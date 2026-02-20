@@ -1074,3 +1074,12 @@ a:hover{
 #projects .divider.teal{
   margin: 18px 0 !important;
 }
+/* ===== Subtle Tech Gradient Background ===== */
+#projects{
+  background: linear-gradient(
+    180deg,
+    #0b0b0b 0%,
+    #111111 40%,
+    #0e0e0e 100%
+  ) !important;
+}
