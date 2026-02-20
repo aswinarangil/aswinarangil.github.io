@@ -1032,57 +1032,49 @@ body {
 
 })();
 </script>
-    <script>
+<script>
 (function(){
 
-  function animateCounter(){
+  function runExpCounter(){
     var el = document.getElementById("expCount");
     if(!el) return;
 
+    var wrap = el.parentElement; // the pill span
+    if(!wrap) return;
+
     var target = 8;
     var current = 0;
-    el.textContent = 0;
+
+    // reset each time
+    wrap.innerHTML = '<span id="expCount" style="color:#26a69a; font-size:20px; font-weight:900;">0</span>';
 
     var timer = setInterval(function(){
       current++;
       if(current >= target){
-        el.textContent = target + "+ Years Experienced";
+        wrap.innerHTML =
+          '<span style="color:#26a69a; font-size:20px; font-weight:900;">' +
+          target + '+</span> <span style="color:#ffffff; font-weight:800;">Years Experienced</span>';
         clearInterval(timer);
       } else {
-        el.textContent = current;
+        wrap.innerHTML =
+          '<span style="color:#26a69a; font-size:20px; font-weight:900;">' +
+          current + '</span>';
       }
-    }, 300);
-  }
-
-  function animateActiveTab(){
-    document.querySelectorAll('.tab-fade').forEach(function(el){
-      el.classList.remove('tab-fade');
-    });
-
-    var active = document.querySelector('.col.s12.active') || document.querySelector('#home');
-    if(active){
-      void active.offsetWidth;
-      active.classList.add('tab-fade');
-    }
+    }, 300); // slower + visible
   }
 
   document.addEventListener("DOMContentLoaded", function(){
-    setTimeout(function(){
-      animateCounter();
-      animateActiveTab();
-    }, 200);
+    setTimeout(runExpCounter, 250);
 
-    document.querySelectorAll('.tabs a').forEach(function(a){
-      a.addEventListener("click", function(){
-        setTimeout(function(){
-          animateCounter();
-          animateActiveTab();
-        }, 150);
+    // animate again when Home tab clicked
+    var homeTab = document.querySelector('a[href="#home"]');
+    if(homeTab){
+      homeTab.addEventListener("click", function(){
+        setTimeout(runExpCounter, 200);
       });
-    });
+    }
   });
 
 })();
-    </script>
-
+</script>
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
