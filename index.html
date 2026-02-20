@@ -986,8 +986,7 @@ body {
     if(!el) return;
 
     // prevent re-running again and again
-    if(el.dataset.done === "1") return;
-    el.dataset.done = "1";
+    
 
     var target = 8;
     var current = 0;
@@ -996,7 +995,7 @@ body {
       current++;
       el.textContent = current;
       if(current >= target) clearInterval(timer);
-    }, 90);
+    }, 300);
   }
 
   document.addEventListener("DOMContentLoaded", function(){
