@@ -1233,3 +1233,22 @@ h4::after{
 .card:hover::before, .card-panel:hover::before{
   opacity: 1;
 }
+/* ===== Silicon Valley Hero Name ===== */
+.hero-name{
+  font-size: 34px !important;
+  font-weight: 900 !important;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  animation: heroGlow 3s ease-in-out infinite;
+}
+
+@keyframes heroGlow{
+  0%,100%{
+    text-shadow: 0 0 0 rgba(38,166,154,0);
+  }
+  50%{
+    text-shadow:
+      0 0 10px rgba(38,166,154,0.25),
+      0 0 25px rgba(38,166,154,0.15);
+  }
+}
