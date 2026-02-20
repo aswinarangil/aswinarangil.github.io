@@ -993,7 +993,7 @@ body {
 
     var timer = setInterval(function(){
       current++;
-      el.textContent = current;
+      el.textContent = (current >= target) ? (target + "+") : current;
       if(current >= target) clearInterval(timer);
     }, 300);
   }
