@@ -474,3 +474,15 @@ html {
   color:#ffffff;
   opacity:0.95;
 }
+/* ===== Premium Card Hover Upgrade ===== */
+.premium-card{
+  border-radius:18px;
+  transition: all 0.35s ease;
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+.premium-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,150,136,0.25);
+  border:1px solid rgba(0,150,136,0.35);
+}
