@@ -865,3 +865,49 @@ ul.white-text li{
   transform:scale(1.05);
   transition:0.3s ease;
 }
+/* ===== Experience text fix (white text + bullets) ===== */
+#projects .exp-bullets,
+#projects .exp-bullets li{
+  color: rgba(255,255,255,0.88) !important;
+}
+
+#projects .exp-bullets{
+  margin-top: 10px;
+  padding-left: 22px;
+}
+
+#projects .exp-bullets li{
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+/* ===== Company header (logo + name/date) ===== */
+.company-header{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.company-logo{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(38, 166, 154, 0.9); /* teal border */
+  background: #fff;
+  flex: 0 0 auto;
+}
+
+.company-meta{ display: flex; flex-direction: column; gap: 4px; }
+
+.company-name{
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.company-date{
+  color: rgba(255,255,255,0.65) !important;
+  font-size: 14px;
+}
