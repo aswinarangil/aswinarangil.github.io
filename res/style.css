@@ -1371,3 +1371,12 @@ body {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+/* ===== Fade-in for visible tab content ===== */
+.tab-fade {
+  animation: tabFadeIn 0.55s ease both;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
