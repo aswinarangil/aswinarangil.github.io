@@ -627,8 +627,31 @@ ul.white-text li{
 /* FORCE EXPERIENCE TAB TO FULL BLACK (HIDES BODY GRADIENT/LINES) */
 #projects{
   position: relative;
-  background: transparent !important;
   overflow: hidden;
+  background: #0f0f0f !important;
+  padding: 40px 0;
+}
+
+/* This layer covers the body background inside Experience */
+#projects::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0f0f0f;
+  z-index: 0;
+}
+
+/* Keep all content above the black layer */
+#projects > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* Make every experience card black */
+#projects .card-panel{
+  background: #1b1b1b !important;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 /* This layer covers the body background inside Experience */
