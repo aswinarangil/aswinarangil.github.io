@@ -1035,51 +1035,46 @@ body {
 <script>
 (function(){
   function runExpCounter(){
-    // run only when Home tab is visible/active
+    // run only when Home is active (or first load)
     if (location.hash && location.hash !== "#home") return;
 
-    var wrapper = document.getElementById("expCountWrapper");
-    var el = document.getElementById("expCount");
-    if(!wrapper || !el) return;
+    var num = document.getElementById("expCount");
+    var label = document.getElementById("expLabel");
+    if(!num || !label) return;
 
     var target = 8;
     var current = 0;
 
-    // reset text every time
-    el.textContent = "0";
+    // reset every time
+    num.textContent = "0";
+    label.textContent = "Years Experienced";
 
-    // clear any previous timer
+    // clear old timer if any
     if (window.__expTimer) clearInterval(window.__expTimer);
 
     window.__expTimer = setInterval(function(){
       current++;
 
       if(current >= target){
-        // show final full text
-        wrapper.innerHTML =
-          '<span style="color:#26a69a; font-size:20px; font-weight:900;">' +
-          target + '+</span> <span style="color:#ffffff; font-weight:800; font-size:16px;">Years Experienced</span>';
+        num.textContent = target + "+";
+        label.textContent = "Years Experienced";
         clearInterval(window.__expTimer);
         return;
       }
 
-      el.textContent = current;
+      num.textContent = String(current);
     }, 300);
   }
 
-  // Run on first load
   document.addEventListener("DOMContentLoaded", function(){
-    // If no hash, Home is default in your page
     if(!location.hash) location.hash = "#home";
     setTimeout(runExpCounter, 250);
   });
 
-  // Run whenever tab changes (hash changes)
   window.addEventListener("hashchange", function(){
     setTimeout(runExpCounter, 200);
   });
 
-  // Also run when any tab is clicked (extra safety)
   document.querySelectorAll('.tabs a').forEach(function(a){
     a.addEventListener("click", function(){
       setTimeout(runExpCounter, 200);
