@@ -1057,3 +1057,20 @@ a:hover{
 #projects .col{
   margin-bottom: 30px;
 }
+/* ===== Experience Header Polish ===== */
+#projects .white-text[style*="font-size:20px"],
+#projects .white-text[style*="font-size:18px"]{
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+#projects .grey-text.text-lighten-1{
+  font-size: 13px !important;
+  letter-spacing: 0.2px;
+  margin-top: 2px !important;
+}
+
+/* Divider spacing consistency */
+#projects .divider.teal{
+  margin: 18px 0 !important;
+}
