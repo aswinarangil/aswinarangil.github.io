@@ -1235,12 +1235,11 @@ h4::after{
 }
 /* ===== Silicon Valley Hero Name ===== */
 .hero-name{
-  white-space: nowrap !important;
-  font-size: clamp(24px, 3.5vw, 30px) !important;
+  font-size: 32px !important;
   font-weight: 900 !important;
-  letter-spacing: 0.8px !important;
+  letter-spacing: 1px !important;
   line-height: 1.1 !important;
-  margin: 6px 0 6px 0 !important;
+  margin: 8px 0 !important;
 }
   font-size: 34px !important;
   font-weight: 900 !important;
