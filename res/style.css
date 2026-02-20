@@ -709,3 +709,17 @@ ul.white-text li{
 .card-panel ul li::marker {
   color: #1fb7a6;
 }
+/* FIX: Experience responsibilities faded/dark text */
+.premium-card ul,
+.premium-card li,
+.premium-card p,
+.premium-card .responsibilities,
+.premium-card .responsibilities * {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.premium-card ul li::marker {
+  color: #1fb7a6 !important;
+}
