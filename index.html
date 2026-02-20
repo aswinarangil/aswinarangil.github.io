@@ -981,21 +981,41 @@ body {
 💬
 </a>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function(){
+  function animateCounter(){
     var el = document.getElementById("expCount");
-    if (!el) return;
+    if(!el) return;
+
+    // prevent re-running again and again
+    if(el.dataset.done === "1") return;
+    el.dataset.done = "1";
 
     var target = 8;
     var current = 0;
 
-    var interval = setInterval(function() {
-        current++;
-        el.textContent = current;
-        if (current >= target) {
-            clearInterval(interval);
-        }
-    }, 100);
-});
+    var timer = setInterval(function(){
+      current++;
+      el.textContent = current;
+      if(current >= target) clearInterval(timer);
+    }, 90);
+  }
+
+  document.addEventListener("DOMContentLoaded", function(){
+    // Try on load (if home visible)
+    setTimeout(animateCounter, 400);
+
+    // Also run when Home tab is clicked
+    var homeTab = document.querySelector('a[href="#home"]');
+    if(homeTab){
+      homeTab.addEventListener("click", function(){
+        // allow rerun by clearing done flag
+        var el = document.getElementById("expCount");
+        if(el) el.dataset.done = "0";
+        setTimeout(animateCounter, 200);
+      });
+    }
+  });
+})();
 </script>
 
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
