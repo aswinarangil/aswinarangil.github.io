@@ -1172,3 +1172,14 @@ nav.nav-extended{
     0 12px 30px rgba(0,0,0,0.6),
     0 0 12px rgba(38,166,154,0.25);
 }
+/* ===== Subtle Tech Background Depth ===== */
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(38,166,154,0.06), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(38,166,154,0.04), transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+}
