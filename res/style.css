@@ -1149,3 +1149,26 @@ nav.nav-extended{
   background: rgba(38,166,154,0.10);
   box-shadow: 0 12px 28px rgba(0,0,0,0.55);
 }
+/* ===== Premium Main Buttons Upgrade ===== */
+.main-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1b1b1b, #121212);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #fff !important;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+}
+
+.main-btn:hover{
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #1f1f1f, #151515);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.6),
+    0 0 12px rgba(38,166,154,0.25);
+}
