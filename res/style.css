@@ -1250,10 +1250,9 @@ h4::after{
       0 0 25px rgba(38,166,154,0.15);
   }
 .hero-name{
-  white-space: nowrap !important;
-  font-size: clamp(26px, 5vw, 32px) !important;
+  font-size: clamp(24px, 4.5vw, 28px) !important;
   font-weight: 900 !important;
-  letter-spacing: 0.3px !important;
+  letter-spacing: 0.4px !important;
   line-height: 1.1 !important;
   margin: 8px 0 !important;
 }
