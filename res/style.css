@@ -1187,3 +1187,49 @@ body::before{
 html{
   scroll-behavior: smooth;
 }
+/* ===== Animated Underline for Section Headings ===== */
+h4{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+h4::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(38,166,154,0.95), rgba(38,166,154,0.0));
+  animation: glowLine 2.5s ease-in-out infinite;
+}
+
+@keyframes glowLine{
+  0%,100%{ opacity: 0.55; transform: translateX(0); }
+  50%{ opacity: 1; transform: translateX(10px); }
+}
+/* ===== Glass Highlight on Cards ===== */
+.card, .card-panel{
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before, .card-panel::before{
+  content:"";
+  position:absolute;
+  top:-40%;
+  left:-60%;
+  width:120%;
+  height:120%;
+  background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 55%);
+  transform: rotate(12deg);
+  pointer-events:none;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.card:hover::before, .card-panel:hover::before{
+  opacity: 1;
+}
