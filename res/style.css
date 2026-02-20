@@ -911,3 +911,9 @@ ul.white-text li{
   color: rgba(255,255,255,0.65) !important;
   font-size: 14px;
 }
+/* ===== Make Experience Meta Box Fully Black ===== */
+.exp-meta{
+  background: #1b1b1b !important;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
