@@ -1295,3 +1295,16 @@ h1.hero-name{
   background: #009688;
   box-shadow: 0 0 0 4px rgba(0,150,136,0.18);
 }
+/* ===== PREMIUM EXPERIENCE CARD UPGRADE ===== */
+.premium-card{
+  background: #1c1c1c !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  transition: all 0.35s ease;
+}
+
+.premium-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,150,136,0.25);
+}
