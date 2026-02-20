@@ -1019,5 +1019,57 @@ body {
   });
 })();
 </script>
+    <script>
+(function(){
+
+  function animateCounter(){
+    var el = document.getElementById("expCount");
+    if(!el) return;
+
+    var target = 8;
+    var current = 0;
+    el.textContent = 0;
+
+    var timer = setInterval(function(){
+      current++;
+      if(current >= target){
+        el.textContent = target + "+ Years Experienced";
+        clearInterval(timer);
+      } else {
+        el.textContent = current;
+      }
+    }, 300);
+  }
+
+  function animateActiveTab(){
+    document.querySelectorAll('.tab-fade').forEach(function(el){
+      el.classList.remove('tab-fade');
+    });
+
+    var active = document.querySelector('.col.s12.active') || document.querySelector('#home');
+    if(active){
+      void active.offsetWidth;
+      active.classList.add('tab-fade');
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+      animateCounter();
+      animateActiveTab();
+    }, 200);
+
+    document.querySelectorAll('.tabs a').forEach(function(a){
+      a.addEventListener("click", function(){
+        setTimeout(function(){
+          animateCounter();
+          animateActiveTab();
+        }, 150);
+      });
+    });
+  });
+
+})();
+    </script>
 
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
