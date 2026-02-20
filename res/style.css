@@ -694,3 +694,18 @@ ul.white-text li{
 .exp-bullets li::marker{
   color: #1fb7a6;
 }
+/* Force white bullets inside experience cards */
+.premium-card ul li,
+.premium-card ol li,
+.card-panel ul li,
+.card-panel ol li {
+  color: #ffffff !important;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Optional: make bullet dot green */
+.premium-card ul li::marker,
+.card-panel ul li::marker {
+  color: #1fb7a6;
+}
