@@ -917,3 +917,8 @@ ul.white-text li{
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
+/* ===== Force Experience Section Fully Dark ===== */
+#projects,
+#projects .timeline {
+  background: #121212 !important;
+}
