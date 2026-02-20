@@ -596,3 +596,17 @@ ul.white-text li{
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
+/* FORCE EXPERIENCE TAB TO FULL BLACK (HIDES BODY GRADIENT/LINES) */
+#projects{
+  position: relative;
+  background: transparent !important;
+  overflow: hidden;
+}
+
+/* This layer covers the body background inside Experience */
+#projects::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #0f0f0f;   /* pure black */
+  z-index: 0
