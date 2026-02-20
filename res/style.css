@@ -1106,3 +1106,46 @@ a:hover{
     0 0 15px rgba(38,166,154,0.15);
   transition: all 0.3s ease;
 }
+/* ===== Premium Sticky Navbar ===== */
+nav.nav-extended{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.55);
+}
+/* ===== Premium Tabs ===== */
+.tabs .tab a{
+  font-weight: 800 !important;
+  letter-spacing: 0.4px;
+  opacity: 0.85;
+}
+.tabs .tab a:hover{
+  opacity: 1;
+}
+.tabs .tab a.active{
+  opacity: 1;
+}
+.tabs .indicator{
+  height: 3px !important;
+  border-radius: 3px;
+}
+/* ===== Action Buttons Look ===== */
+.action-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.action-btn:hover{
+  transform: translateY(-2px);
+  background: rgba(38,166,154,0.10);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.55);
+}
