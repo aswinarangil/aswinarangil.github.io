@@ -373,3 +373,6 @@ html {
   background: rgba(0,150,136,0.85);
   box-shadow: 0 0 0 4px rgba(0,150,136,0.18);
 }
+.timeline-item {
+  margin-bottom: 40px;
+}
