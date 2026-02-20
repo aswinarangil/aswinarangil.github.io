@@ -853,3 +853,11 @@ ul.white-text li{
   font-size:14px;
   margin-top:4px;
 }
+.company-logo{
+  width:72px !important;
+  height:72px !important;
+  object-fit:contain !important;
+  background:#fff;
+  padding:6px;
+  border-radius:12px !important;
+}
