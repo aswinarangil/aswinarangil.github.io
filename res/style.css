@@ -1047,3 +1047,13 @@ a:hover{
 .exp-meta .white-text{
   line-height: 1.7;
 }
+/* ===== Clean Section Spacing ===== */
+#home, #projects, #softskills, #contact{
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+/* Add spacing between experience cards */
+#projects .col{
+  margin-bottom: 30px;
+}
