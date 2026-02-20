@@ -945,3 +945,14 @@ ul.white-text li{
 #projects .timeline {
   background: #121212 !important;
 }
+/* ===== Premium Card (safe visual upgrade) ===== */
+.premium-card{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.premium-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.55);
+}
