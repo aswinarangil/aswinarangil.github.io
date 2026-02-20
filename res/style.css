@@ -323,21 +323,52 @@ html {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 10px 26px rgba(38,166,154,0.35);
 }
-/* ===== Experience blocks ===== */
+/* ===== Experience blocks (Fixed) ===== */
 .exp-meta{
   margin-top:10px;
   padding:12px 14px;
   border-radius:12px;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.10);
 }
 
+/* Green labels: Role / Client / Environment */
 .exp-meta b{
-  color:#ffffff;
+  color:#26a69a;
+  font-weight:800;
 }
 
+/* White values */
+.exp-meta,
+.exp-meta div,
+.exp-meta span{
+  color: rgba(255,255,255,0.92);
+}
+
+/* Slightly softer text if you use class="muted" */
 .exp-meta .muted{
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.80);
+}
+
+/* ===== Bullets + Impact (Fix black text everywhere) ===== */
+.exp-bullets{
+  margin-top:12px;
+  padding-left:18px;
+}
+
+.exp-bullets li{
+  color: rgba(255,255,255,0.88);
+  line-height: 1.75;
+  margin: 8px 0;
+}
+
+/* Impact line if not using white-text */
+.exp-impact{
+  margin-top:10px;
+  color: rgba(255,255,255,0.92);
+}
+.exp-impact b{
+  color:#ffffff;
 }
 /* ===== Experience Timeline ===== */
 .timeline {
