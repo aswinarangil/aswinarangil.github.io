@@ -956,3 +956,75 @@ ul.white-text li{
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0,0,0,0.55);
 }
+/* =========================
+   VISUAL POLISH PACK (SAFE)
+   ========================= */
+
+/* Page background + smoother look */
+body{
+  background:#0b0b0b !important;
+  color: rgba(255,255,255,0.88);
+}
+
+/* Better spacing between sections */
+.pad20top{ padding-top:28px !important; }
+.row{ margin-bottom:18px; }
+
+/* Make all cards look premium */
+.card, .card-panel{
+  border-radius:18px !important;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+}
+.card:hover, .card-panel:hover{
+  box-shadow: 0 16px 46px rgba(0,0,0,0.65);
+}
+
+/* Headings look more modern */
+h4, .card-title{
+  font-weight:800 !important;
+  letter-spacing:0.4px;
+}
+h4{ margin-top: 8px; }
+
+/* Make all text readable (fix random black text) */
+.white-text{ color: rgba(255,255,255,0.92) !important; }
+.grey-text.text-lighten-1{ color: rgba(255,255,255,0.62) !important; }
+
+/* Experience logos: consistent size + premium ring */
+.project-img, .circle.responsive-img{
+  width:78px !important;
+  height:78px !important;
+  object-fit:cover;
+  border-radius:50% !important;
+  border: 2px solid rgba(38,166,154,0.8);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.5);
+}
+
+/* Experience bullet spacing */
+#projects ul li{
+  margin: 10px 0;
+  line-height: 1.75;
+}
+
+/* Tabs: nicer text + active highlight */
+.tabs .tab a{
+  font-weight:700;
+  letter-spacing:0.3px;
+}
+.tabs .indicator{
+  height:3px;
+}
+
+/* Buttons/links: better hover */
+a{
+  transition: opacity .2s ease, transform .2s ease;
+}
+a:hover{
+  opacity: 0.9;
+}
+
+/* Small premium divider */
+.divider.teal{
+  opacity: 0.9;
+}
