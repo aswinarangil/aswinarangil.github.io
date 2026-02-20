@@ -376,3 +376,6 @@ html {
 .timeline-item {
   margin-bottom: 40px;
 }
+.card-panel.premium-card {
+  border-radius: 16px;
+}
