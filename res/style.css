@@ -673,3 +673,19 @@ ul.white-text li{
   color: #1fb7a6;
   font-weight: 700;
 }
+/* Experience bullet list styling */
+.exp-bullets{
+  margin-top: 14px;
+  padding-left: 18px;
+}
+
+.exp-bullets li{
+  color: rgba(255,255,255,0.88);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+
+.exp-bullets li::marker{
+  color: #1fb7a6; /* green bullet */
+}
