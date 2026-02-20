@@ -452,3 +452,25 @@ html {
   transform:translateY(-2px);
   box-shadow:0 6px 16px rgba(0,0,0,0.35);
 }
+/* ===== Home Profile Typography ===== */
+.profile-name{
+  font-size:28px;
+  font-weight:900;
+  margin:14px 0 6px 0;
+  letter-spacing:0.4px;
+}
+
+.profile-role{
+  font-size:16px;
+  font-weight:700;
+  color:#9ee7df;
+  margin:0 0 12px 0;
+}
+
+.profile-summary{
+  font-size:15px;
+  line-height:1.85;
+  margin-top:14px;
+  color:#ffffff;
+  opacity:0.95;
+}
