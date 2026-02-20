@@ -993,7 +993,11 @@ body {
 
     var timer = setInterval(function(){
       current++;
-      el.textContent = (current >= target) ? (target + "+") : current;
+      if(current >= target){
+    el.textContent = target + "+ Years Experienced";
+} else {
+    el.textContent = current;
+      }
       if(current >= target) clearInterval(timer);
     }, 300);
   }
