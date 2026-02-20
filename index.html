@@ -132,9 +132,10 @@ body {
 </ul>
   </div>
      </nav>
-
-<!-- Tabs Content Wrapper (ALL tab panels must be direct children of this row) -->
-<div class="row">
+        <div class="row">
+  <div class="col s12">
+       </div>
+        </div>
 
 <!-- Contact Tab -->
 <div id="contact" class="col s12">
@@ -191,7 +192,7 @@ body {
   </div> <!-- row -->
 
 </div> <!-- /contact -->
-  </div> <!-- end Tabs Content Wrapper -->      
+        
       
         <!-- Soft Skills Section -->
 <div id="softskills" class="col s12">
@@ -237,31 +238,46 @@ object-fit:cover;"
             </div>
             
               <!-- Action Buttons -->
-<div style="margin-top:16px; text-align:center;">
-  <a href="./res/resume.pdf" target="_blank" class="action-btn primary">
+<div style="display:flex; 
+            justify-content:center; 
+            gap:18px; 
+            flex-wrap:wrap; 
+            margin-top:18px;">
+
+  <a href="./res/resume.pdf" target="_blank"
+       class="action-btn main-btn"
+     style="min-width:120px; padding:12px 18px; border-radius:999px;
+            background:rgba(0,150,136,0.18); border:1px solid rgba(0,150,136,0.55);
+            color:#ffffff; font-weight:700; text-decoration:none;
+            display:flex; align-items:center; justify-content:center; gap:8px;">
     📄 Resume
   </a>
 
-  <a href="https://youtu.be/eRSNW6ic1zI?si=ASBWcPsFc8VxGRoT"
-     target="_blank"
-     class="action-btn secondary">
-    🎥 Video Profile
+  <a href="https://youtu.be/eRSNW6ic1zI?si=ASBWcPsFc8VxGRoT" target="_blank"
+       class="action-btn main-btn"
+     style="min-width:120px; padding:12px 18px; border-radius:999px;
+            background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18);
+            color:#ffffff; font-weight:700; text-decoration:none;
+            display:flex; align-items:center; justify-content:center; gap:8px;">
+    🎥 Video
   </a>
 
-  <a href="https://aswinarangil.github.io"
-     target="_blank"
-     class="action-btn secondary">
+  <a href="https://aswinarangil.github.io" target="_blank"
+       class="action-btn main-btn"
+     style="min-width:120px; padding:12px 18px; border-radius:999px;
+            background:rgba(0,150,136,0.18); border:1px solid rgba(0,150,136,0.55);
+            color:#ffffff; font-weight:700; text-decoration:none;
+            display:flex; align-items:center; justify-content:center; gap:8px;">
     🌐 Portfolio
   </a>
+
 </div>
 
-<div class="white-text center-align profile-name">
+<div class="card-content">
+     <h1 class="white-text center-align"
+    style="font-size:32px; font-weight:800; letter-spacing:1px; margin-bottom:6px;">
   Aswin Arangil
-</div>
-
-<div class="center-align profile-role">
-  IT Infrastructure & Desktop Support Engineer
-</div>
+</h1>
 <div style="text-align:center; margin-top:10px;">
   <span style="display:inline-block; padding:6px 12px; margin:4px; border-radius:999px;
                background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12);
@@ -314,9 +330,9 @@ object-fit:cover;"
     </div>
 
     <!-- Strong Summary -->
-    <div class="profile-summary left-align">
-  Results-driven IT Infrastructure & Desktop Support Engineer with 8+ years of experience supporting enterprise and banking environments. Proven expertise in L1/L2 troubleshooting, Windows systems, Outlook configuration, LAN/VPN connectivity, and SLA-driven incident management. Recognized for structured problem-solving, minimal downtime delivery, and high end-user satisfaction.
-    </div>
+    <p class="white-text left-align" style="font-size:15px; line-height:1.8; margin-top:18px;">
+Results-driven IT Infrastructure & Desktop Support Engineer specializing in enterprise and banking environments. Expert in L1/L2 troubleshooting, Windows systems, Outlook/email configuration, LAN/VPN connectivity, and SLA-driven incident management. Known for structured problem-solving, minimal downtime delivery, and high end-user satisfaction.
+</p>
 <div style="margin-top:20px; display:flex; justify-content:space-between; flex-wrap:wrap; text-align:center;">
 
   <div style="flex:1; min-width:120px; margin:10px;">
@@ -551,7 +567,6 @@ object-fit:cover;"
         </footer>
  <!-- end of home -->
  </div>
-   </div>
 
 
 
@@ -831,10 +846,11 @@ object-fit:cover;"
         <b>Impact:</b> Maintained high service availability and user satisfaction.
       </div>
 
-    </div>  <!-- closes last row inside projects -->
-</div>  <!-- closes #projects -->
+    </div>
+  </div>
+</div>
    
-</div>          
+                   
    <!-- END OF PROJECTS TAB -->
             
         
@@ -914,20 +930,19 @@ object-fit:cover;"
      </div>
           
 
-       
+          <div class="hiddendiv common"></div>
 <div class="drag-target" data-sidenav="slide-out" style="left:0px; touch-action: pan-y;"></div>
 
 
 
-</div> <!-- end Tabs Content Wrapper -->
-
-<!-- Floating WhatsApp (optional, keep) -->
-<a href="https://wa.me/919567863206" ...>💬</a>
-
-<div class="hiddendiv common"></div>
-<div class="drag-target" data-sidenav="slide-out" ...></div>
-</body>
-</html>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919567863206" target="_blank"
+   style="position:fixed;right:20px;bottom:20px;width:60px;height:60px;
+   background:#25D366;border-radius:50%;display:flex;align-items:center;
+   justify-content:center;font-size:26px;color:#fff;text-decoration:none;
+   box-shadow:0 8px 25px rgba(0,0,0,0.35);z-index:99999;">
+💬
+</a>
 
 
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
