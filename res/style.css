@@ -142,10 +142,7 @@
   transition: all 0.3s ease;
 }
 
-.premium-card:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.45);
-}
+
 .home-card {
   background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
   border-radius: 14px;
@@ -767,4 +764,18 @@ ul.white-text li{
 #projects .label,
 #projects .label-green {
   color: #1fb7a6 !important;
+}
+/* ===== FINAL PREMIUM CARD DESIGN ===== */
+.premium-card{
+  background: linear-gradient(145deg, #111111, #1a1a1a);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.premium-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.65);
 }
