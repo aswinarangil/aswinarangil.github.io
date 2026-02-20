@@ -990,106 +990,23 @@ body {
 💬
 </a>
 <script>
-(function(){
+document.addEventListener("DOMContentLoaded", function() {
+  var el = document.getElementById("expCount");
+  if (!el) return;
 
-  function animateCounter(){
-    var el = document.getElementById("expCount");
-    if(!el) return;
+  var target = 8;
+  var current = 0;
 
-    var target = 8;
-    var current = 0;
-    el.textContent = 0;
+  var timer = setInterval(function() {
+    current++;
+    el.textContent = current;
 
-    var timer = setInterval(function(){
-      current++;
-      if(current >= target){
-        el.textContent = target + "+ Years Experienced";
-        clearInterval(timer);
-      } else {
-        el.textContent = current;
-      }
-    }, 300);
-  }
-
-  function animateActiveTab(){
-    document.querySelectorAll('.tab-fade').forEach(function(el){
-      el.classList.remove('tab-fade');
-    });
-
-    // Materialize keeps active panel visible; fall back to #home
-    var active = document.querySelector('.col.s12.active') || document.querySelector('#home');
-    if(active){
-      void active.offsetWidth;
-      active.classList.add('tab-fade');
+    if (current >= target) {
+      clearInterval(timer);
+      el.textContent = target + "+";
     }
-  }
-
-  document.addEventListener("DOMContentLoaded", function(){
-    setTimeout(function(){
-      animateCounter();
-      animateActiveTab();
-    }, 250);
-
-    document.querySelectorAll('.tabs a').forEach(function(a){
-      a.addEventListener("click", function(){
-        setTimeout(function(){
-          animateCounter();
-          animateActiveTab();
-        }, 180);
-      });
-    });
-  });
-
-})();
+  }, 400); // slower and clean
+});
 </script>
-<script>
-(function(){
-  function runExpCounter(){
-    // run only when Home is active (or first load)
-    if (location.hash && location.hash !== "#home") return;
 
-    var num = document.getElementById("expCount");
-    var label = document.getElementById("expLabel");
-    if(!num || !label) return;
-
-    var target = 8;
-    var current = 0;
-
-    // reset every time
-    num.textContent = "0";
-    label.textContent = "Years Experienced";
-
-    // clear old timer if any
-    if (window.__expTimer) clearInterval(window.__expTimer);
-
-    window.__expTimer = setInterval(function(){
-      current++;
-
-      if(current >= target){
-        num.textContent = target + "+";
-        label.textContent = "Years Experienced";
-        clearInterval(window.__expTimer);
-        return;
-      }
-
-      num.textContent = String(current);
-    }, 300);
-  }
-
-  document.addEventListener("DOMContentLoaded", function(){
-    if(!location.hash) location.hash = "#home";
-    setTimeout(runExpCounter, 250);
-  });
-
-  window.addEventListener("hashchange", function(){
-    setTimeout(runExpCounter, 200);
-  });
-
-  document.querySelectorAll('.tabs a').forEach(function(a){
-    a.addEventListener("click", function(){
-      setTimeout(runExpCounter, 200);
-    });
-  });
-})();
-</script>
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
