@@ -638,3 +638,20 @@ ul.white-text li{
   line-height: 1.6 !important;
   font-size: 15px !important;
 }
+/* Grey info box */
+.meta-box {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Green labels */
+.label-green {
+  color: #26a69a;
+  font-weight: 700;
+}
