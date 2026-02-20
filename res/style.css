@@ -723,3 +723,17 @@ ul.white-text li{
 .premium-card ul li::marker {
   color: #1fb7a6 !important;
 }
+/* FIX: Force white text inside Experience tab (all cards) */
+#projects,
+#projects * {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* Keep labels teal/green like your design */
+#projects b,
+#projects .label,
+#projects .label-green {
+  color: #1fb7a6 !important;
+}
