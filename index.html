@@ -1034,47 +1034,57 @@ body {
 </script>
 <script>
 (function(){
-
   function runExpCounter(){
-    var el = document.getElementById("expCount");
-    if(!el) return;
+    // run only when Home tab is visible/active
+    if (location.hash && location.hash !== "#home") return;
 
-    var wrap = el.parentElement; // the pill span
-    if(!wrap) return;
+    var wrapper = document.getElementById("expCountWrapper");
+    var el = document.getElementById("expCount");
+    if(!wrapper || !el) return;
 
     var target = 8;
     var current = 0;
 
-    // reset each time
-    wrap.innerHTML = '<span id="expCount" style="color:#26a69a; font-size:20px; font-weight:900;">0</span>';
+    // reset text every time
+    el.textContent = "0";
 
-    var timer = setInterval(function(){
+    // clear any previous timer
+    if (window.__expTimer) clearInterval(window.__expTimer);
+
+    window.__expTimer = setInterval(function(){
       current++;
+
       if(current >= target){
-        wrap.innerHTML =
+        // show final full text
+        wrapper.innerHTML =
           '<span style="color:#26a69a; font-size:20px; font-weight:900;">' +
-          target + '+</span> <span style="color:#ffffff; font-weight:800;">Years Experienced</span>';
-        clearInterval(timer);
-      } else {
-        wrap.innerHTML =
-          '<span style="color:#26a69a; font-size:20px; font-weight:900;">' +
-          current + '</span>';
+          target + '+</span> <span style="color:#ffffff; font-weight:800; font-size:16px;">Years Experienced</span>';
+        clearInterval(window.__expTimer);
+        return;
       }
-    }, 300); // slower + visible
+
+      el.textContent = current;
+    }, 300);
   }
 
+  // Run on first load
   document.addEventListener("DOMContentLoaded", function(){
+    // If no hash, Home is default in your page
+    if(!location.hash) location.hash = "#home";
     setTimeout(runExpCounter, 250);
-
-    // animate again when Home tab clicked
-    var homeTab = document.querySelector('a[href="#home"]');
-    if(homeTab){
-      homeTab.addEventListener("click", function(){
-        setTimeout(runExpCounter, 200);
-      });
-    }
   });
 
+  // Run whenever tab changes (hash changes)
+  window.addEventListener("hashchange", function(){
+    setTimeout(runExpCounter, 200);
+  });
+
+  // Also run when any tab is clicked (extra safety)
+  document.querySelectorAll('.tabs a').forEach(function(a){
+    a.addEventListener("click", function(){
+      setTimeout(runExpCounter, 200);
+    });
+  });
 })();
 </script>
 <div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
