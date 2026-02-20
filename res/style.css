@@ -1235,6 +1235,8 @@ h4::after{
 }
 /* ===== Silicon Valley Hero Name ===== */
 .hero-name{
+  white-space: nowrap;
+}
   font-size: 34px !important;
   font-weight: 900 !important;
   letter-spacing: 1px;
