@@ -71,15 +71,18 @@ body {
      <script type="text/javascript" src="./res/materialize.min.js.download"></script>
      <script>
      jQuery(document).ready(function(){
-         $('.materialboxed').materialbox();
-         $(".button-collapse").sideNav();
-          $('ul.tabs').tabs();
-    	jQuery('.skillbar').each(function(){
-    		jQuery(this).find('.skillbar-bar').animate({
-    			width:jQuery(this).attr('data-percent')
-    		},2000);
-    	});
+     jQuery(document).ready(function(){
+    $('.materialboxed').materialbox();
+    $(".button-collapse").sideNav();
+
+    $('ul.tabs').tabs();   <!-- ADD THIS LINE -->
+
+    jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+            width:jQuery(this).attr('data-percent')
+        },2000);
     });
+});
 
     $(document).ready(function(){
 
