@@ -952,16 +952,19 @@ body {
    box-shadow:0 8px 25px rgba(0,0,0,0.35);z-index:99999;">
 💬
 </a>
+
+<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
 <script>
 (function () {
   var target = 8;
-  var current = 0;
 
   function startCount() {
     var el = document.getElementById("expCount");
-    if (!el) return; // if id not found, do nothing
+    if (!el) return;
 
+    var current = 0;              // ✅ reset here
     el.textContent = "0";
+
     var timer = setInterval(function () {
       current++;
       if (current >= target) {
@@ -970,10 +973,9 @@ body {
       } else {
         el.textContent = String(current);
       }
-    }, 350);
+    }, 200); // ✅ faster + smoother (was 350)
   }
 
-  // run after everything is loaded
   window.addEventListener("load", function () {
     setTimeout(startCount, 200);
   });
@@ -997,5 +999,7 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+revealOnScroll(); // ✅ run once immediately
     </script>
-<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
+   </body></html>
