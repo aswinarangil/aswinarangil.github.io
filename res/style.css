@@ -945,7 +945,7 @@ ul.white-text li{
   box-shadow: 0 10px 26px rgba(0,0,0,0.35) !important;
   color:#fff !important;
 }
-.exp-meta b{ color:#fff !important; }
+
 .exp-meta .muted{ color:rgba(255,255,255,0.75) !important; }
 
 
@@ -1483,4 +1483,17 @@ body {
   color: rgba(255,255,255,0.65) !important;
   font-size: 14px;
   margin-top: 4px;
+}
+/* ===== Experience meta: Green labels + White values ===== */
+.exp-meta{
+  color:#fff !important;
+}
+
+.exp-meta b{
+  color:#26a69a !important;   /* green labels: Role/Client/Environment */
+  font-weight: 900 !important;
+}
+
+.exp-meta .muted{
+  color: rgba(255,255,255,0.78) !important; /* grey values */
 }
