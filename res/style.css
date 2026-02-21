@@ -1581,3 +1581,34 @@ body{
 .card-panel.grey.darken-4.premium-card{
   padding: 22px !important;
 }
+/* ===== Experience header (logo + name + date) ===== */
+.company-header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:10px;
+}
+
+.company-logo{
+  width:78px;
+  height:78px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(38,166,154,0.45);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.35);
+  flex: 0 0 auto;
+}
+
+.company-name{
+  color:#fff !important;
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:0.2px;
+  line-height:1.2;
+}
+
+.company-date{
+  color: rgba(255,255,255,0.65) !important;
+  font-size:13px;
+  margin-top:4px;
+}
