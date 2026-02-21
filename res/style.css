@@ -1513,3 +1513,8 @@ body {
 div.exp-meta > div.white-text > b{
   color:#26a69a !important;
 }
+/* Force green labels (Role/Client/Environment) */
+.exp-meta b,
+.exp-meta b *{
+  color:#26a69a !important;
+}
