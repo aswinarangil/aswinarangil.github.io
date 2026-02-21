@@ -1713,3 +1713,16 @@ body{
       0 0 14px rgba(38,166,154,0.4);
   }
 }
+/* ===== Step 3: Achievement Badge ===== */
+.ach-badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background: rgba(38,166,154,0.12);
+  border: 1px solid rgba(38,166,154,0.35);
+  color:#26a69a;
+  font-weight:800;
+  font-size:12px;
+  letter-spacing:0.3px;
+  margin-top:10px;
+}
