@@ -1,6 +1,4 @@
-body{
-  border:5px solid red !important;
-}
+
 .icons{
   width: 100%;
   display: table;
@@ -1484,4 +1482,14 @@ body {
 
 .exp-meta .muted{
   color: rgba(255,255,255,0.78);
+}
+/* FINAL FIX: force green labels inside exp-meta even if white-text exists */
+.exp-meta b,
+.exp-meta b strong{
+  color:#26a69a !important;
+}
+
+.exp-meta .white-text b,
+.exp-meta .white-text b strong{
+  color:#26a69a !important;
 }
