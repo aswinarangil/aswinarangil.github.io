@@ -1830,3 +1830,8 @@ body{
   background: #26a69a;
   box-shadow: 0 0 0 4px rgba(38,166,154,0.18);
 }
+/* FIX: make timeline container take full height even with floated columns */
+.timeline{
+  position: relative;
+  display: flow-root; /* best fix for float collapse */
+}
