@@ -1645,3 +1645,23 @@ body{
   font-size:14px;
   margin-top:4px;
 }
+/* ===== Step 1: Subtle glow on hover (Experience cards) ===== */
+.premium-card{
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.premium-card:hover{
+  transform: translateY(-4px);
+  border-color: rgba(38,166,154,0.35);
+  box-shadow:
+    0 14px 34px rgba(0,0,0,0.55),
+    0 0 18px rgba(38,166,154,0.18);
+}
+
+/* Optional: glow on the logo ring too */
+.premium-card:hover .company-logo{
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.35),
+    0 0 14px rgba(38,166,154,0.25);
+}
