@@ -1612,3 +1612,36 @@ body{
   font-size:13px;
   margin-top:4px;
 }
+.company-header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:10px;
+}
+
+.company-logo{
+  width:78px;
+  height:78px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid rgba(38,166,154,0.85);
+  background:#fff;
+}
+
+.company-text{
+  display:flex;
+  flex-direction:column;
+}
+
+.company-name{
+  color:#ffffff;
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:0.2px;
+}
+
+.company-date{
+  color:rgba(255,255,255,0.65);
+  font-size:14px;
+  margin-top:4px;
+}
