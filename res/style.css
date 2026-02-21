@@ -1726,3 +1726,40 @@ body{
   letter-spacing:0.3px;
   margin-top:10px;
 }
+/* ===== Achievement Badges (Glow + Animation) ===== */
+.ach-badge{
+  display:inline-block;
+  margin:6px 8px 0 0;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:0.2px;
+
+  color:#ffffff;
+  background:rgba(38,166,154,0.10);
+  border:1px solid rgba(38,166,154,0.35);
+
+  box-shadow: 0 0 0 rgba(38,166,154,0);
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+  animation: badgeGlow 2.6s ease-in-out infinite;
+}
+
+.ach-badge:hover{
+  transform: translateY(-2px) scale(1.03);
+  background:rgba(38,166,154,0.18);
+  box-shadow:
+    0 0 12px rgba(38,166,154,0.35),
+    0 0 26px rgba(38,166,154,0.20);
+}
+
+@keyframes badgeGlow{
+  0%,100%{
+    box-shadow: 0 0 0 rgba(38,166,154,0);
+  }
+  50%{
+    box-shadow:
+      0 0 10px rgba(38,166,154,0.28),
+      0 0 22px rgba(38,166,154,0.18);
+  }
+}
