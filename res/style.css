@@ -1509,3 +1509,7 @@ body {
   color:#26a69a !important;
   font-weight:800 !important;
 }
+/* FINAL OVERRIDE: force green labels inside exp-meta */
+div.exp-meta > div.white-text > b{
+  color:#26a69a !important;
+}
