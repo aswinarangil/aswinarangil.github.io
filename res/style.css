@@ -936,7 +936,15 @@ ul.white-text li{
 }
 /* ===== Make Experience Meta Box Fully Black ===== */
 .exp-meta{
-  background: #1b1b1b !important;
+  background: rgba(0,0,0,0.55) !important;
+  border: 1px solid rgba(38,166,154,0.35) !important;
+  border-left: 4px solid #26a69a !important;
+  padding: 14px 14px !important;
+  border-radius: 12px !important;
+  margin-top: 12px !important;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.35) !important;
+  color:#fff !important;
+}
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
