@@ -1505,3 +1505,6 @@ body {
 .exp-meta .muted{
   color: rgba(255,255,255,0.78) !important; /* grey values */
 }
+.exp-meta .white-text b{
+  color:#26a69a !important;
+}
