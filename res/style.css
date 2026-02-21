@@ -1493,3 +1493,21 @@ body {
 .exp-meta .white-text b strong{
   color:#26a69a !important;
 }
+/* ===== Premium animated background glow ===== */
+body{
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(38,166,154,0.18), transparent 55%),
+              radial-gradient(900px 500px at 90% 20%, rgba(0,172,193,0.12), transparent 55%),
+              radial-gradient(900px 500px at 50% 95%, rgba(255,193,7,0.10), transparent 60%),
+              #0f1115 !important;
+  background-attachment: fixed;
+}
+
+/* subtle moving glow */
+@keyframes bgShift {
+  0%   { filter: hue-rotate(0deg); }
+  50%  { filter: hue-rotate(12deg); }
+  100% { filter: hue-rotate(0deg); }
+}
+body{
+  animation: bgShift 10s ease-in-out infinite;
+}
