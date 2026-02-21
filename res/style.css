@@ -1665,3 +1665,51 @@ body{
     0 10px 24px rgba(0,0,0,0.35),
     0 0 14px rgba(38,166,154,0.25);
 }
+/* ===== Step 2: Timeline Vertical Line ===== */
+
+.timeline{
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before{
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(38,166,154,0.7),
+    rgba(38,166,154,0.2)
+  );
+  border-radius: 3px;
+}
+.timeline-dot{
+  position: absolute;
+  left: 6px;
+  width: 18px;
+  height: 18px;
+  background: #26a69a;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(38,166,154,0.15);
+  animation: dotPulse 2s infinite ease-in-out;
+}
+
+.timeline-item{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* Dot Glow Animation */
+@keyframes dotPulse{
+  0%,100%{
+    box-shadow: 0 0 0 4px rgba(38,166,154,0.15);
+  }
+  50%{
+    box-shadow:
+      0 0 0 6px rgba(38,166,154,0.25),
+      0 0 14px rgba(38,166,154,0.4);
+  }
+}
