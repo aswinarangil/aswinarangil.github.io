@@ -1558,3 +1558,26 @@ body{
   border:1px solid rgba(38,166,154,0.45);
   box-shadow: 0 10px 22px rgba(0,0,0,0.28);
 }
+/* ===== Experience card: timeline accent ===== */
+.card-panel.grey.darken-4.premium-card{
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(18,18,18,0.92) !important;
+}
+
+.card-panel.grey.darken-4.premium-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:14px;
+  bottom:14px;
+  width:4px;
+  border-radius:6px;
+  background:#26a69a;
+  opacity:0.9;
+}
+
+/* Better spacing inside experience cards */
+.card-panel.grey.darken-4.premium-card{
+  padding: 22px !important;
+}
