@@ -945,6 +945,8 @@ ul.white-text li{
   box-shadow: 0 10px 26px rgba(0,0,0,0.35) !important;
   color:#fff !important;
 }
+.exp-meta b{ color:#fff !important; }
+.exp-meta .muted{ color:rgba(255,255,255,0.75) !important; }
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
