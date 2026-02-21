@@ -1861,3 +1861,15 @@ body{
   box-shadow: 0 18px 46px rgba(0,0,0,0.55),
               0 0 18px rgba(38,166,154,0.18) !important;
 }
+/* ===== Scroll Reveal Animation ===== */
+
+.reveal{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active{
+  opacity: 1;
+  transform: translateY(0);
+}
