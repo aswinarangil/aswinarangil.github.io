@@ -368,3 +368,10 @@ section h5::after {
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(0, 229, 255, 0.5);
 }
+/* ===== Step 4: Premium Background Glow ===== */
+body {
+  background: radial-gradient(circle at 20% 30%, rgba(0, 229, 255, 0.12), transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(41, 121, 255, 0.12), transparent 40%),
+              #0f1117;
+  background-attachment: fixed;
+}
