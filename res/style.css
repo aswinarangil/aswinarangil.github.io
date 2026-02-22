@@ -629,3 +629,7 @@ section::after {
 .exp-meta .card-panel.premium-card{
   border-left: 4px solid #26a69a !important;
 }
+/* Add green left accent to all Expertise inner cards */
+.exp-meta .premium-card {
+  border-left: 4px solid #26a69a !important;
+}
