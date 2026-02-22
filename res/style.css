@@ -316,3 +316,15 @@ body{
   background: rgba(38,166,154,0.9);
   box-shadow: 0 0 14px rgba(38,166,154,0.35);
 }
+/* ===== Step 1: Improve Section Spacing ===== */
+section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 600px){
+  section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
