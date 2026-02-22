@@ -471,4 +471,16 @@ nav ul li a::after {
 nav ul li a:hover::after {
   transform: scaleX(1);
 }
+/* ===== Step 13: Premium List Style ===== */
+ul {
+  padding-left: 20px;
+}
 
+ul li {
+  margin-bottom: 8px;
+  color: rgba(255,255,255,0.75);
+}
+
+ul li::marker {
+  color: #00e5ff;
+}
