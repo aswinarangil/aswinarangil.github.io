@@ -721,3 +721,15 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* ===== Hero Role Upgrade ===== */
+.hero-role {
+  text-align: center;
+  padding: 18px 0 10px 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffffff, #26a69a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
