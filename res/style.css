@@ -713,13 +713,14 @@ body {
 }
 /* ===== Hero Name Upgrade ===== */
 .hero-name {
-  font-size: 42px !important;
-  font-weight: 900 !important;
-  letter-spacing: 1.5px;
+  font-size: 34px !important;
+  font-weight: 900;
+  letter-spacing: 1px;
   text-transform: uppercase;
   background: linear-gradient(90deg, #ffffff, #26a69a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
 }
 /* ===== Hero Role Upgrade ===== */
 .hero-role {
