@@ -297,3 +297,22 @@ body{
 
   box-shadow: 0 0 14px rgba(255,193,7,0.35);
 }
+/* ===== Premium Section Title ===== */
+.section-title{
+  position: relative;
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.section-title::after{
+  content:"";
+  display:block;
+  margin-top:8px;
+  width: 64px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(38,166,154,0.9);
+  box-shadow: 0 0 14px rgba(38,166,154,0.35);
+}
