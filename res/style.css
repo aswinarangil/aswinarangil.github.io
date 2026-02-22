@@ -596,3 +596,8 @@ section h5::after {
   outline: 2px solid rgba(0,229,255,0.55);
   outline-offset: 2px;
 }
+/* ===== Strong Button Hover Lift + Glow ===== */
+.action-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 229, 255, 0.55);
+}
