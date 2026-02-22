@@ -702,3 +702,12 @@ body {
   background: linear-gradient(90deg, #26a69a, #00e5ff);
   border-radius: 4px;
 }
+/* ===== Hero Section Upgrade ===== */
+.hero-glass {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.55);
+  padding: 30px 20px;
+}
