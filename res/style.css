@@ -267,3 +267,17 @@ body{
 
 /* Divider tone */
 .divider.teal{ opacity: 0.7; }
+/* ===== Achievement Badge Fix ===== */
+.achievement-badge{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;
+  border-radius:999px;
+  font-weight:900;
+  font-size:12px;
+  letter-spacing:0.3px;
+  background: rgba(38,166,154,0.15);
+  border:1px solid rgba(38,166,154,0.45);
+  color:#26a69a;
+  box-shadow: 0 0 12px rgba(38,166,154,0.35);
+}
