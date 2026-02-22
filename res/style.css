@@ -409,10 +409,6 @@ html {
   transition: all 0.3s ease;
 }
 
-.premium-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
-}
 /* ===== Experience Timeline (Projects Tab) ===== */
 
 /* Make the projects tab a positioning context */
@@ -490,11 +486,6 @@ html {
   opacity:0.95;
 }
 
-.premium-card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0,150,136,0.25);
-  border:1px solid rgba(0,150,136,0.35);
-}
 /* ===== Corporate Clean Upgrade Pack ===== */
 
 /* Better default font rendering */
@@ -506,11 +497,6 @@ body {
 /* Make all dark cards feel more premium */
 .card, .card-panel {
   border-radius: 14px;
-}
-
-.premium-card:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 16px 34px rgba(0,0,0,0.42);
 }
 
 /* Glass look (you already use .glass-card on home card) */
@@ -772,10 +758,6 @@ ul.white-text li{
   border: 1px solid rgba(255,255,255,0.06);
 }
 
-.premium-card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.65);
-}
 /* ===== Experience Header Upgrade ===== */
 .company-header{
   display:flex;
@@ -1300,10 +1282,6 @@ h1.hero-name{
   box-shadow: 0 0 0 4px rgba(0,150,136,0.18);
 }
 
-.premium-card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,150,136,0.25);
-}
 
 .timeline-item:before{
   content:"";
