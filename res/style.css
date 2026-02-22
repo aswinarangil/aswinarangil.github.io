@@ -2329,10 +2329,6 @@ h4{
 }
 
 .project-img:hover, .company-logo:hover{
-  transform: scale(1.05);
-  box-shadow: 0 0 18px rgba(38,166,154,0.65);
-}
-.project-img:hover, .company-logo:hover{
   transform: scale(1.06);
   box-shadow: 
     0 0 12px rgba(38,166,154,0.55),
