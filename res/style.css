@@ -2340,6 +2340,7 @@ h4{
   display: inline-block;
   font-weight: 800;
   letter-spacing: 1px;
+  white-space: nowrap;   /* prevents break */
 }
 
 .section-title::after{
