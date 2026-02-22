@@ -348,3 +348,23 @@ section h5::after {
   margin-top: 8px;
   border-radius: 2px;
 }
+/* ===== Step 3: Modern Button Upgrade ===== */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00e5ff, #2979ff);
+  color: #000;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 229, 255, 0.3);
+}
+
+.action-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 229, 255, 0.5);
+}
