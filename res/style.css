@@ -644,3 +644,8 @@ section::after {
   border-radius: 18px;
   padding: 22px 18px;
 }
+/* Green left accent for BOTH Expertise cards */
+.exp-meta .card-panel.premium-card {
+  border-left: 4px solid #26a69a !important;
+  padding-left: 18px; /* give space so text doesn't touch border */
+}
