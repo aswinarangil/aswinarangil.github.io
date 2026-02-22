@@ -281,3 +281,19 @@ body{
   color:#26a69a;
   box-shadow: 0 0 12px rgba(38,166,154,0.35);
 }
+/* ===== Restore Achievement Badge Style ===== */
+.achievement-badge{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;
+  border-radius:999px;
+  font-weight:900;
+  font-size:12px;
+  letter-spacing:0.3px;
+
+  background: rgba(255,193,7,0.15);   /* gold glow */
+  border:1px solid rgba(255,193,7,0.45);
+  color:#ffc107;
+
+  box-shadow: 0 0 14px rgba(255,193,7,0.35);
+}
