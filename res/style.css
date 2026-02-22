@@ -2235,3 +2235,8 @@ h4{
 .timeline-dot{
   animation: pulseDot 2.5s infinite;
 }
+/* Clean Timeline Layout Fix */
+.timeline-item{
+  position: relative;
+  padding-left: 0px;
+}
