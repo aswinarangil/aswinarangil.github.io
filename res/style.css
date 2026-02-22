@@ -1990,3 +1990,24 @@ body::after{
 body::after{
   animation: bgMove 12s ease-in-out infinite;
 }
+/* Subtle edge highlight */
+.card::before,
+.card-panel::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:16px;
+  pointer-events:none;
+  background: linear-gradient(
+    120deg,
+    rgba(38,166,154,0.15),
+    transparent 35%
+  );
+  opacity:0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover::before,
+.card-panel:hover::before{
+  opacity:0.35;
+}
