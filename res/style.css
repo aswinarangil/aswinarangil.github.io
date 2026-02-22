@@ -652,6 +652,7 @@ ul.white-text li{
   inset: 0;
   background: #0f0f0f;   /* pure black */
   z-index: 0
+}
 /* Make Role/Client/Environment box same everywhere */
 .exp-meta-box, .meta-box, .exp-details-box {
   background: rgba(255,255,255,0.06) !important;
