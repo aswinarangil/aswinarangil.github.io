@@ -546,3 +546,18 @@ section h5::after {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
+/* ===== Step 21: Green Pill Mobile Friendly ===== */
+.green-pill {
+  max-width: 95%;
+  text-align: center;
+  line-height: 1.4;
+  white-space: normal;     /* allow wrap */
+  word-break: break-word;  /* prevent overflow */
+}
+
+@media (max-width: 600px) {
+  .green-pill {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}
