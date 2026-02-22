@@ -1915,3 +1915,28 @@ h4{
 .action-btn.main-btn{
   background: linear-gradient(135deg,#1b1b1b,#111);
 }
+/* ===== STYLE 1: SILICON VALLEY HERO UPGRADE ===== */
+.home-card{
+  border: 1px solid rgba(38,166,154,0.25);
+  box-shadow:
+    0 20px 55px rgba(0,0,0,0.55),
+    0 0 28px rgba(38,166,154,0.12);
+}
+
+.profile-name{
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.6px !important;
+  margin: 6px 0 6px 0 !important;
+}
+
+.profile-role{
+  color: #26a69a !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.3px !important;
+}
+
+.profile-summary{
+  color: rgba(255,255,255,0.88) !important;
+  line-height: 1.9 !important;
+}
