@@ -1016,5 +1016,22 @@ body {
 })();
    </script>
 
-    
+    <script>
+(function(){
+  function revealOnScroll(){
+    var els = document.querySelectorAll(".reveal");
+    var windowH = window.innerHeight;
+
+    for (var i = 0; i < els.length; i++){
+      var top = els[i].getBoundingClientRect().top;
+      if (top < windowH - 80){
+        els[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+})();
+    </script>
    </body></html>
