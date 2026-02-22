@@ -384,3 +384,13 @@ body {
   box-shadow: 0 0 25px rgba(0, 229, 255, 0.35);
   object-fit: cover;
 }
+/* ===== Step 7: Premium Glass Buttons ===== */
+.action-btn {
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.action-btn:active {
+  transform: translateY(-1px);
+}
