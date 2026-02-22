@@ -2121,3 +2121,15 @@ h4{
   font-weight:700;
   color:#ffffff !important;
 }
+/* Improve experience card spacing */
+.premium-card .company-header{
+  margin-bottom: 12px;
+}
+
+.premium-card .divider{
+  margin: 18px 0 !important;
+}
+
+.premium-card .exp-meta{
+  margin-top: 14px !important;
+}
