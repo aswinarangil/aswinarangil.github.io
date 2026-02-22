@@ -404,10 +404,7 @@ html {
 .card-panel.premium-card {
   border-radius: 16px;
 }
-/* Experience Card Hover Effect */
-.premium-card {
-  transition: all 0.3s ease;
-}
+
 
 /* ===== Experience Timeline (Projects Tab) ===== */
 
@@ -748,15 +745,7 @@ ul.white-text li{
 #projects .label-green {
   color: #1fb7a6 !important;
 }
-/* ===== FINAL PREMIUM CARD DESIGN ===== */
-.premium-card{
-  background: linear-gradient(145deg, #111111, #1a1a1a);
-  border-radius: 18px;
-  padding: 22px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  transition: all 0.35s ease;
-  border: 1px solid rgba(255,255,255,0.06);
-}
+
 
 /* ===== Experience Header Upgrade ===== */
 .company-header{
@@ -1764,10 +1753,7 @@ body{
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* ===== Subtle Glow on Hover for Premium Cards ===== */
-.premium-card{
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
+
 
 /* ===== Scroll Reveal Animation ===== */
 
@@ -2014,18 +2000,6 @@ h4{
 .exp-meta span.muted{
   font-weight:700;
   color:#ffffff !important;
-}
-/* Improve experience card spacing */
-.premium-card .company-header{
-  margin-bottom: 12px;
-}
-
-.premium-card .divider{
-  margin: 18px 0 !important;
-}
-
-.premium-card .exp-meta{
-  margin-top: 14px !important;
 }
 /* Premium content width control */
 .container{
