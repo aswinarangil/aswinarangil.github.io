@@ -2242,8 +2242,8 @@ h4{
 }
 /* ===== Scroll Reveal Animation ===== */
 .reveal{
-  opacity: 0;
-  transform: translateY(40px);
+  opacity: 1;
+  transform: translateY(0);
   transition: all 0.8s ease;
 }
 
