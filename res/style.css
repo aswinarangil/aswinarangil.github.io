@@ -625,3 +625,7 @@ section::after {
 .card-panel.teal.premium-card {
   background: #1e1e1e !important;
 }
+/* Step: Add green left border to Expertise cards */
+.exp-meta .card-panel.premium-card{
+  border-left: 4px solid #26a69a !important;
+}
