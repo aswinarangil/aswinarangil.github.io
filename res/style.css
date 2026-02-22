@@ -1873,3 +1873,21 @@ body{
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== HERO VISUAL UPGRADE ===== */
+.home-card{
+  border: 1px solid rgba(38,166,154,0.25);
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.55),
+    0 0 25px rgba(38,166,154,0.12);
+}
+
+.profile-name{
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.6px;
+}
+
+.profile-role{
+  color: #26a69a !important;
+  font-weight: 800 !important;
+}
