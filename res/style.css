@@ -621,3 +621,7 @@ section::after {
     transparent
   );
 }
+/* Fix accent visibility on teal cards */
+.card-panel.teal.premium-card {
+  background: #1e1e1e !important;
+}
