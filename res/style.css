@@ -1303,7 +1303,7 @@ h1.hero-name{
 
 .timeline-item{
   position: relative;
-  padding-left: 18px;
+  padding-left: 40px;
 }
 
 .timeline-item:before{
