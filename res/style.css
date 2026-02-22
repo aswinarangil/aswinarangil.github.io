@@ -2334,3 +2334,25 @@ h4{
     0 0 12px rgba(38,166,154,0.55),
     0 0 28px rgba(38,166,154,0.35);
 }
+/* ===== Animated Section Title Underline ===== */
+.section-title{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.section-title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg,#26a69a,#009688);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.section-title:hover::after{
+  width: 100%;
+}
