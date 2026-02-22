@@ -449,4 +449,26 @@ nav ul li a {
 nav ul li a:hover {
   opacity: 1;
 }
+/* ===== Step 12: Navbar Link Hover Underline ===== */
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  height: 2px;
+  background: rgba(0, 229, 255, 0.85);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+  border-radius: 2px;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
 
