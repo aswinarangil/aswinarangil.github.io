@@ -671,3 +671,19 @@ section::after {
   font-weight: 800;
   opacity: 0.9;
 }
+/* ===== Experience Upgrade Step 1: Better Card Spacing ===== */
+#projects .premium-card {
+  padding: 22px !important;
+}
+
+#projects .exp-bullets li {
+  margin-bottom: 10px;
+}
+
+#projects .exp-impact {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(38,166,154,0.10);
+  border: 1px solid rgba(38,166,154,0.22);
+}
