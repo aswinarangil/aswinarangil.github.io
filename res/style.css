@@ -2106,9 +2106,11 @@ h4{
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.45) !important;
 }
-/* Experience Impact Line */
+/* Experience Impact Line (Premium Version) */
 .exp-impact{
-  margin-top:12px;
+  margin-top:14px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,0.08);
   font-size:13px;
   font-weight:600;
   color: rgba(255,255,255,0.75);
