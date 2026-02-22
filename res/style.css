@@ -442,17 +442,7 @@ html {
 }
 
 /* Timeline dot for each card */
-.timeline-item::before{
-  content:"";
-  position:absolute;
-  left: 17px;
-  top: 26px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #009688;                 /* teal */
-  box-shadow: 0 0 0 5px rgba(0,150,136,0.18);
-}
+
 /* ===== Action Buttons ===== */
 .action-btn{
   display:inline-block;
