@@ -425,4 +425,28 @@ p {
 h1, h2, h3, h4, h5 {
   letter-spacing: 0.4px;
 }
+/* ===== Step 11: Premium Sticky Navbar ===== */
+nav.nav-extended {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(10, 12, 18, 0.75) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+nav .brand-logo {
+  font-weight: 900;
+  letter-spacing: 0.6px;
+}
+
+nav ul li a {
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
 
