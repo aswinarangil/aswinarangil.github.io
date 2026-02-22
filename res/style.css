@@ -601,3 +601,23 @@ section h5::after {
   transform: translateY(-4px) scale(1.03);
   box-shadow: 0 15px 35px rgba(0, 229, 255, 0.55);
 }
+/* ===== Step 24: Soft Section Divider ===== */
+section {
+  position: relative;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 229, 255, 0.4),
+    transparent
+  );
+}
