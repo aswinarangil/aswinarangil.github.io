@@ -1891,3 +1891,10 @@ body{
   color: #26a69a !important;
   font-weight: 800 !important;
 }
+/* ===== SECTION TITLE STYLE ===== */
+h4{
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
