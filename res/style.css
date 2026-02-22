@@ -1999,12 +1999,7 @@ h4{
   transition: all 0.35s ease;
 }
 
-.premium-card:hover{
-  transform: translateY(-6px);
-  box-shadow:
-    0 18px 50px rgba(0,0,0,0.7),
-    0 0 30px rgba(38,166,154,0.15) !important;
-}
+
 /* Experience Impact Line (Premium Version) */
 .exp-impact{
   margin-top:14px;
