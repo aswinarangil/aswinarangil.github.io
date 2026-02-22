@@ -1898,3 +1898,20 @@ h4{
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
+/* ===== EXPERIENCE CARD SPACING ===== */
+#projects .premium-card{
+  padding: 26px !important;
+}
+
+#projects .company-name{
+  font-size: 19px !important;
+}
+/* ===== BUTTON PREMIUM POLISH ===== */
+.action-btn{
+  border-radius: 14px !important;
+  font-weight: 800 !important;
+}
+
+.action-btn.main-btn{
+  background: linear-gradient(135deg,#1b1b1b,#111);
+}
