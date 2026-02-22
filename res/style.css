@@ -399,3 +399,13 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
+/* ===== Step 9: Section Hover Lift ===== */
+.premium-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+}
+
