@@ -2226,3 +2226,14 @@ h4{
     0 18px 44px rgba(0,0,0,0.65),
     0 0 20px rgba(38,166,154,0.25);
 }
+/* ===== Smooth Scroll Reveal ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active{
+  opacity: 1;
+  transform: translateY(0);
+}
