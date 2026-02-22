@@ -1980,3 +1980,13 @@ body::after{
     radial-gradient(circle at 85% 30%, rgba(0,188,212,0.08), transparent 45%);
   z-index: -1;
 }
+/* Animated futuristic glow */
+@keyframes bgMove {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+body::after{
+  animation: bgMove 12s ease-in-out infinite;
+}
