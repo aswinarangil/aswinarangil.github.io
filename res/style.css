@@ -684,4 +684,21 @@ body {
     background-position: 0% 50%;
   }
 }
+/* ===== Skills Title Upgrade ===== */
+#home .card-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
 
+#home .card-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto 0;
+  background: linear-gradient(90deg, #26a69a, #00e5ff);
+  border-radius: 4px;
+}
