@@ -2294,3 +2294,12 @@ h4{
   margin-top:12px;
   box-shadow: 0 6px 18px rgba(38,166,154,0.35);
 }
+/* ===== Achievement Badge Hover Glow ===== */
+.achievement-badge{
+  transition: all 0.3s ease;
+}
+
+.achievement-badge:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(38,166,154,0.45);
+}
