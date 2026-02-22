@@ -2220,3 +2220,12 @@ h4{
 .section-title:hover::after{
   width: 100%;
 }
+.premium-card{
+  background: rgba(20,20,20,0.78) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
