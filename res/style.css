@@ -2246,3 +2246,17 @@ h4{
 .timeline-dot{
   animation: pulseDot 2.5s infinite;
 }
+/* ===== Premium Logo Hover ===== */
+.company-logo,
+.project-img{
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  border: 2px solid rgba(38,166,154,0.25);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+.timeline-item:hover .company-logo,
+.timeline-item:hover .project-img{
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.55);
+  filter: saturate(1.15);
+}
