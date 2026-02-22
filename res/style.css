@@ -532,3 +532,17 @@ section h5::after {
 .pill, .badge-pill, .tagline, .highlight-box {
   padding: 12px 16px;
 }
+/* ===== Step 20: Enhanced Green Pill (Premium Upgrade) ===== */
+.green-pill {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(0,150,136,0.15);
+  border: 1px solid rgba(0,150,136,0.45);
+  color: #7ff7e6;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 8px 22px rgba(0,150,136,0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
