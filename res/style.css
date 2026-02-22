@@ -495,3 +495,19 @@ section h5::after {
   margin-left: auto;
   margin-right: auto;
 }
+/* ===== Step 15: Hero Name Upgrade ===== */
+.hero-name {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00e5ff, #2979ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .hero-name {
+    font-size: 24px;
+  }
+}
