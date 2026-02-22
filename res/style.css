@@ -1940,3 +1940,12 @@ h4{
   color: rgba(255,255,255,0.88) !important;
   line-height: 1.9 !important;
 }
+/* Glass card glow effect */
+.glass-card:hover{
+  border-color: rgba(38,166,154,0.45);
+  box-shadow: 
+    0 14px 40px rgba(0,0,0,0.50),
+    0 0 18px rgba(38,166,154,0.18);
+  transform: translateY(-4px);
+  transition: all 0.25s ease;
+}
