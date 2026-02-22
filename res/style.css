@@ -2116,3 +2116,8 @@ h4{
   color: rgba(255,255,255,0.75);
   letter-spacing:0.2px;
 }
+/* Highlight role title inside exp-meta */
+.exp-meta span.muted{
+  font-weight:700;
+  color:#ffffff !important;
+}
