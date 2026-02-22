@@ -511,3 +511,12 @@ section h5::after {
     font-size: 24px;
   }
 }
+/* ===== Step 17: Hero Spacing Refinement ===== */
+.hero-name {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.hero-name + p {
+  margin-bottom: 20px;
+}
