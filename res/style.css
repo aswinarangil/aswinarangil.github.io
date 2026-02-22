@@ -2011,3 +2011,24 @@ body::after{
 .card-panel:hover::before{
   opacity:0.35;
 }
+/* Premium section depth */
+#home,
+#projects,
+#softskills,
+#contact{
+  position: relative;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+#home::before,
+#projects::before,
+#softskills::before,
+#contact::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(255,255,255,0.02);
+  pointer-events:none;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
