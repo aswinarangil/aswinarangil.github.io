@@ -2133,3 +2133,7 @@ h4{
 .premium-card .exp-meta{
   margin-top: 14px !important;
 }
+/* Premium content width control */
+.container{
+  max-width: 1100px !important;
+}
