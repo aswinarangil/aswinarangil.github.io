@@ -2323,3 +2323,12 @@ h4{
   font-weight: 900;
   margin-right: 4px;
 }
+/* ===== Logo Hover Glow ===== */
+.project-img, .company-logo{
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-img:hover, .company-logo:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(38,166,154,0.65);
+}
