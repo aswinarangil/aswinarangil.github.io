@@ -711,3 +711,13 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.55);
   padding: 30px 20px;
 }
+/* ===== Hero Name Upgrade ===== */
+.hero-name {
+  font-size: 42px !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffffff, #26a69a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
