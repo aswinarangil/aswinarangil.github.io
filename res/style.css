@@ -2077,3 +2077,24 @@ h4{
   letter-spacing: 1px !important;
   font-weight: 800 !important;
 }
+/* Company Domain Badge */
+.domain-badge{
+  display:inline-block;
+  padding:5px 12px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:0.3px;
+}
+
+.domain-badge.banking{
+  background: rgba(255,193,7,0.12);
+  border: 1px solid rgba(255,193,7,0.35);
+  color:#ffc107;
+}
+
+.domain-badge.enterprise{
+  background: rgba(38,166,154,0.12);
+  border: 1px solid rgba(38,166,154,0.35);
+  color:#26a69a;
+}
