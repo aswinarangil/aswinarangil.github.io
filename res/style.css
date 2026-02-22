@@ -2219,7 +2219,16 @@ h4{
   );
   border-radius: 10px;
 }
+/* Subtle flowing light on timeline */
+.timeline-item::before{
+  background-size: 100% 200%;
+  animation: timelineFlow 6s linear infinite;
+}
 
+@keyframes timelineFlow{
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
 /* Timeline Dot */
 .timeline-dot{
   position: absolute;
