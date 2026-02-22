@@ -932,11 +932,6 @@ a:hover::after{
 #projects,
 #projects .timeline {
 
-
-.premium-card:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.55);
-}
 /* =========================
    VISUAL POLISH PACK (SAFE)
    ========================= */
@@ -1379,12 +1374,6 @@ body {
   border: 1px solid rgba(255,255,255,0.06) !important;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35) !important;
 }
-
-/* Slight hover lift (safe) */
-.premium-card:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.45) !important;
-}
 /* ===== Action Buttons (Resume / Video / Portfolio) ===== */
 .action-btn{
   display:inline-flex !important;
@@ -1597,20 +1586,7 @@ body{
   margin-top:4px;
 }
 
-.premium-card:hover{
-  transform: translateY(-4px);
-  border-color: rgba(38,166,154,0.35);
-  box-shadow:
-    0 14px 34px rgba(0,0,0,0.55),
-    0 0 18px rgba(38,166,154,0.18);
-}
 
-/* Optional: glow on the logo ring too */
-.premium-card:hover .company-logo{
-  box-shadow:
-    0 10px 24px rgba(0,0,0,0.35),
-    0 0 14px rgba(38,166,154,0.25);
-}
 /* ===== Step 2: Timeline Vertical Line ===== */
 
 
