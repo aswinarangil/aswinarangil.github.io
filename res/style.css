@@ -2270,3 +2270,14 @@ h4{
     transform: translateY(0);
   }
 }
+/* ===== Experience Card Premium Hover ===== */
+.timeline-item .premium-card{
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.timeline-item .premium-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.55);
+  border: 1px solid rgba(38,166,154,0.4);
+}
