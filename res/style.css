@@ -705,3 +705,19 @@ body {
     background-position: 0% 50%;
   }
 }
+/* ===== Skills Fix: Restore previous clean look ===== */
+.skillbar{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 10px 0 !important;
+}
+
+.skillbar-title{
+  border-radius: 10px 0 0 10px !important;
+}
+
+.skillbar-bar{
+  border-radius: 10px !important;
+  height: 12px !important;
+}
