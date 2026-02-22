@@ -633,3 +633,14 @@ section::after {
 .exp-meta .premium-card {
   border-left: 4px solid #26a69a !important;
 }
+/* ===== Expertise: make cards look like one clean column ===== */
+.exp-meta .celled {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.exp-meta .celled .card-panel {
+  width: 100%;
+  border-radius: 18px;
+  padding: 22px 18px;
+}
