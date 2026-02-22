@@ -2032,3 +2032,25 @@ body::after{
   pointer-events:none;
   border-top: 1px solid rgba(255,255,255,0.04);
 }
+/* ===== Premium Typography ===== */
+body{
+  letter-spacing: 0.2px;
+}
+
+.white-text{
+  letter-spacing: 0.2px;
+}
+
+p{
+  line-height: 1.85 !important;
+}
+
+.card-title{
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+}
+
+h4{
+  letter-spacing: 1px !important;
+  font-weight: 800 !important;
+}
