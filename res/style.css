@@ -1956,3 +1956,9 @@ h4{
   letter-spacing: 0.6px !important;
   text-shadow: 0 0 12px rgba(38,166,154,0.15);
 }
+/* Premium Role Accent */
+.profile-role{
+  color: #26a69a !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.4px !important;
+}
