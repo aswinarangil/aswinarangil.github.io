@@ -2334,21 +2334,6 @@ h4{
     0 0 12px rgba(38,166,154,0.55),
     0 0 28px rgba(38,166,154,0.35);
 }
-/* ===== Premium Animated Section Title ===== */
-.section-title{
-  position: relative;
-  display: inline-block;
-  font-weight: 800;
-  letter-spacing: 1px;
-  white-space: nowrap;   /* prevents break */
-}
-
-.section-title{
-  position: relative;
-  display: inline-block;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
 
 .section-title::after{
   content: "";
