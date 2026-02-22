@@ -649,3 +649,25 @@ section::after {
   border-left: 4px solid #26a69a !important;
   padding-left: 18px; /* give space so text doesn't touch border */
 }
+/* ===== Skills Upgrade Step 1: Modern Skill Bars ===== */
+.skillbar {
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  margin: 14px 0;
+}
+
+.skillbar-title {
+  border-radius: 14px 0 0 14px;
+}
+
+.skillbar-bar {
+  border-radius: 14px;
+  height: 14px;
+}
+
+.skill-bar-percent {
+  font-weight: 800;
+  opacity: 0.9;
+}
