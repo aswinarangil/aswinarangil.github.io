@@ -649,28 +649,7 @@ section::after {
   border-left: 4px solid #26a69a !important;
   padding-left: 18px; /* give space so text doesn't touch border */
 }
-/* ===== Skills Upgrade Step 1: Modern Skill Bars ===== */
-.skillbar {
-  border-radius: 14px;
-  overflow: hidden;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.10);
-  margin: 14px 0;
-}
 
-.skillbar-title {
-  border-radius: 14px 0 0 14px;
-}
-
-.skillbar-bar {
-  border-radius: 14px;
-  height: 14px;
-}
-
-.skill-bar-percent {
-  font-weight: 800;
-  opacity: 0.9;
-}
 /* ===== Experience Card Strong Glass Upgrade ===== */
 #projects .premium-card {
   background: linear-gradient(
@@ -705,19 +684,4 @@ body {
     background-position: 0% 50%;
   }
 }
-/* ===== Skills Fix: Restore previous clean look ===== */
-.skillbar{
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  margin: 10px 0 !important;
-}
 
-.skillbar-title{
-  border-radius: 10px 0 0 10px !important;
-}
-
-.skillbar-bar{
-  border-radius: 10px !important;
-  height: 12px !important;
-}
