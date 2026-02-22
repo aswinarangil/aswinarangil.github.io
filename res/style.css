@@ -2249,3 +2249,35 @@ h4{
 #projects .timeline-item.reveal:nth-child(4){ transition-delay: .26s; }
 #projects .timeline-item.reveal:nth-child(5){ transition-delay: .33s; }
 #projects .timeline-item.reveal:nth-child(6){ transition-delay: .40s; }
+/* ===== Soft Gradient Edge Glow ===== */
+.premium-card{
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(
+    120deg,
+    rgba(38,166,154,0.5),
+    rgba(0,191,165,0.2),
+    rgba(38,166,154,0.5)
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0.4;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.premium-card:hover::before{
+  opacity: 0.8;
+}
+
