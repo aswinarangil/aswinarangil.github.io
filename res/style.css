@@ -2219,6 +2219,7 @@ h4{
   border: 1px solid rgba(255,255,255,0.06);
   box-shadow: 0 12px 28px rgba(0,0,0,0.45);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+	background-clip: padding-box;
 }
 .premium-card:hover{
   transform: translateY(-8px);
