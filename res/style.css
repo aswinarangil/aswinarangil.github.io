@@ -2281,3 +2281,16 @@ h4{
   box-shadow: 0 18px 40px rgba(0,0,0,0.55);
   border: 1px solid rgba(38,166,154,0.4);
 }
+/* ===== Achievement Badge ===== */
+.achievement-badge{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:999px;
+  background: linear-gradient(135deg,#26a69a,#009688);
+  color:#ffffff;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:0.4px;
+  margin-top:12px;
+  box-shadow: 0 6px 18px rgba(38,166,154,0.35);
+}
