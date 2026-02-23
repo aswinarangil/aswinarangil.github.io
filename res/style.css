@@ -1095,3 +1095,48 @@ html{
 .card-panel.premium-card .grey-text{
   color: rgba(255,255,255,0.68) !important;
 }
+/* ===== Process 9: Premium Contact Chips ===== */
+
+.contact-info{
+  display: grid;
+  gap: 12px;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 12px 14px;
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.35);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-item:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 20px 56px rgba(0,0,0,0.55);
+  border-color: rgba(0,229,255,0.22);
+}
+
+/* Icon spacing + size (works with <i> icons) */
+.contact-item i{
+  margin-right: 12px;
+  font-size: 22px;
+  opacity: 0.95;
+}
+
+/* Contact links */
+.contact-item a{
+  color: rgba(255,255,255,0.92) !important;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.contact-item a:hover{
+  color: rgba(0,229,255,0.95) !important;
+}
