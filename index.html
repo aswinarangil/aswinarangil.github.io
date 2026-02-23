@@ -96,17 +96,20 @@ body {
   swipeable: false
 });
 
-/* HARD STOP: remove carousel behavior created by some Materialize builds */
+/* HARD STOP: prevent Materialize from behaving like a carousel */
 var $tc = $('.tabs-content');
 $tc.removeClass('carousel carousel-slider initialized');
 
+/* If a carousel instance exists, destroy it */
 try {
-  // If Materialize Carousel instance exists, destroy it (prevents swipe hijack)
   if (window.M && M.Carousel && $tc.length) {
     var inst = M.Carousel.getInstance($tc[0]);
     if (inst) inst.destroy();
   }
 } catch(e) {}
+
+/* Also neutralize any leftover transform that causes sliding */
+$tc.css({ transform: 'none' });
       /* ===== Process 16: Scroll Progress Logic ===== */
 function updateScrollProgress(){
   var doc = document.documentElement;
