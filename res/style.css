@@ -1718,3 +1718,23 @@ body{
 }
 
 /* ===== /Process 28 ===== */
+/* ===== Process 29: Premium Button Glow ===== */
+
+.btn,
+.btn-floating{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.btn-floating:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,229,255,0.18);
+}
+
+/* Light theme adjustment */
+body[data-theme="light"] .btn:hover,
+body[data-theme="light"] .btn-floating:hover{
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== /Process 29 ===== */
