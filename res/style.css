@@ -1338,3 +1338,21 @@ img{
   .resume-fab{ right: 14px; bottom: 14px; }
   .resume-actions a{ width: 100%; justify-content: center; }
 }
+/* ===== LIGHT MODE (SAFE MINIMAL) ===== */
+html[data-theme="light"] body{
+  background: #f4f6fb !important;
+  color: #111 !important;
+}
+
+html[data-theme="light"] a{
+  color: #0b6cff !important;
+}
+
+html[data-theme="light"] .white-text{
+  color: #111 !important;
+}
+
+html[data-theme="light"] nav.nav-extended .nav-wrapper,
+html[data-theme="light"] nav.nav-extended .tabs{
+  background: #ffffff !important;
+}
