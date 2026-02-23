@@ -148,28 +148,6 @@ if(btn){
       localStorage.setItem("theme", "light");
       btn.textContent = "☀️";
     }
-   /* ===== Resume FAB: stop jump + force open modal ===== */
-var resumeBtn = document.querySelector(".resume-fab");
-if(resumeBtn){
-  resumeBtn.addEventListener("click", function(e){
-    e.preventDefault();
-    e.stopPropagation();
-
-    var el = document.getElementById("resumeModal");
-    if(!el) return;
-
-    // Init modal if not already initialised
-    if(window.M && M.Modal){
-      var inst = M.Modal.getInstance(el);
-      if(!inst) inst = M.Modal.init(el);
-      inst.open();
-    }else if (window.jQuery && jQuery.fn.modal){
-      // For older Materialize builds
-      jQuery(el).modal('open');
-    }
-  }, true);
-}
-/* ===== /Resume FAB fix ===== */
   });
 }
 
