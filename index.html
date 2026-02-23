@@ -106,6 +106,10 @@ try {
   }
 } catch(e) {}
 
+/* Neutralize any leftover transform that causes sliding */
+$tc.css({ transform: 'none' });
+
+
 /* Also neutralize any leftover transform that causes sliding */
 $tc.css({ transform: 'none' });
       /* ===== Process 16: Scroll Progress Logic ===== */
