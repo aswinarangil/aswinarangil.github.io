@@ -93,6 +93,13 @@ body {
           $('ul.tabs').tabs({
   swipeable: false
 });
+      /* ===== Resume Modal Init ===== */
+if ($.fn.modal) {
+  $('.modal').modal();
+} else if ($.fn.leanModal) {
+  $('.modal').leanModal();
+}
+/* ===== /Resume Modal Init ===== */
 
 /* HARD STOP: prevent Materialize from behaving like a carousel */
 var $tc = $('.tabs-content');
