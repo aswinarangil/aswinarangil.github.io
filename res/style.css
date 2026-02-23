@@ -869,3 +869,48 @@ a{
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
+/* ===== Process 4: Premium Buttons + Pills ===== */
+
+/* Primary action buttons */
+.action-btn{
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 16px !important;
+  border-radius: 999px !important;
+
+  background: linear-gradient(135deg, rgba(38,166,154,0.95), rgba(0,229,255,0.85)) !important;
+  color: rgba(0,0,0,0.86) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.3px;
+
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.action-btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 22px 60px rgba(0,0,0,0.58);
+  filter: brightness(1.05);
+}
+
+.action-btn:active{
+  transform: translateY(-1px) scale(0.99);
+}
+
+/* Pill buttons */
+.green-pill, .blue-pill{
+  border-radius: 999px !important;
+  padding: 9px 14px !important;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.green-pill:hover, .blue-pill:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 18px 48px rgba(0,0,0,0.50);
+}
