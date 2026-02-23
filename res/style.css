@@ -1194,3 +1194,42 @@ html{
     font-size: 0.95rem !important;
   }
 }
+/* ===== Process 11: Micro-Animations ===== */
+
+@keyframes softIn{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(2px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Animate major surfaces on load */
+.premium-card,
+.contact-item,
+.skillbar{
+  animation: softIn 0.55s ease both;
+}
+
+/* Stagger feel without JS */
+.premium-card{ animation-delay: 0.06s; }
+.skillbar{ animation-delay: 0.10s; }
+.contact-item{ animation-delay: 0.12s; }
+
+/* Smooth scroll */
+html{
+  scroll-behavior: smooth;
+}
+
+/* Make focus states look premium (keyboard users) */
+a:focus-visible,
+button:focus-visible{
+  outline: 2px solid rgba(0,229,255,0.55);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
