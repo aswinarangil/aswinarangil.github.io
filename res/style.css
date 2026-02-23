@@ -1607,40 +1607,4 @@ body:not([data-theme="light"]) nav.nav-extended{
 }
 
 /* ===== /Process 22 ===== */
-/* ===== Process 23: Premium Glass + Shrink Navbar ===== */
 
-/* Glass effect */
-nav.nav-extended{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-
-  background: rgba(18,18,18,0.65) !important;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  transition: all 0.3s ease;
-}
-
-/* Space for fixed navbar */
-body{
-  padding-top: 90px;
-}
-
-/* Shrink effect */
-nav.nav-extended.shrink{
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background: rgba(18,18,18,0.85) !important;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-}
-
-/* Make brand slightly shrink */
-nav.nav-extended.shrink .brand-logo{
-  transform: scale(0.92);
-  transition: transform 0.3s ease;
-}
-
-/* ===== /Process 23 ===== */
