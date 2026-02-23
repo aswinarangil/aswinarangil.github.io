@@ -68,14 +68,35 @@ body {
     			width:jQuery(this).attr('data-percent')
     		},2000);
     	});
+      /* ===== SAFE THEME TOGGLE ===== */
+var btn = document.getElementById("themeToggle");
+
+if(btn){
+  btn.addEventListener("click", function(){
+    var current = document.documentElement.getAttribute("data-theme");
+    if(current === "light"){
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      btn.textContent = "🌙";
+    }else{
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+      btn.textContent = "☀️";
+    }
+  });
+}
+
+/* Load saved theme */
+var saved = localStorage.getItem("theme");
+if(saved){
+  document.documentElement.setAttribute("data-theme", saved);
+  if(btn){
+    btn.textContent = (saved === "light") ? "☀️" : "🌙";
+  }
+}
     });
 
-    $(document).ready(function(){
-
-    });
-
-         $(".button-collapse").sideNav();
-     </script>
+ 
 
 
 
