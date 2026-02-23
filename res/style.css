@@ -1233,3 +1233,39 @@ button:focus-visible{
   outline-offset: 3px;
   border-radius: 10px;
 }
+/* ===== Process 12: Final Consistency Polish ===== */
+
+/* Consistent thin borders everywhere */
+.card, .card-panel, .premium-card, .contact-item, .skillbar{
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+/* Better contrast for secondary text */
+.grey-text, .grey-text.text-lighten-1, .grey-text.text-lighten-2{
+  color: rgba(255,255,255,0.70) !important;
+}
+
+/* Icon and small labels consistency */
+i, .chip{
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.35));
+}
+
+/* Reduce overly bright teal blocks if any */
+.teal{
+  background-color: rgba(14, 18, 22, 0.92) !important;
+}
+
+/* Make separators / borders subtle */
+hr{
+  opacity: 0.9;
+}
+
+/* Improve image edges (profile image / icons) */
+img{
+  border-radius: 14px;
+}
+
+/* Selection highlight */
+::selection{
+  background: rgba(0,229,255,0.28);
+}
