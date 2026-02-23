@@ -1590,21 +1590,4 @@ nav.nav-extended .tabs .indicator{
 }
 
 /* ===== /Process 21 ===== */
-/* ===== Process 22: Glass Navbar Upgrade ===== */
-
-nav.nav-extended{
-  background: rgba(18,18,18,0.75) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-  transition: background 0.3s ease;
-}
-
-/* Slight transparency on scroll */
-body:not([data-theme="light"]) nav.nav-extended{
-  background: rgba(18,18,18,0.82) !important;
-}
-
-/* ===== /Process 22 ===== */
 
