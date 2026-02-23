@@ -1302,3 +1302,39 @@ img{
   box-shadow: 0 20px 56px rgba(0,0,0,0.55);
   border-color: rgba(0,229,255,0.22);
 }
+/* ===== Process 15: Resume FAB + Modal ===== */
+
+.resume-fab{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  border-radius: 999px !important;
+}
+
+/* Make modal look premium */
+.resume-modal{
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.resume-modal .modal-content{
+  background: rgba(10,12,16,0.92);
+  color: rgba(255,255,255,0.92);
+}
+
+.resume-modal .modal-footer{
+  background: rgba(10,12,16,0.92);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.resume-actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px){
+  .resume-fab{ right: 14px; bottom: 14px; }
+  .resume-actions a{ width: 100%; justify-content: center; }
+}
