@@ -2269,3 +2269,48 @@ nav.nav-extended .tabs{
   box-shadow: 0 26px 65px rgba(0,0,0,0.48) !important;
 }
 /* ===== /Glass Buttons ===== */
+/* ===== Ultra Premium Glass CTA Buttons ===== */
+
+.action-btn.main-btn{
+  min-width: 220px !important;
+  padding: 16px 20px !important;
+  border-radius: 999px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.05)
+  ) !important;
+
+  border: 1px solid rgba(255,255,255,0.22) !important;
+
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+
+  color:#ffffff !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transition: all .28s ease !important;
+}
+
+/* Hover shine */
+.action-btn.main-btn:hover{
+  transform: translateY(-6px) !important;
+
+  border-color: rgba(0,229,255,0.55) !important;
+
+  box-shadow:
+    0 22px 60px rgba(0,0,0,0.45),
+    0 0 25px rgba(0,229,255,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.35);
+}
