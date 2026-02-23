@@ -1898,3 +1898,20 @@ nav.nav-extended .tabs .tab a.active::after{
 }
 
 /* ===== /Process 36 FIXED ===== */
+/* ===== Process 37: Premium Card Surface ===== */
+
+.card{
+  background: rgba(25,25,25,0.75) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  border-radius: 14px !important;
+}
+
+/* Light theme adjustment */
+body[data-theme="light"] .card{
+  background: rgba(255,255,255,0.85) !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+}
+
+/* ===== /Process 37 ===== */
