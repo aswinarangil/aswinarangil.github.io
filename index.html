@@ -63,11 +63,38 @@ body {
          $('.materialboxed').materialbox();
          $(".button-collapse").sideNav();
           $('ul.tabs').tabs();
-    	jQuery('.skillbar').each(function(){
+    jQuery('.skillbar').each(function(){
     jQuery(this).find('.skillbar-bar').animate({
         width:jQuery(this).attr('data-percent')
     },2000);
 });
+
+/* ===== Process 14: Theme Toggle ===== */
+function applyTheme(theme){
+  document.documentElement.setAttribute("data-theme", theme);
+  var btn = document.getElementById("themeToggle");
+  if(btn){
+    btn.textContent = (theme === "light") ? "☀️" : "🌙";
+  }
+}
+
+var saved = localStorage.getItem("theme");
+if(saved !== "light" && saved !== "dark"){ saved = "dark"; }
+applyTheme(saved);
+
+var tbtn = document.getElementById("themeToggle");
+if(tbtn){
+  tbtn.addEventListener("click", function(){
+    var current = document.documentElement.getAttribute("data-theme") || "dark";
+    var next = (current === "dark") ? "light" : "dark";
+    localStorage.setItem("theme", next);
+    applyTheme(next);
+  });
+}
+/* ===== /Process 14 ===== */
+
+});   // ✅ CLOSE ready()
+</script>  <!-- ✅ CLOSE script -->
 
 
      <!-- navigation bar -->
