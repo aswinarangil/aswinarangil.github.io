@@ -1574,3 +1574,19 @@ nav.nav-extended .tabs .indicator{
 }
 
 /* ===== /Process 20 ===== */
+/* ===== Process 21: Tab Content Fade Animation ===== */
+
+/* Default state */
+.tabs-content > div{
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Active tab content */
+.tabs-content > div.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== /Process 21 ===== */
