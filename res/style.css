@@ -2465,3 +2465,13 @@ nav.nav-extended .tabs{
 }
 
 /* ===== /Process 44 ===== */
+/* ===== Process 45: Page Entrance Animation ===== */
+@keyframes pageIn{
+  0%{ opacity: 0; transform: translateY(16px); }
+  100%{ opacity: 1; transform: translateY(0); }
+}
+
+body.page-enter{
+  animation: pageIn 0.7s ease both;
+}
+/* ===== /Process 45 ===== */
