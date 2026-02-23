@@ -1054,3 +1054,44 @@ html{
   font-weight: 800;
   letter-spacing: 0.2px;
 }
+/* ===== Process 8: Experience/Education Card Layout Polish ===== */
+
+/* Better spacing inside content cards */
+.card-panel.premium-card{
+  line-height: 1.75;
+}
+
+.card-panel.premium-card b,
+.card-panel.premium-card strong{
+  color: rgba(255,255,255,0.96);
+  font-weight: 850;
+}
+
+/* Create subtle dividers between blocks inside a card */
+.card-panel.premium-card hr{
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.14), transparent);
+  margin: 16px 0;
+}
+
+/* If no <hr> exists, still improve paragraphs spacing */
+.card-panel.premium-card p{
+  margin: 10px 0;
+}
+
+/* Lists look cleaner */
+.card-panel.premium-card ul{
+  margin-top: 10px;
+}
+
+.card-panel.premium-card li{
+  margin: 8px 0;
+  color: rgba(255,255,255,0.86);
+}
+
+/* Small meta lines (dates, locations) */
+.card-panel.premium-card .meta,
+.card-panel.premium-card .grey-text{
+  color: rgba(255,255,255,0.68) !important;
+}
