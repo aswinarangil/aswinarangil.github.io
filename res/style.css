@@ -2109,3 +2109,45 @@ body{
   #cursorGlow{ opacity: 1; }
 }
 /* ===== /Process 3 ===== */
+/* ===== Process 5: Premium Contact Section ===== */
+
+.contact-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.contact-item:hover{
+  transform: translateY(-4px);
+  border-color: rgba(38,166,154,0.5);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.contact-icon{
+  font-size: 22px;
+}
+
+.contact-title{
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.contact-sub{
+  color: #cccccc;
+  font-size: 13px;
+}
+
+/* ===== /Process 5 ===== */
