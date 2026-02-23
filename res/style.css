@@ -1302,4 +1302,29 @@ img{
   box-shadow: 0 20px 56px rgba(0,0,0,0.55);
   border-color: rgba(0,229,255,0.22);
 }
+/* ===== Safe Light Mode ===== */
 
+html[data-theme="light"] body{
+  background: #f4f6fb !important;
+  color: #111 !important;
+}
+
+html[data-theme="light"] .premium-card,
+html[data-theme="light"] .card-panel{
+  background: #ffffff !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+html[data-theme="light"] nav.nav-extended .nav-wrapper{
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+html[data-theme="light"] .white-text{
+  color: #111 !important;
+}
+
+html[data-theme="light"] .grey-text{
+  color: #555 !important;
+}
