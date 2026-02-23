@@ -1057,4 +1057,39 @@ if(saved){
   window.addEventListener("load", revealOnScroll);
 })();
     </script>
+    <!-- ===== Process 15: Resume CTA Button + Modal ===== -->
+<a class="btn-floating btn-large action-btn resume-fab modal-trigger" href="#resumeModal" title="Resume">
+  <i class="material-icons">description</i>
+</a>
+
+<div id="resumeModal" class="modal resume-modal">
+  <div class="modal-content">
+    <h5 style="margin-top:0;">Resume</h5>
+    <p style="margin-bottom:16px;">
+      Choose an option:
+    </p>
+
+    <div class="resume-actions">
+      <!-- IMPORTANT: put your actual resume file in your repo root (same folder as index.html) -->
+      <a class="waves-effect waves-light btn action-btn" href="./Aswin_resume.pdf" target="_blank" rel="noopener">
+        <i class="material-icons left">visibility</i> View
+      </a>
+
+      <a class="waves-effect waves-light btn action-btn" href="./Aswin_resume.pdf" download>
+        <i class="material-icons left">download</i> Download
+      </a>
+    </div>
+
+    <div style="height:14px;"></div>
+
+    <p class="grey-text" style="margin:0;">
+      If the buttons don’t open, make sure <b>Aswin_resume.pdf</b> is uploaded to the same folder as <b>index.html</b>.
+    </p>
+  </div>
+
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
+  </div>
+</div>
+<!-- ===== /Process 15 ===== -->
    </body></html>
