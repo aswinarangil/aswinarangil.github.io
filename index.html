@@ -92,7 +92,9 @@ body {
      jQuery(document).ready(function(){
          $('.materialboxed').materialbox();
          $(".button-collapse").sideNav();
-          $('ul.tabs').tabs();
+          $('ul.tabs').tabs({
+  swipeable: false
+});
       $('.modal').modal();
     	jQuery('.skillbar').each(function(){
     		jQuery(this).find('.skillbar-bar').animate({
