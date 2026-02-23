@@ -1982,3 +1982,23 @@ body[data-theme="light"] #projects .card{
 }
 
 /* ===== /Process 38 ===== */
+/* ===== Process 1: Animated Premium Background ===== */
+
+body{
+  background: linear-gradient(
+    120deg,
+    rgba(10,12,14,1),
+    rgba(10,25,28,1),
+    rgba(10,12,14,1)
+  );
+  background-size: 200% 200%;
+  animation: bgShift 14s ease-in-out infinite;
+}
+
+@keyframes bgShift{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+
+/* ===== /Process 1 ===== */
