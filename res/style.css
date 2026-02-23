@@ -1951,3 +1951,34 @@ body[data-theme="light"] #projects .card{
 }
 
 /* ===== /Process 38 ===== */
+/* ===== Process 38: Premium Skill Enhancement ===== */
+
+/* Skill container background */
+#skills .skillbar{
+  background: rgba(255,255,255,0.05) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Smooth bar animation */
+#skills .skillbar-bar{
+  transition: width 1.4s cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 12px rgba(0,229,255,0.25);
+}
+
+/* Percentage bubble upgrade */
+#skills .skill-bar-percent{
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0,229,255,0.25);
+  box-shadow: 0 0 12px rgba(0,229,255,0.15);
+  color: #00e5ff !important;
+  font-weight: 600;
+}
+
+/* Slight hover effect */
+#skills .skillbar:hover .skillbar-bar{
+  box-shadow: 0 0 20px rgba(0,229,255,0.45);
+}
+
+/* ===== /Process 38 ===== */
