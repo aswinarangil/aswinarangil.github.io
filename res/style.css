@@ -1591,3 +1591,17 @@ nav.nav-extended .tabs .indicator{
 
 /* ===== /Process 21 ===== */
 
+/* ===== Premium Glass Navbar (SAFE) ===== */
+nav.nav-extended{
+  background: rgba(18,18,18,0.75) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Shrink visual effect only */
+nav.nav-extended.shrink{
+  background: rgba(18,18,18,0.9) !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
