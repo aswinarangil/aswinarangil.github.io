@@ -157,6 +157,30 @@ function activateReveal(){
 
 setTimeout(activateReveal, 150);
 /* ===== /Process 31 ===== */
+   /* ===== Process 2: Apply Fade on Tab Change ===== */
+function fadeActiveTab(){
+  // remove old states
+  document.querySelectorAll('.tabs-content > div').forEach(function(el){
+    el.classList.remove('tab-fade', 'show');
+    el.classList.add('tab-fade');
+  });
+
+  // show active tab content
+  var active = document.querySelector('.tabs-content > div.active');
+  if(active){
+    // small delay so transition triggers
+    setTimeout(function(){ active.classList.add('show'); }, 30);
+  }
+}
+
+// run on load and on tab click
+fadeActiveTab();
+document.querySelectorAll('.tabs .tab a').forEach(function(a){
+  a.addEventListener('click', function(){
+    setTimeout(fadeActiveTab, 60);
+  });
+});
+/* ===== /Process 2 ===== */
   });
 }
 /* ===== Safe Navbar Shrink ===== */
