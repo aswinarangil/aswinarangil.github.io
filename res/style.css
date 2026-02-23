@@ -2083,3 +2083,29 @@ body{
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== Process 3: Cursor Glow (Refined) ===== */
+#cursorGlow{
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+
+  background: rgba(0,229,255,0.18);
+  box-shadow:
+    0 0 18px rgba(0,229,255,0.22),
+    0 0 50px rgba(0,229,255,0.10);
+
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.05s linear;
+}
+
+/* Show on desktop only */
+@media (hover:hover){
+  #cursorGlow{ opacity: 1; }
+}
+/* ===== /Process 3 ===== */
