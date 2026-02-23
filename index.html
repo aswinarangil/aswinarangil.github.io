@@ -1,7 +1,6 @@
  <!DOCTYPE html>
-<html>
-<head>
-  <title>Aswin Arangil | IT Support Engineer | L1/L2 Desktop Support</title>
+     <title>Aswin Arangil | IT Support Engineer | L1/L2 Desktop Support</title>
+     
      <!--Import Google Icon Font-->
      <link href="./res/icon" rel="stylesheet">
      <!--Import materialize.css-->
@@ -53,14 +52,15 @@ body {
         ga('send', 'pageview');
 
         </script>
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
- <body>
- <a class="btn-floating btn-large action-btn resume-fab modal-trigger"
+   </head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <body>
+    <a class="btn-floating btn-large action-btn resume-fab modal-trigger"
    href="javascript:void(0)"
 data-target="resumeModal" title="Resume">
   <i class="material-icons">description</i>
     </a>
+
   <!-- ===== Global Floating Buttons (MUST be here) ===== -->
 
   <a id="waFloat" class="float-btn whatsapp-float"
@@ -85,8 +85,8 @@ data-target="resumeModal" title="Resume">
   <!-- rest of your page continues... -->
     <div id="scrollProgress"></div>
      <!--Import jQuery before materialize.js-->
-     <script src="res/jquery-2.1.1.min.js"></script>
-     <script src="res/materialize.min.js"></script>
+     <script type="text/javascript" src="./res/jquery-2.1.1.min.js.download"></script>
+     <script type="text/javascript" src="./res/materialize.min.js.download"></script>
      <script>
      jQuery(document).ready(function(){
          $('.materialboxed').materialbox();
@@ -152,8 +152,6 @@ if(btn){
       localStorage.setItem("theme", "light");
       btn.textContent = "☀️";
     }
-  });
-}
    /* ===== Resume FAB: stop jump + force open modal ===== */
 var resumeBtn = document.querySelector(".resume-fab");
 if(resumeBtn){
@@ -176,6 +174,9 @@ if(resumeBtn){
   }, true);
 }
 /* ===== /Resume FAB fix ===== */
+  });
+}
+
 /* Load saved theme */
 var saved = localStorage.getItem("theme");
 if(saved){
