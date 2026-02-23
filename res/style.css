@@ -1863,3 +1863,38 @@ nav.nav-extended .tabs .tab a.active::after{
 }
 
 /* ===== /Process 36 ===== */
+/* ===== Process 36 FIXED: Active Tab Glow ===== */
+
+/* Base tab link */
+.tabs .tab a{
+  position: relative !important;
+  transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease !important;
+  border-radius: 999px !important;
+}
+
+/* Active tab pill + glow */
+.tabs .tab a.active{
+  background: rgba(0,229,255,0.10) !important;
+  color: rgba(0,229,255,1) !important;
+  border: 1px solid rgba(0,229,255,0.18) !important;
+}
+
+/* Soft glow halo */
+.tabs .tab a.active::after{
+  content: "" !important;
+  position: absolute !important;
+  left: -6px !important;
+  right: -6px !important;
+  top: -6px !important;
+  bottom: -6px !important;
+  border-radius: 999px !important;
+  box-shadow: 0 0 18px rgba(0,229,255,0.20) !important;
+  pointer-events: none !important;
+}
+
+/* Optional: tiny lift on active */
+.tabs .tab a.active{
+  transform: translateY(-1px) !important;
+}
+
+/* ===== /Process 36 FIXED ===== */
