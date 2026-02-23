@@ -1706,3 +1706,15 @@ body::after{
 }
 
 /* ===== /Process 27 ===== */
+/* ===== Process 28: Smooth Scroll ===== */
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Slightly smoother touch scrolling */
+body{
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ===== /Process 28 ===== */
