@@ -967,3 +967,50 @@ nav.nav-extended .tabs .indicator{
 html{
   scroll-padding-top: 120px;
 }
+/* ===== Process 6: Hero Spotlight + Clean Spacing ===== */
+
+/* Hero glass card refinement */
+.hero-glass{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft spotlight behind hero content */
+.hero-glass::before{
+  content: "";
+  position: absolute;
+  inset: -40px;
+  background:
+    radial-gradient(520px 260px at 20% 15%, rgba(0,229,255,0.20), transparent 60%),
+    radial-gradient(520px 260px at 85% 30%, rgba(38,166,154,0.22), transparent 60%);
+  filter: blur(10px);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Subtle sheen overlay */
+.hero-glass::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.10), transparent 55%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Ensure text/content stays above overlays */
+.hero-glass > *{
+  position: relative;
+  z-index: 2;
+}
+
+/* Give hero area breathing room */
+#home .container{
+  padding-top: 18px;
+  padding-bottom: 10px;
+}
+
+/* Slightly larger hero headings (Materialize sometimes clamps sizes) */
+#home h1, #home h2{
+  text-shadow: 0 10px 30px rgba(0,0,0,0.55);
+}
