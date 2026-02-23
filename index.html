@@ -70,6 +70,23 @@ body {
     			width:jQuery(this).attr('data-percent')
     		},2000);
     	});
+      /* ===== Process 16: Scroll Progress Logic ===== */
+function updateScrollProgress(){
+  var doc = document.documentElement;
+  var scrollTop = window.pageYOffset || doc.scrollTop || document.body.scrollTop || 0;
+  var scrollHeight = (doc.scrollHeight || document.body.scrollHeight) - (doc.clientHeight || window.innerHeight);
+  var scrolled = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+
+  var bar = document.getElementById("scrollProgress");
+  if(bar){
+    bar.style.width = scrolled + "%";
+  }
+}
+
+updateScrollProgress();
+window.addEventListener("scroll", updateScrollProgress);
+setTimeout(updateScrollProgress, 250);
+/* ===== /Process 16 ===== */
       /* ===== SAFE THEME TOGGLE ===== */
 var btn = document.getElementById("themeToggle");
 
