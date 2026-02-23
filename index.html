@@ -95,6 +95,8 @@ body {
           $('ul.tabs').tabs({
   swipeable: false
 });
+      // Extra safety: disable drag on tabs content if Materialize created a carousel container
+$('.tabs-content.carousel').removeClass('carousel carousel-slider');
       $('.modal').modal();
     	jQuery('.skillbar').each(function(){
     		jQuery(this).find('.skillbar-bar').animate({
