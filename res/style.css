@@ -1376,3 +1376,36 @@ html[data-theme="light"] .grey-text{
   background: linear-gradient(90deg, rgba(38,166,154,1), rgba(0,229,255,1));
   box-shadow: 0 10px 30px rgba(0,229,255,0.14);
 }
+/* ===== Process 17: Projects/Experience Visual Upgrade ===== */
+
+/* Improve readability in the Experience/Projects section */
+#projects .premium-card{
+  padding: 22px 18px !important;
+}
+
+/* Make headings inside projects pop */
+#projects b, #projects strong{
+  font-size: 1.08rem;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+/* Softer meta text inside that section */
+#projects .grey-text,
+#projects .meta{
+  color: rgba(255,255,255,0.72) !important;
+}
+
+/* Make repeated <br> spacing look cleaner */
+#projects br + br{
+  content: "";
+  display: block;
+  margin-top: 10px;
+}
+
+/* Add subtle “panel” feel to each job block if you used timeline wrappers,
+   but also safe even if you didn't */
+#projects .t-content{
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,255,255,0.10);
+}
