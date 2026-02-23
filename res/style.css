@@ -1840,3 +1840,26 @@ footer.page-footer.premium-footer{
   position: relative;
 }
 /* ===== /Process 34 ===== */
+/* ===== Process 36: Active Tab Glow ===== */
+
+nav.nav-extended .tabs .tab a{
+  position: relative;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav.nav-extended .tabs .tab a.active{
+  background: rgba(0,229,255,0.08) !important;
+  color: #00e5ff !important;
+}
+
+/* Soft outer glow */
+nav.nav-extended .tabs .tab a.active::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  box-shadow: 0 0 18px rgba(0,229,255,0.15);
+  pointer-events: none;
+}
+
+/* ===== /Process 36 ===== */
