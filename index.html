@@ -199,6 +199,9 @@ document.addEventListener("touchmove", function(e){
   moveGlow(e.touches[0].clientX, e.touches[0].clientY);
 }, {passive:true});
 /* ===== /Process 3 ===== */
+   /* ===== Process 45: Trigger Page Entrance ===== */
+document.body.classList.add("page-enter");
+/* ===== /Process 45 ===== */
   });
 }
 /* ===== Safe Navbar Shrink ===== */
