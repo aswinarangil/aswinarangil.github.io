@@ -2054,3 +2054,21 @@ body{
 }
 
 /* ===== /Process 4 ===== */
+/* ===== Premium Hero Name Animation ===== */
+.hero-name {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #ffffff, #26a69a, #ffffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heroShine 5s linear infinite;
+}
+
+@keyframes heroShine {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
