@@ -1475,5 +1475,5 @@ html[data-theme="light"] .grey-text{
   position: fixed !important;
   right: 18px !important;
   bottom: 158px !important;  /* above backToTop */
-  z-index: 10001 !important;
+  z-index: 10002 !important;
 }
