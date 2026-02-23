@@ -55,7 +55,11 @@ body {
    </head>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <body>
-    
+    <a class="btn-floating btn-large action-btn resume-fab modal-trigger"
+   href="javascript:void(0)"
+data-target="resumeModal" title="Resume">
+  <i class="material-icons">description</i>
+    </a>
 
   <!-- ===== Global Floating Buttons (MUST be here) ===== -->
 
@@ -148,23 +152,31 @@ if(btn){
       localStorage.setItem("theme", "light");
       btn.textContent = "☀️";
     }
+   /* ===== Resume FAB: stop jump + force open modal ===== */
+var resumeBtn = document.querySelector(".resume-fab");
+if(resumeBtn){
+  resumeBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    var el = document.getElementById("resumeModal");
+    if(!el) return;
+
+    // Init modal if not already initialised
+    if(window.M && M.Modal){
+      var inst = M.Modal.getInstance(el);
+      if(!inst) inst = M.Modal.init(el);
+      inst.open();
+    }else if (window.jQuery && jQuery.fn.modal){
+      // For older Materialize builds
+      jQuery(el).modal('open');
+    }
+  }, true);
+}
+/* ===== /Resume FAB fix ===== */
   });
 }
-/* ===== Navbar Shrink on Scroll ===== */
-function handleNavbar(){
-  var nav = document.querySelector("nav.nav-extended");
-  if(!nav) return;
 
-  if(window.scrollY > 40){
-    nav.classList.add("shrink");
-  } else {
-    nav.classList.remove("shrink");
-  }
-}
-
-handleNavbar();
-window.addEventListener("scroll", handleNavbar);
-/* ===== /Navbar Shrink ===== */
 /* Load saved theme */
 var saved = localStorage.getItem("theme");
 if(saved){
