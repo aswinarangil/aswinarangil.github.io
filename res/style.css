@@ -1470,10 +1470,11 @@ html[data-theme="light"] .grey-text{
   .whatsapp-float{ bottom: 14px; }
   .backtotop{ bottom: 82px; }
 }
-/* ===== Resume Floating Button FIX ===== */
+/* ===== Resume FAB click fix ===== */
 .resume-fab{
   position: fixed !important;
   right: 18px !important;
-  bottom: 158px !important;  /* above backToTop */
-  z-index: 10002 !important;
+  bottom: 230px !important;   /* moved higher so it won't overlap tabs */
+  z-index: 999999 !important; /* above everything */
+  pointer-events: auto !important;
 }
