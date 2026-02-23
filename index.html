@@ -148,21 +148,6 @@ if(btn){
       localStorage.setItem("theme", "light");
       btn.textContent = "☀️";
     }
-   /* ===== Navbar Shrink on Scroll ===== */
-function handleNavbar(){
-  var nav = document.querySelector("nav.nav-extended");
-  if(!nav) return;
-
-  if(window.scrollY > 40){
-    nav.classList.add("shrink");
-  } else {
-    nav.classList.remove("shrink");
-  }
-}
-
-handleNavbar();
-window.addEventListener("scroll", handleNavbar);
-/* ===== /Navbar Shrink ===== */
   });
 }
 
