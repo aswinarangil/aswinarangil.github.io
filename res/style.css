@@ -1621,3 +1621,24 @@ nav.nav-extended.shrink{
 
   transition: width 0.12s linear;
 }
+/* ===== Process 25: Premium Experience Cards ===== */
+
+/* Smooth transition */
+.card{
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Hover effect */
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+  border: 1px solid rgba(0,229,255,0.15);
+}
+
+/* Optional glow for dark theme */
+body:not([data-theme="light"]) .card:hover{
+  box-shadow: 0 25px 60px rgba(0,229,255,0.08);
+}
+
+/* ===== /Process 25 ===== */
