@@ -1364,3 +1364,15 @@ html[data-theme="light"] .white-text{
 html[data-theme="light"] .grey-text{
   color: #555 !important;
 }
+/* ===== Process 16: Scroll Progress Bar ===== */
+
+#scrollProgress{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  z-index: 10000;
+  background: linear-gradient(90deg, rgba(38,166,154,1), rgba(0,229,255,1));
+  box-shadow: 0 10px 30px rgba(0,229,255,0.14);
+}
