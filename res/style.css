@@ -1140,3 +1140,57 @@ html{
 .contact-item a:hover{
   color: rgba(0,229,255,0.95) !important;
 }
+/* ===== Process 10: Mobile Optimization ===== */
+
+@media (max-width: 600px){
+
+  /* Reduce container squeezing */
+  .container{
+    width: 92% !important;
+  }
+
+  /* Hero + section padding */
+  #home .container{
+    padding-top: 14px;
+  }
+
+  .section{
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+
+  /* Card spacing */
+  .card-panel.premium-card{
+    padding: 18px 14px;
+  }
+
+  /* Headings scale */
+  h1{
+    font-size: 2.1rem !important;
+  }
+  h2{
+    font-size: 1.55rem !important;
+  }
+  h3{
+    font-size: 1.25rem !important;
+  }
+
+  /* Buttons fit better */
+  .action-btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Contact chips wrap better */
+  .contact-item{
+    padding: 12px 12px;
+  }
+  .contact-item i{
+    font-size: 20px;
+  }
+
+  /* Tabs readability */
+  nav.nav-extended .tabs .tab a{
+    font-size: 0.95rem !important;
+  }
+}
