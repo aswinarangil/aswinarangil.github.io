@@ -2072,3 +2072,14 @@ body{
   0% { background-position: 200% center; }
   100% { background-position: -200% center; }
 }
+/* ===== Premium Tab Fade Animation ===== */
+.tab-fade {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.tab-fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
