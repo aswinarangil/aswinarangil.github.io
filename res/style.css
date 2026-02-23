@@ -2036,3 +2036,21 @@ body{
   #cursorGlow{ opacity: 1; }
 }
 /* ===== /Process 3 ===== */
+/* ===== Process 4: Hero Text Animation ===== */
+
+@keyframes heroIn{
+  0%{ opacity: 0; transform: translateY(18px); }
+  100%{ opacity: 1; transform: translateY(0); }
+}
+
+/* Target common hero headings inside Home */
+#home h1, #home h2, #home h3{
+  animation: heroIn 0.8s ease both;
+}
+
+#home p, #home .subtitle, #home .flow-text{
+  animation: heroIn 1.05s ease both;
+  animation-delay: 0.12s;
+}
+
+/* ===== /Process 4 ===== */
