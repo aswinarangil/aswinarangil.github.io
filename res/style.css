@@ -2151,3 +2151,21 @@ body{
 }
 
 /* ===== /Process 5 ===== */
+/* ===== Final: Contact Icons Professional ===== */
+.contact-icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0,229,255,0.08);
+  border: 1px solid rgba(0,229,255,0.14);
+}
+
+.contact-icon i{
+  font-size: 22px;
+  color: rgba(0,229,255,0.95);
+}
+/* ===== /Final ===== */
