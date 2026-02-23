@@ -69,31 +69,7 @@ body {
     },2000);
 });
 
-/* ===== Process 14: Theme Toggle ===== */
-function applyTheme(theme){
-  document.documentElement.setAttribute("data-theme", theme);
-  var btn = document.getElementById("themeToggle");
-  if(btn){
-    btn.textContent = (theme === "light") ? "☀️" : "🌙";
-  }
-}
 
-var saved = localStorage.getItem("theme");
-if(saved !== "light" && saved !== "dark"){ saved = "dark"; }
-applyTheme(saved);
-
-var tbtn = document.getElementById("themeToggle");
-if(tbtn){
-  tbtn.addEventListener("click", function(){
-    var current = document.documentElement.getAttribute("data-theme") || "dark";
-    var next = (current === "dark") ? "light" : "dark";
-    localStorage.setItem("theme", next);
-    applyTheme(next);
-  });
-}
-/* ===== /Process 14 ===== */
-
-});
      <!-- navigation bar -->
      <nav class="nav-extended">
   <div class="nav-wrapper grey darken-4">
