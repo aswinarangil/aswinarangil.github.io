@@ -1547,3 +1547,30 @@ html[data-theme="light"] .grey-text{
     --fab-gap: 10px;
   }
 }
+/* ===== Process 20: Premium Tabs (pill + hover) ===== */
+
+/* Make each tab link look like a pill */
+nav.nav-extended .tabs .tab a{
+  border-radius: 999px !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  margin: 6px 6px !important;
+}
+
+/* Hover effect */
+nav.nav-extended .tabs .tab a:hover{
+  background: rgba(255,255,255,0.06) !important;
+  transform: translateY(-1px);
+}
+
+/* Active tab pill */
+nav.nav-extended .tabs .tab a.active{
+  background: rgba(255,255,255,0.10) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+}
+
+/* Indicator stays, but give it a bit more breathing room */
+nav.nav-extended .tabs .indicator{
+  bottom: 2px !important;
+}
+
+/* ===== /Process 20 ===== */
