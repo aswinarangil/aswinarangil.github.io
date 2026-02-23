@@ -914,3 +914,56 @@ a{
   transform: translateY(-2px);
   box-shadow: 0 18px 48px rgba(0,0,0,0.50);
 }
+/* ===== Process 5: Sticky Glass Navbar (CSS only) ===== */
+
+/* Make the whole nav stick to top */
+nav.nav-extended{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* Glass + border + blur */
+nav.nav-extended .nav-wrapper{
+  background: rgba(10, 12, 16, 0.65) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+/* Slightly reduce harsh height feel */
+nav.nav-extended .brand-logo{
+  font-weight: 850;
+  letter-spacing: 0.4px;
+}
+
+/* Tabs area (since you use tabs in nav) */
+nav.nav-extended .tabs{
+  background: rgba(10, 12, 16, 0.35) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Tabs text + spacing */
+nav.nav-extended .tabs .tab a{
+  color: rgba(255,255,255,0.78) !important;
+  font-weight: 750;
+  letter-spacing: 0.25px;
+}
+
+nav.nav-extended .tabs .tab a.active{
+  color: rgba(255,255,255,0.96) !important;
+}
+
+/* Improve indicator glow */
+nav.nav-extended .tabs .indicator{
+  height: 3px;
+  background: linear-gradient(90deg, rgba(38,166,154,1), rgba(0,229,255,1));
+  border-radius: 999px;
+}
+
+/* Ensure content doesn't hide under sticky nav on anchor jumps */
+html{
+  scroll-padding-top: 120px;
+}
