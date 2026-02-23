@@ -232,13 +232,17 @@ body{
 .timeline-item{ position: relative; }
 .timeline-dot{
   position:absolute;
-  left: -2px;
-  top: 22px;
-  width: 12px;
-  height: 12px;
+  left: 3px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
+
   background: #26a69a;
-  box-shadow: 0 0 14px rgba(38,166,154,0.7);
+
+  box-shadow:
+    0 0 0 4px rgba(38,166,154,0.15),
+    0 0 14px rgba(38,166,154,0.6);
 }
 
 /* ---------- Scroll reveal ---------- */
