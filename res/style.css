@@ -1738,3 +1738,19 @@ body[data-theme="light"] .btn-floating:hover{
 }
 
 /* ===== /Process 29 ===== */
+/* ===== Process 30: Section Divider Glow ===== */
+
+.section-divider{
+  height: 1px;
+  margin: 60px auto;
+  width: 80%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0,229,255,0.25),
+    transparent
+  );
+  border-radius: 999px;
+}
+
+/* ===== /Process 30 ===== */
