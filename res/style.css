@@ -779,3 +779,39 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* ===== Process 2: Premium Glass Cards (Global) ===== */
+
+/* Base card surfaces */
+.card, .card-panel, .premium-card{
+  border-radius: var(--radius);
+}
+
+/* Premium glass look for all premium cards */
+.premium-card{
+  background: linear-gradient(145deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.03)
+  );
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Smooth hover lift */
+.premium-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 26px 70px rgba(0,0,0,0.60);
+  border-color: rgba(0,229,255,0.22);
+}
+
+/* Make inner card text spacing consistent */
+.card-panel.premium-card{
+  padding: 22px 18px;
+}
+
+/* Keep your teal cards readable (you already force dark bg here) */
+.card-panel.teal.premium-card{
+  background: rgba(20,22,27,0.92) !important;
+}
