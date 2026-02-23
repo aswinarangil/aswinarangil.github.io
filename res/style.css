@@ -2169,3 +2169,18 @@ body{
   color: rgba(0,229,255,0.95);
 }
 /* ===== /Final ===== */
+/* ===== Process 39: Premium Glass Navbar (SAFE) ===== */
+nav.nav-extended{
+  background: rgba(18,18,18,0.72) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Give tabs area a slightly cleaner look */
+nav.nav-extended .tabs{
+  background: transparent !important;
+}
+
+/* ===== /Process 39 ===== */
