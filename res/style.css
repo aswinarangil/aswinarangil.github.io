@@ -2184,3 +2184,22 @@ nav.nav-extended .tabs{
 }
 
 /* ===== /Process 39 ===== */
+/* ===== Process 40: Executive Experience Card Animation ===== */
+
+#projects .card{
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+
+#projects .card:hover{
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 26px 60px rgba(0,0,0,0.38) !important;
+  border-color: rgba(255,255,255,0.10) !important;
+}
+
+/* Reduce glow feeling when hovering inside dark theme */
+#projects .card:hover *{
+  text-shadow: none !important;
+}
+
+/* ===== /Process 40 ===== */
