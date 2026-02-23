@@ -1470,6 +1470,15 @@ html[data-theme="light"] .grey-text{
   .whatsapp-float{ bottom: 14px; }
   .backtotop{ bottom: 82px; }
 }
+/* ===== STOP TAB SWIPE HIJACK (mobile + desktop) ===== */
+.tabs-content{
+  overflow-x: hidden !important;
+  touch-action: pan-y !important;   /* allow only vertical scroll */
+}
+
+.tabs-content *{
+  touch-action: pan-y !important;
+}
 /* ===== Resume FAB click fix ===== */
 .resume-fab{
   position: fixed !important;
