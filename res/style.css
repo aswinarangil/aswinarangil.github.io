@@ -1409,55 +1409,64 @@ html[data-theme="light"] .grey-text{
   background: rgba(255,255,255,0.045);
   border: 1px solid rgba(255,255,255,0.10);
 }
-/* ===== Process 18: Back To Top Button ===== */
-.backtotop{
+/* ===== Global Floating Buttons UI ===== */
+.float-btn{
   position: fixed;
   right: 18px;
-  bottom: 78px; /* above your resume FAB */
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 10000;
 
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
-
-  border-radius: 999px !important;
-  background: rgba(255,255,255,0.10) !important;
-  border: 1px solid rgba(255,255,255,0.16) !important;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.16);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 16px 40px rgba(0,0,0,0.45);
 
-  transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
 }
 
+.float-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 22px 60px rgba(0,0,0,0.55);
+  border-color: rgba(0,229,255,0.22);
+}
+
+.float-icon{
+  width: 28px;
+  height: 28px;
+  color: rgba(255,255,255,0.92);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.35));
+}
+
+/* WhatsApp: green tint */
+.whatsapp-float{
+  bottom: 18px;
+  background: rgba(37,211,102,0.18);
+  border-color: rgba(37,211,102,0.45);
+}
+.whatsapp-float:hover{
+  border-color: rgba(37,211,102,0.80);
+}
+
+/* Back to top: above WhatsApp and hidden until scroll */
+.backtotop{
+  bottom: 88px;
+  opacity: 0;
+  pointer-events: none;
+}
 .backtotop.show{
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
 }
 
-.backtotop:hover{
-  border-color: rgba(0,229,255,0.22) !important;
-}
-
 @media (max-width: 600px){
-  .backtotop{ right: 14px; bottom: 74px; }
-}
-/* ===== WhatsApp Floating Button ===== */
-.whatsapp-float{
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
-  z-index: 10000;
-
-  border-radius: 999px !important;
-  background: rgba(37, 211, 102, 0.18) !important; /* WhatsApp green tint */
-  border: 1px solid rgba(37, 211, 102, 0.45) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
-}
-
-.whatsapp-float:hover{
-  border-color: rgba(37, 211, 102, 0.70) !important;
+  .float-btn{ right: 14px; width: 54px; height: 54px; }
+  .float-icon{ width: 26px; height: 26px; }
+  .whatsapp-float{ bottom: 14px; }
+  .backtotop{ bottom: 82px; }
 }
