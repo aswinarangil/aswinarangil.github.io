@@ -1338,21 +1338,29 @@ img{
   .resume-fab{ right: 14px; bottom: 14px; }
   .resume-actions a{ width: 100%; justify-content: center; }
 }
-/* ===== LIGHT MODE (SAFE MINIMAL) ===== */
+/* ===== Safe Light Mode ===== */
+
 html[data-theme="light"] body{
   background: #f4f6fb !important;
   color: #111 !important;
 }
 
-html[data-theme="light"] a{
-  color: #0b6cff !important;
+html[data-theme="light"] .premium-card,
+html[data-theme="light"] .card-panel{
+  background: #ffffff !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+html[data-theme="light"] nav.nav-extended .nav-wrapper{
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 html[data-theme="light"] .white-text{
   color: #111 !important;
 }
 
-html[data-theme="light"] nav.nav-extended .nav-wrapper,
-html[data-theme="light"] nav.nav-extended .tabs{
-  background: #ffffff !important;
+html[data-theme="light"] .grey-text{
+  color: #555 !important;
 }
