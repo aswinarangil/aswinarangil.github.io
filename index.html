@@ -150,7 +150,21 @@ if(btn){
     }
   });
 }
+/* ===== Navbar Shrink on Scroll ===== */
+function handleNavbar(){
+  var nav = document.querySelector("nav.nav-extended");
+  if(!nav) return;
 
+  if(window.scrollY > 40){
+    nav.classList.add("shrink");
+  } else {
+    nav.classList.remove("shrink");
+  }
+}
+
+handleNavbar();
+window.addEventListener("scroll", handleNavbar);
+/* ===== /Navbar Shrink ===== */
 /* Load saved theme */
 var saved = localStorage.getItem("theme");
 if(saved){
