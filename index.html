@@ -148,7 +148,15 @@ if(btn){
       localStorage.setItem("theme", "light");
       btn.textContent = "☀️";
     }
-   
+   /* ===== Process 31: Activate Reveal ===== */
+function activateReveal(){
+  document.querySelectorAll('.reveal-fade').forEach(function(el){
+    el.classList.add('active');
+  });
+}
+
+setTimeout(activateReveal, 150);
+/* ===== /Process 31 ===== */
   });
 }
 /* ===== Safe Navbar Shrink ===== */
