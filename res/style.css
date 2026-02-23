@@ -2475,3 +2475,21 @@ body.page-enter{
   animation: pageIn 0.7s ease both;
 }
 /* ===== /Process 45 ===== */
+/* ===== Process 46: Subtle Animated Background (Refine) ===== */
+
+/* Keep it very subtle and slow */
+body{
+  background: radial-gradient(circle at 20% 20%, rgba(0,229,255,0.06), transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(123,97,255,0.06), transparent 45%),
+              linear-gradient(120deg, rgba(10,12,14,1), rgba(12,14,18,1));
+  background-size: 120% 120%;
+  animation: bgFloat 18s ease-in-out infinite;
+}
+
+@keyframes bgFloat{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+
+/* ===== /Process 46 ===== */
