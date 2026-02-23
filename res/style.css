@@ -1501,3 +1501,49 @@ html[data-theme="light"] .grey-text{
 .tabs-content *{
   touch-action: pan-y !important;
 }
+/* ===== Floating Buttons: perfect stack + no hang ===== */
+:root{
+  --fab-right: 16px;
+  --fab-bottom: 16px;
+  --fab-size: 56px;
+  --fab-gap: 12px;
+}
+
+/* Force all floating buttons to a consistent size/position */
+.float-btn,
+.resume-fab{
+  position: fixed !important;
+  right: var(--fab-right) !important;
+  width: var(--fab-size) !important;
+  height: var(--fab-size) !important;
+  border-radius: 999px !important;
+  z-index: 999999 !important;
+}
+
+/* WhatsApp at bottom */
+.whatsapp-float{
+  bottom: var(--fab-bottom) !important;
+}
+
+/* Back to Top above WhatsApp */
+.backtotop{
+  bottom: calc(var(--fab-bottom) + var(--fab-size) + var(--fab-gap)) !important;
+}
+
+/* Resume above Back to Top */
+.resume-fab{
+  bottom: calc(var(--fab-bottom) + (var(--fab-size) * 2) + (var(--fab-gap) * 2)) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile fine tune */
+@media (max-width: 600px){
+  :root{
+    --fab-right: 12px;
+    --fab-bottom: 12px;
+    --fab-size: 54px;
+    --fab-gap: 10px;
+  }
+}
