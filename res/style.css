@@ -2409,3 +2409,59 @@ nav.nav-extended .tabs{
 }
 
 /* ===== /Process 43 ===== */
+/* ===== Process 44: Strong Modern Tech Glow ===== */
+
+.action-btn.main-btn{
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent !important;
+  background-clip: padding-box;
+}
+
+/* Animated gradient border */
+.action-btn.main-btn::after{
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #00e5ff,
+    #7b61ff,
+    #00e5ff
+  );
+  background-size: 200% 200%;
+  animation: borderFlow 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes borderFlow{
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Stronger light sweep */
+.action-btn.main-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 80%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+}
+
+.action-btn.main-btn:hover::before{
+  left: 150%;
+}
+
+/* ===== /Process 44 ===== */
