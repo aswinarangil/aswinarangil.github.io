@@ -1491,3 +1491,13 @@ html[data-theme="light"] .grey-text{
 .tabs-content.carousel.carousel-slider{
   touch-action: pan-y !important; /* allow vertical scroll only */
 }
+/* ===== STOP TAB SLIDE ON SCROLL (mobile) ===== */
+.tabs-content{
+  overflow-x: hidden !important;
+  touch-action: pan-y !important;   /* allow vertical scroll only */
+  transform: none !important;       /* kill horizontal translate */
+}
+
+.tabs-content *{
+  touch-action: pan-y !important;
+}
