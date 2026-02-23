@@ -815,3 +815,57 @@ body {
 .card-panel.teal.premium-card{
   background: rgba(20,22,27,0.92) !important;
 }
+/* ===== Process 3: Typography + Spacing System ===== */
+
+body{
+  font-family: "Poppins", "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: 0.2px;
+  line-height: 1.65;
+}
+
+/* Headings */
+h1, h2, h3, h4{
+  letter-spacing: 0.3px;
+  color: rgba(255,255,255,0.96);
+}
+
+h1{
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+h2{
+  font-weight: 750;
+  line-height: 1.18;
+}
+
+h3{
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Make small text more readable */
+p, li, span{
+  color: var(--text);
+}
+
+/* Muted text helper */
+.text-muted{
+  color: var(--muted) !important;
+}
+
+/* Cleaner section rhythm */
+.section{
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.container{
+  margin-top: 18px;
+}
+
+/* Links feel “designed” */
+a{
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
