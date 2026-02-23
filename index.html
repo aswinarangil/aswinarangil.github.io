@@ -113,7 +113,28 @@ if(saved){
     btn.textContent = (saved === "light") ? "☀️" : "🌙";
   }
 }
-    });
+   /* ===== Process 18: Back To Top Logic ===== */
+var topBtn = document.getElementById("backToTop");
+
+function toggleTopBtn(){
+  if(!topBtn) return;
+  if(window.pageYOffset > 350){
+    topBtn.classList.add("show");
+  }else{
+    topBtn.classList.remove("show");
+  }
+}
+
+toggleTopBtn();
+window.addEventListener("scroll", toggleTopBtn);
+
+if(topBtn){
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+/* ===== /Process 18 ===== */
+     });
      </script>
  
 
