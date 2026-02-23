@@ -1809,3 +1809,34 @@ body[data-theme="light"] .btn-floating:hover{
 }
 
 /* ===== /Process 33 ===== */
+/* ===== Process 34: Footer Fix (override Materialize) ===== */
+footer.page-footer.premium-footer{
+  background: rgba(18,18,18,0.88) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(0,229,255,0.15) !important;
+  padding: 18px 0 !important;
+  margin-top: 50px !important;
+}
+
+footer.page-footer.premium-footer .footer-content{
+  color: rgba(255,255,255,0.78) !important;
+  font-size: 14px !important;
+  letter-spacing: 0.8px;
+}
+
+footer.page-footer.premium-footer::before{
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,229,255,0.35), transparent) !important;
+}
+
+footer.page-footer.premium-footer{
+  position: relative;
+}
+/* ===== /Process 34 ===== */
