@@ -2510,3 +2510,29 @@ body{
   box-shadow: 0 0 18px rgba(0,229,255,0.06);
 }
 /* ===== /Process 47 ===== */
+/* ===== Process 48: Refined Hero Name Gradient ===== */
+
+.hero-name{
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #00e5ff,
+    #7b61ff,
+    #ffffff
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: heroFlow 8s linear infinite;
+}
+
+@keyframes heroFlow{
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
+/* ===== /Process 48 ===== */
