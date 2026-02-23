@@ -1642,3 +1642,34 @@ body:not([data-theme="light"]) .card:hover{
 }
 
 /* ===== /Process 25 ===== */
+/* ===== Process 26: Hero Image Glow + Float ===== */
+
+/* Target your main hero/profile image */
+.hero img,
+.profile-img,
+#home img{
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Soft glow */
+.hero img:hover,
+.profile-img:hover,
+#home img:hover{
+  box-shadow: 0 25px 60px rgba(0,229,255,0.15);
+  transform: translateY(-4px);
+}
+
+/* Subtle floating animation */
+@keyframes floatImage{
+  0%{ transform: translateY(0px); }
+  50%{ transform: translateY(-6px); }
+  100%{ transform: translateY(0px); }
+}
+
+.hero img,
+.profile-img{
+  animation: floatImage 5s ease-in-out infinite;
+}
+
+/* ===== /Process 26 ===== */
