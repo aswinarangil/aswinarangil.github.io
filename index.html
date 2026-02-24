@@ -202,6 +202,14 @@ document.addEventListener("touchmove", function(e){
    /* ===== Process 45: Trigger Page Entrance ===== */
 document.body.classList.add("page-enter");
 /* ===== /Process 45 ===== */
+   /* ===== Process 2: Activate Fade Animation ===== */
+$('ul.tabs').on('click', 'a', function(){
+  setTimeout(function(){
+    $('.tabs-content > .col').removeClass('active');
+    $('.tabs-content > .col:visible').addClass('active');
+  }, 50);
+});
+/* ===== /Process 2 ===== */
   });
 }
 /* ===== Safe Navbar Shrink ===== */
