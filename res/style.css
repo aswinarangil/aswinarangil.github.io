@@ -2614,3 +2614,25 @@ body{
   }
 }
 /* ===== /Process 4 ===== */
+/* ===== Process 5: Contact Section Upgrade ===== */
+
+.contact-item{
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 14px;
+}
+
+.contact-item:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+.contact-icon{
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover .contact-icon{
+  transform: scale(1.15);
+}
+
+/* ===== /Process 5 ===== */
