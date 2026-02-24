@@ -435,7 +435,13 @@ if(topBtn){
             flex-wrap:wrap; 
             margin-top:18px;">
 
-<a href="./res/resume.pdf" target="_blank" class="action-btn main-btn">
+<a href="./res/resume.pdf"
+   target="_blank"
+   class="action-btn main-btn"
+   onclick="gtag('event','resume_click',{
+     event_category:'engagement',
+     event_label:'Resume Download'
+   });">
   📄 Resume
 </a>
 
