@@ -2581,3 +2581,22 @@ body{
   transform: translateY(0);
 }
 /* ===== /Process 2 ===== */
+/* ===== Process 3: Cursor Glow ===== */
+#cursorGlow{
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  left: -999px;
+  top: -999px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(circle, rgba(0,229,255,0.18), rgba(0,229,255,0) 60%);
+  filter: blur(2px);
+  transition: transform 0.05s linear;
+}
+
+@media (max-width: 768px){
+  #cursorGlow{ display:none; } /* disable on mobile */
+}
+/* ===== /Process 3 ===== */
