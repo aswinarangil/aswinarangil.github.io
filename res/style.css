@@ -2600,3 +2600,17 @@ body{
   #cursorGlow{ display:none; } /* disable on mobile */
 }
 /* ===== /Process 3 ===== */
+/* ===== Process 4: Hero Text Animation ===== */
+.hero-name{
+  opacity: 0;
+  transform: translateY(25px);
+  animation: heroFadeUp 1.2s ease forwards;
+}
+
+@keyframes heroFadeUp{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== /Process 4 ===== */
