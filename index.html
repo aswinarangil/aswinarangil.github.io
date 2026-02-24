@@ -210,6 +210,15 @@ $('ul.tabs').on('click', 'a', function(){
   }, 50);
 });
 /* ===== /Process 2 ===== */
+   /* ===== Process 3: Cursor Glow Logic ===== */
+var glow = document.getElementById("cursorGlow");
+if(glow){
+  document.addEventListener("mousemove", function(e){
+    glow.style.left = (e.clientX - 110) + "px";
+    glow.style.top  = (e.clientY - 110) + "px";
+  });
+}
+/* ===== /Process 3 ===== */
   });
 }
 /* ===== Safe Navbar Shrink ===== */
