@@ -2536,3 +2536,36 @@ body{
 }
 
 /* ===== /Process 48 ===== */
+/* ===== Impact Numbers (Process 1) ===== */
+.impact-strip{
+  margin: 16px auto 0 auto;
+  max-width: 720px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.impact-item{
+  min-width: 160px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.impact-num{
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.impact-label{
+  font-size: 12px;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+/* ===== /Impact Numbers ===== */
