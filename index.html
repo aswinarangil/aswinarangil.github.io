@@ -340,7 +340,12 @@ if(topBtn){
 
 <div class="contact-grid">
 
-  <a href="https://wa.me/919567863206" target="_blank" class="contact-item">
+  <a href="https://wa.me/919567863206"
+   target="_blank"
+   onclick="gtag('event','whatsapp_click',{
+     event_category:'engagement',
+     event_label:'WhatsApp Contact'
+   });">
     <div class="contact-icon">
   <i class="material-icons">chat</i>
     </div>
