@@ -79,19 +79,21 @@
   });
     </script>
     <script>
-  const correctPassword = "YourPasswordHere"; // replace with your password
+const correctPassword = "YourPasswordHere"; // replace with your password
 
-  document.querySelector("form").addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent default form submission
-    const enteredPassword = this.querySelector("input[name='password']").value;
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault(); // prevent default form submission
+  const enteredPassword = this.querySelector("input[name='password']").value;
+  const errorDiv = document.getElementById("error-message");
 
-    if (enteredPassword === correctPassword) {
-      // Redirect to protected portfolio
-      window.location.href = "protected/index.html";
-    } else {
-      alert("Incorrect password. Please try again.");
-    }
-  });
+  if (enteredPassword === correctPassword) {
+    // Redirect to protected portfolio
+    window.location.href = "protected/index.html";
+  } else {
+    // Show error message
+    errorDiv.style.display = "block";
+  }
+});
     </script>
 </body>
 </html>
