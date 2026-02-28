@@ -62,6 +62,31 @@
       <button type="submit">Submit</button>
     </form>
   </div>
+        <script>
+const correctPassword = "YourPasswordHere"; // replace with your password
+
+const form = document.querySelector("form");
+const passwordInput = form.querySelector("input[name='password']");
+const errorDiv = document.getElementById("error-message");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); // prevent default form submission
+  const enteredPassword = passwordInput.value;
+
+  if (enteredPassword === correctPassword) {
+    // Redirect to protected portfolio
+    window.location.href = "protected/index.html";
+  } else {
+    // Show error message
+    errorDiv.style.display = "block";
+  }
+});
+
+// Hide error message when user starts typing again
+passwordInput.addEventListener("input", function() {
+  errorDiv.style.display = "none";
+});
+        </script>
     </body>
     <script>
   const correctPassword = "928811"; // replace with your desired password
