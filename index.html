@@ -62,8 +62,9 @@
       <button type="submit">Submit</button>
     </form>
   </div>
+        const correctPassword = "YourPasswordHere"; // replace with your password
         <script>
-const correctPassword = "928811"; // replace with your password
+const correctPassword = "928811"; // <-- replace this with your real password
 
 const form = document.querySelector("form");
 const passwordInput = form.querySelector("input[name='password']");
@@ -77,48 +78,13 @@ form.addEventListener("submit", function(e) {
     // Redirect to protected portfolio
     window.location.href = "protected/index.html";
   } else {
-    // Show error message
-    errorDiv.style.display = "block";
+    errorDiv.style.display = "block"; // show error message
   }
 });
 
-// Hide error message when user starts typing again
 passwordInput.addEventListener("input", function() {
-  errorDiv.style.display = "none";
+  errorDiv.style.display = "none"; // hide error on typing
 });
         </script>
-    </body>
-    <script>
-  const correctPassword = "928811"; // replace with your desired password
-   <small>Hint: Check your email if you forget the password</small>
-  document.querySelector("form").addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent default form submission
-    const enteredPassword = this.querySelector("input[name='password']").value;
-
-    if (enteredPassword === correctPassword) {
-      // Redirect to protected portfolio
-      window.location.href = "protected/index.html";
-    } else {
-      alert("Incorrect password. Please try again.");
-    }
-  });
-    </script>
-    <script>
-const correctPassword = "928811"; // replace with your password
-
-document.querySelector("form").addEventListener("submit", function(e) {
-  e.preventDefault(); // prevent default form submission
-  const enteredPassword = this.querySelector("input[name='password']").value;
-  const errorDiv = document.getElementById("error-message");
-
-  if (enteredPassword === correctPassword) {
-    // Redirect to protected portfolio
-    window.location.href = "protected/index.html";
-  } else {
-    // Show error message
-    errorDiv.style.display = "block";
-  }
-});
-    </script>
 </body>
 </html>
