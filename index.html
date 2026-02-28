@@ -75,5 +75,20 @@
     }
   });
     </script>
+    <script>
+  const correctPassword = "YourPasswordHere"; // replace with your password
+
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent default form submission
+    const enteredPassword = this.querySelector("input[name='password']").value;
+
+    if (enteredPassword === correctPassword) {
+      // Redirect to protected portfolio
+      window.location.href = "protected/index.html";
+    } else {
+      alert("Incorrect password. Please try again.");
+    }
+  });
+    </script>
 </body>
 </html>
