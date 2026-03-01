@@ -179,7 +179,24 @@ form.addEventListener("submit", function(e) {
     errorDiv.style.display = "block";
   }
 });
+form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const enteredPassword = passwordInput.value;
+    const enteredHash = await hashPassword(enteredPassword);
 
+    // Show loader
+    document.getElementById("loader").style.display = "block";
+
+    // Small delay to simulate processing
+    setTimeout(function() {
+        if (enteredHash === correctPasswordHash) {
+            window.location.href = "protected/index.html"; // redirect if correct
+        } else {
+            errorDiv.style.display = "block";
+            document.getElementById("loader").style.display = "none"; // hide loader
+        }
+    }, 1000); // 1 second delay
+});
 // Hide error when user starts typing again
 passwordInput.addEventListener("input", function() {
   errorDiv.style.display = "none";
