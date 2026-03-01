@@ -16,14 +16,18 @@
   margin: 0;
 }
         .login-container {
-  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); /* modern secure gradient */
+  width: 320px; /* fixed width */
+  max-width: 90%; /* responsive on smaller screens */
+  margin: auto;   /* ensures horizontal centering */
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
   color: #fff;
   text-align: center;
-  width: 320px; /* fixed width for neat layout */
-  margin: auto; /* center horizontally */
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 0.6s forwards;
 }
 
 input[type="password"] {
