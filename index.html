@@ -164,16 +164,7 @@ button:hover {
         <div id="loader" style="display:none; margin: 20px auto; border: 5px solid #f3f3f3; border-top: 5px solid #0073b1; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
 </div>
     </div>
-
     <script>
-async function hashPassword(password) {
-  const msgUint8 = new TextEncoder().encode(password);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-  return hashHex;
-}
-
 // SHA-256 hash function
 async function hashPassword(password) {
     const msgUint8 = new TextEncoder().encode(password);
