@@ -175,27 +175,44 @@ async function hashPassword(password) {
   return hashHex;
 }
 
-// SHA-256 hash of 928811
-const correctPasswordHash = "f0b0d90e1f1d7e5d2c6a68d5f508ee401c601e95b06deac92b1cf101cc8b6d04"; // SHA-256 of 928811
+// SHA-256 hash function
+async function hashPassword(password) {
+    const msgUint8 = new TextEncoder().encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
+}
 
-const form = document.querySelector("form");
-const passwordInput = document.getElementById("password");
-const errorDiv = document.getElementById("error-message");
+// Wait for DOM to load
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    const passwordInput = document.getElementById("password");
+    const errorDiv = document.getElementById("error-message");
+    const correctPasswordHash = "f0b0d90e1f1d7e5d2c6a68d5f508ee401c601e95b06deac92b1cf101cc8b6d04";
 
-form.addEventListener("submit", async function(e) {
-    e.preventDefault();
-    const enteredPassword = passwordInput.value;
-    const enteredHash = await hashPassword(enteredPassword);
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault(); // prevents page reload
+        const enteredPassword = passwordInput.value;
+        const enteredHash = await hashPassword(enteredPassword);
 
-    if (enteredHash === correctPasswordHash) {
-        window.location.href = "protected/index.html"; // redirect if correct
-    } else {
-        errorDiv.style.display = "block";
-    }
-});
+        // Show loader if you added one
+        const loader = document.getElementById("loader");
+        if (loader) loader.style.display = "block";
 
-passwordInput.addEventListener("input", function() {
-    errorDiv.style.display = "none";
+        setTimeout(function() {
+            if (enteredHash === correctPasswordHash) {
+                window.location.href = "protected/index.html"; // correct password
+            } else {
+                errorDiv.style.display = "block"; // wrong password
+                if (loader) loader.style.display = "none";
+            }
+        }, 1000);
+    });
+
+    passwordInput.addEventListener("input", function() {
+        errorDiv.style.display = "none"; // hide error when typing
+    });
 });
     </script>
     
