@@ -195,26 +195,26 @@ async function hashPassword(password) {
 }
 
 // SHA-256 hash of 928811
-const correctPasswordHash = "f0b0d90e1f1d7e5d2c6a68d5f508ee401c601e95b06deac92b1cf101cc8b6d04"; 
+const correctPasswordHash = "f0b0d90e1f1d7e5d2c6a68d5f508ee401c601e95b06deac92b1cf101cc8b6d04"; // SHA-256 of 928811
 
 const form = document.querySelector("form");
-const passwordInput = form.querySelector("input[name='password']");
+const passwordInput = document.getElementById("password");
 const errorDiv = document.getElementById("error-message");
 
 form.addEventListener("submit", async function(e) {
-  e.preventDefault();
-  const enteredPassword = passwordInput.value;
-  const enteredHash = await hashPassword(enteredPassword);
+    e.preventDefault();
+    const enteredPassword = passwordInput.value;
+    const enteredHash = await hashPassword(enteredPassword);
 
-  if (enteredHash === correctPasswordHash) {
-    window.location.href = "protected/index.html";
-  } else {
-    errorDiv.style.display = "block";
-  }
+    if (enteredHash === correctPasswordHash) {
+        window.location.href = "protected/index.html"; // redirect if correct
+    } else {
+        errorDiv.style.display = "block";
+    }
 });
 
 passwordInput.addEventListener("input", function() {
-  errorDiv.style.display = "none";
+    errorDiv.style.display = "none";
 });
     </script>
     
