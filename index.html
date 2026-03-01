@@ -184,8 +184,6 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault(); // prevents page reload
         const enteredPassword = passwordInput.value;
         const enteredHash = await hashPassword(enteredPassword);
-        errorDiv.style.display = "block";
-errorDiv.innerText = enteredHash;
 
         // Show loader if you added one
         const loader = document.getElementById("loader");
