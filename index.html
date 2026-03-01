@@ -151,22 +151,30 @@ button:hover {
     </h3>
 
     <!-- Password form -->
-    <form style="text-align:center;">
-<div style="margin-bottom:15px;">
-    
-    
-    <button type="button" id="togglePassword"
-            style="padding:10px; border:none; background:#0073b1; color:white; border-radius:4px; cursor:pointer;">
-        Show
-    </button>
-</div>
-        <br>
-        <button type="submit"
-                style="padding:10px 20px; border:none; border-radius:4px; background-color:#0073b1; color:white; cursor:pointer; font-weight:bold;">
-            Submit
+<form style="text-align:center;">
+
+    <div style="margin-bottom:15px;">
+        <input type="password" id="password" name="password" placeholder="Enter Password"
+               style="padding:10px; width:220px; border-radius:4px; border:1px solid #ccc;">
+        
+        <button type="button" id="togglePassword"
+                style="padding:10px; border:none; background:#0073b1; color:white; border-radius:4px; cursor:pointer;">
+            Show
         </button>
-        <div id="error-message" style="color:red; display:none; margin-top:10px;">Incorrect password</div>
-    </form>
+    </div>
+
+    <br>
+
+    <button type="submit"
+            style="padding:10px 20px; border:none; border-radius:4px; background-color:#0073b1; color:white; cursor:pointer; font-weight:bold;">
+        Submit
+    </button>
+
+    <div id="error-message" style="color:red; display:none; margin-top:10px;">
+        Incorrect password
+    </div>
+
+</form>
         <div id="loader" style="display:none; margin: 20px auto; border: 5px solid #f3f3f3; border-top: 5px solid #0073b1; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
 </div>
     </div>
