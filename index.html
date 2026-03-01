@@ -185,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault(); // prevents page reload
         const enteredPassword = passwordInput.value;
         const enteredHash = await hashPassword(enteredPassword);
+        console.log("Generated Hash:", enteredHash);
 
         // Show loader if you added one
         const loader = document.getElementById("loader");
