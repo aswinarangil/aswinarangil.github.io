@@ -2727,3 +2727,23 @@ body{
 .reveal.active .skill-bar-fill {
     width: var(--percent);
 }
+/* Fix for Experience Section Gaps */
+.experience-grid {
+  display: block;
+  columns: 2; /* Creates two columns naturally */
+  column-gap: 20px;
+}
+
+/* Ensure cards don't break across columns */
+.experience-grid .timeline-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Mobile fix: back to 1 column on small screens */
+@media only screen and (max-width: 600px) {
+  .experience-grid {
+    columns: 1;
+  }
+}
