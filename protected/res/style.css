@@ -2693,3 +2693,37 @@ body{
   box-shadow: 0 0 10px var(--accent);
 }
 
+/* Premium Skill Bars */
+.skill-container {
+    margin-bottom: 25px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.skill-bar-bg {
+    background: rgba(255, 255, 255, 0.1);
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    box-shadow: 0 0 15px rgba(38, 166, 154, 0.5);
+    width: 0%; /* Starts at 0 for animation */
+    transition: width 1.5s cubic-bezier(0.1, 0.5, 0.5, 1);
+}
+
+/* Animation trigger when the section becomes active on scroll */
+.reveal.active .skill-bar-fill {
+    width: var(--percent);
+}
