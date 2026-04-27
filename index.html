@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00aaff, #00ffaa);
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.15);  /* slightly transparent */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 320px;   /* keeps content in column */
+}
+.login-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+        button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #005582; /* slightly darker on hover */
+}
+input[type="password"] {
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1f2a36;
+  color: #fff;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #28a745; /* green = secure */
+  padding: 12px 25px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+        .login-container {
+  /* Fade-in animation */
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00aaff, #00ffaa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.15);  /* slightly transparent */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 320px;
+}
+  input[type="password"] {
+    padding: 10px;
+    width: 220px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0073b1;  /* Original color */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+
+  /* Smooth transition for hover */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005582;  /* Darker shade on hover */
+  transform: scale(1.1);       /* Slightly enlarge button */
+}
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }    
+    </style>
+    <title>Protected Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        input { padding: 10px; margin: 10px 0; width: 200px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+    <!-- Title -->
+    <h1 style="color:#000000; font-size:28px; text-align:center; margin-bottom:10px;">
+        Aswin Arangil
+    </h1>
+
+    <!-- Subtitle -->
+    <h3 style="color:#333333; font-weight:400; text-align:center; margin-bottom:20px;">
+        IT Infrastructure & Desktop Support Engineer
+    </h3>
+
+    <!-- Photo -->
+    <img src="../res/aswn.jpg" alt="My Photo"
+         style="width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 20px auto;">
+
+    <!-- Password instruction -->
+    <h3 style="color:#333333; font-weight:400; text-align:center; margin-bottom:15px;">
+        Enter the password to access the portfolio
+    </h3>
+
+    <!-- Password form -->
+<form style="text-align:center;">
+
+    <div style="margin-bottom:15px;">
+        <input type="password" id="password" name="password" placeholder="Enter Password"
+               style="padding:10px; width:220px; border-radius:4px; border:1px solid #ccc;">
+        
+        <button type="button" id="togglePassword"
+                style="padding:10px; border:none; background:#0073b1; color:white; border-radius:4px; cursor:pointer;">
+            Show
+        </button>
+    </div>
+
+    <br>
+
+    <button type="submit"
+            style="padding:10px 20px; border:none; border-radius:4px; background-color:#0073b1; color:white; cursor:pointer; font-weight:bold;">
+        Submit
+    </button>
+
+    <div id="error-message" style="color:red; display:none; margin-top:10px;">
+        Incorrect password
+    </div>
+
+</form>
+        <div id="loader" style="display:none; margin: 20px auto; border: 5px solid #f3f3f3; border-top: 5px solid #0073b1; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
+</div>
+    </div>
+    <script>
+// SHA-256 hash function
+async function hashPassword(password) {
+    const msgUint8 = new TextEncoder().encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
+}
+
+// Wait for DOM to load
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    const passwordInput = document.getElementById("password");
+    const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", function() {
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        togglePassword.textContent = "Hide";
+    } else {
+        passwordInput.type = "password";
+        togglePassword.textContent = "Show";
+    }
+});
+    const errorDiv = document.getElementById("error-message");
+    const correctPasswordHash = "eb9c28e32aec35dfb0233e540dc27587df61603ae7efa6f28753cb1dd1f4f43c";
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault(); // prevents page reload
+        const enteredPassword = passwordInput.value;
+        const enteredHash = await hashPassword(enteredPassword);
+
+        // Show loader if you added one
+        const loader = document.getElementById("loader");
+        if (loader) loader.style.display = "block";
+
+        setTimeout(function() {
+            if (enteredHash === correctPasswordHash) {
+                window.location.href = "protected/index.html"; // correct password
+            } else {
+                errorDiv.style.display = "block"; // wrong password
+                if (loader) loader.style.display = "none";
+            }
+        }, 1000);
+    });
+
+    passwordInput.addEventListener("input", function() {
+        errorDiv.style.display = "none"; // hide error when typing
+    });
+});
+    </script>
+    
+</body>
+</html>
