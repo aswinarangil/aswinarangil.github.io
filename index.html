@@ -1,124 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin Arangil | Secure Access</title>
     <link rel="stylesheet" href="./res/style_login.css">
-    
 </head>
 <body>
     <div class="login-container">
-    <!-- Title -->
-    <h1 style="color:#000000; font-size:28px; text-align:center; margin-bottom:10px;">
-        Aswin Arangil
-    </h1>
+        <img src="./res/aswn.jpg" class="user-profile" alt="Aswin Arangil">
 
-    <!-- Subtitle -->
-    <h3 style="color:#333333; font-weight:400; text-align:center; margin-bottom:20px;">
-        IT Infrastructure & Desktop Support Engineer
-    </h3>
+        <h2>Workstation Login</h2>
 
-    <!-- Photo -->
-    <img src="../res/aswn.jpg" alt="My Photo"
-         style="width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 20px auto;">
+        <form id="login-form">
+            <div style="margin-bottom:15px; position: relative;">
+                <input type="password" id="password" placeholder="Enter Access Key" required>
+                <button type="button" id="togglePassword" 
+                        style="position: absolute; right: 10px; top: 12px; background: none; border: none; color: #00e5ff; cursor: pointer; width: auto; padding: 0; font-size: 11px; font-weight: bold; letter-spacing: 1px;">
+                    SHOW
+                </button>
+            </div>
 
-    <!-- Password instruction -->
-    <h3 style="color:#333333; font-weight:400; text-align:center; margin-bottom:15px;">
-        Enter the password to access the portfolio
-    </h3>
+            <button type="submit" id="submit-btn">
+                <span id="btn-text">Unlock Portfolio</span>
+                <div class="spinner" id="loader"></div>
+            </button>
+        </form>
 
-    <!-- Password form -->
-<form style="text-align:center;">
-
-    <div style="margin-bottom:15px;">
-        <input type="password" id="password" name="password" placeholder="Enter Password"
-               style="padding:10px; width:220px; border-radius:4px; border:1px solid #ccc;">
-        
-        <button type="button" id="togglePassword"
-                style="padding:10px; border:none; background:#0073b1; color:white; border-radius:4px; cursor:pointer;">
-            Show
-        </button>
+        <div id="error-message">Access Denied: Invalid Key</div>
     </div>
 
-    <br>
-<button type="submit" id="submit-btn">
-    <span id="btn-text">Unlock Portfolio</span>
-    <div class="spinner" id="loader"></div>
-</button>
-    
-
-    <div id="error-message" style="color:red; display:none; margin-top:10px;">
-        Incorrect password
-    </div>
-
-</form>
-        <div id="loader" style="display:none; margin: 20px auto; border: 5px solid #f3f3f3; border-top: 5px solid #0073b1; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
-</div>
-    </div>
     <script>
-// SHA-256 hash function
-async function hashPassword(password) {
-    const msgUint8 = new TextEncoder().encode(password);
-    const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-    return hashHex;
-}
-
-// Wait for DOM to load
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    const passwordInput = document.getElementById("password");
-    const togglePassword = document.getElementById("togglePassword");
-
-togglePassword.addEventListener("click", function() {
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        togglePassword.textContent = "Hide";
-    } else {
-        passwordInput.type = "password";
-        togglePassword.textContent = "Show";
-    }
-});
-    const errorDiv = document.getElementById("error-message");
-    const correctPasswordHash = "eb9c28e32aec35dfb0233e540dc27587df61603ae7efa6f28753cb1dd1f4f43c";
-    form.addEventListener("submit", async function(e) {
-    e.preventDefault();
-    
-    const submitBtn = document.getElementById("submit-btn");
-    const btnText = document.getElementById("btn-text");
-    const loader = document.getElementById("loader");
-
-    // 1. Start Loading State
-    submitBtn.classList.add("loading");
-    if(btnText) btnText.style.opacity = "0";
-    if(loader) loader.style.display = "block";
-
-    const enteredPassword = passwordInput.value;
-    const enteredHash = await hashPassword(enteredPassword);
-
-    // 2. Artificial delay for "Security Processing" feel
-    setTimeout(function() {
-        if (enteredHash === correctPasswordHash) {
-            // Correct password - redirect
-            window.location.href = "protected/index.html"; 
-        } else {
-            // Wrong password - Reset UI
-            submitBtn.classList.remove("loading");
-            if(btnText) btnText.style.opacity = "1";
-            if(loader) loader.style.display = "none";
-            errorDiv.style.display = "block";
-            
-            // Shake effect for feedback
-            submitBtn.style.animation = "none";
-            setTimeout(() => { submitBtn.style.animation = "shake 0.4s"; }, 10);
+        // SHA-256 hash function
+        async function hashPassword(password) {
+            const msgUint8 = new TextEncoder().encode(password);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
         }
-    }, 1200); 
-});
-    
-    passwordInput.addEventListener("input", function() {
-        errorDiv.style.display = "none"; // hide error when typing
-    });
-});
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("login-form");
+            const passwordInput = document.getElementById("password");
+            const togglePassword = document.getElementById("togglePassword");
+            const errorDiv = document.getElementById("error-message");
+            const submitBtn = document.getElementById("submit-btn");
+            const btnText = document.getElementById("btn-text");
+            const loader = document.getElementById("loader");
+
+            const correctPasswordHash = "eb9c28e32aec35dfb0233e540dc27587df61603ae7efa6f28753cb1dd1f4f43c";
+
+            // Show/Hide Toggle Logic
+            togglePassword.addEventListener("click", function() {
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    togglePassword.textContent = "HIDE";
+                } else {
+                    passwordInput.type = "password";
+                    togglePassword.textContent = "SHOW";
+                }
+            });
+
+            // Login Logic
+            form.addEventListener("submit", async function(e) {
+                e.preventDefault();
+                
+                // Start Loading State
+                submitBtn.classList.add("loading");
+                btnText.style.display = "none";
+                loader.style.display = "block";
+                errorDiv.style.display = "none";
+
+                const enteredPassword = passwordInput.value;
+                const enteredHash = await hashPassword(enteredPassword);
+
+                // Artificial delay to feel like a "secure check"
+                setTimeout(function() {
+                    if (enteredHash === correctPasswordHash) {
+                        window.location.href = "protected/index.html"; 
+                    } else {
+                        // Reset if wrong
+                        submitBtn.classList.remove("loading");
+                        btnText.style.display = "block";
+                        loader.style.display = "none";
+                        errorDiv.style.display = "block";
+                        
+                        // Shake the button for feedback
+                        submitBtn.style.animation = "none";
+                        setTimeout(() => { submitBtn.style.animation = "shake 0.4s"; }, 10);
+                    }
+                }, 1200); 
+            });
+
+            passwordInput.addEventListener("input", () => {
+                errorDiv.style.display = "none";
+            });
+        });
     </script>
-    
 </body>
 </html>
