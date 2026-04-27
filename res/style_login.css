@@ -117,3 +117,34 @@ button:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
     }    
+/* Loading Spinner */
+.spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* State when button is clicked */
+button.loading {
+    color: transparent;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+button.loading .spinner {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
