@@ -81,24 +81,39 @@ togglePassword.addEventListener("click", function() {
     const errorDiv = document.getElementById("error-message");
     const correctPasswordHash = "eb9c28e32aec35dfb0233e540dc27587df61603ae7efa6f28753cb1dd1f4f43c";
     form.addEventListener("submit", async function(e) {
-        e.preventDefault(); // prevents page reload
-        const enteredPassword = passwordInput.value;
-        const enteredHash = await hashPassword(enteredPassword);
+    e.preventDefault();
+    
+    const submitBtn = document.getElementById("submit-btn");
+    const btnText = document.getElementById("btn-text");
+    const loader = document.getElementById("loader");
 
-        // Show loader if you added one
-        const loader = document.getElementById("loader");
-        if (loader) loader.style.display = "block";
+    // 1. Start Loading State
+    submitBtn.classList.add("loading");
+    if(btnText) btnText.style.opacity = "0";
+    if(loader) loader.style.display = "block";
 
-        setTimeout(function() {
-            if (enteredHash === correctPasswordHash) {
-                window.location.href = "protected/index.html"; // correct password
-            } else {
-                errorDiv.style.display = "block"; // wrong password
-                if (loader) loader.style.display = "none";
-            }
-        }, 1000);
-    });
+    const enteredPassword = passwordInput.value;
+    const enteredHash = await hashPassword(enteredPassword);
 
+    // 2. Artificial delay for "Security Processing" feel
+    setTimeout(function() {
+        if (enteredHash === correctPasswordHash) {
+            // Correct password - redirect
+            window.location.href = "protected/index.html"; 
+        } else {
+            // Wrong password - Reset UI
+            submitBtn.classList.remove("loading");
+            if(btnText) btnText.style.opacity = "1";
+            if(loader) loader.style.display = "none";
+            errorDiv.style.display = "block";
+            
+            // Shake effect for feedback
+            submitBtn.style.animation = "none";
+            setTimeout(() => { submitBtn.style.animation = "shake 0.4s"; }, 10);
+        }
+    }, 1200); 
+});
+    
     passwordInput.addEventListener("input", function() {
         errorDiv.style.display = "none"; // hide error when typing
     });
