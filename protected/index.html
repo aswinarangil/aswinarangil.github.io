@@ -1,0 +1,1466 @@
+ <!DOCTYPE html>
+<body>
+     <title>Aswin Arangil | IT Support Engineer | L2 Desktop Support | IT Infrastructure & Technical Support Specialist</title>
+     
+     <!--Import Google Icon Font-->
+     <link href="./res/icon" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="./res/materialize.css" media="screen,projection">
+      <link type="text/css" rel="stylesheet" href="./res/style.css">
+     <style>
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
+}
+     </style>
+     <style>
+.action-btn {
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,150,136,0.35);
+}
+     </style>
+     <link rel="icon" type="image/png" href="./res/aswn.jpg">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="Aswin Arangil, IT Support Engineer, Desktop Support Engineer, L1 Support, L2 Support, Bangalore IT Jobs, Windows Support, Technical Support Engineer">
+     <!-- <meta property="og:site_name" content="haxzie.me"> -->
+      <meta property="og:title" content="Aswin&#39;s Portfolio">
+      <meta property="og:title" content="Aswin Arangil | IT Support Engineer">
+<meta property="og:description" content="8+ years in L1/L2 desktop support, Windows, Outlook, LAN/VPN, and SLA-driven IT operations.">
+<meta property="og:image" content="https://aswinarangil.github.io/res/aswn.jpg">
+<meta property="og:url" content="https://aswinarangil.github.io/">
+<meta property="og:type" content="website">
+     <meta property="og:url" content="https://aswinarangil.github.io">
+<meta property="og:site_name" content="Aswin Arangil Portfolio">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aswin Arangil | IT Support Engineer">
+<meta name="twitter:description" content="8+ years in L1/L2 desktop support, Windows, Outlook, LAN/VPN, and SLA-driven IT operations.">
+<meta name="twitter:image" content="https://aswinarangil.github.io/res/aswn.jpg">
+
+     <script async="" src="./res/analytics.js.download"></script><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101997744-1', 'auto');
+        ga('send', 'pageview');
+
+        </script>
+   </head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <body>
+    <div id="cursorGlow"></div>
+
+  <!-- ===== Global Floating Buttons (MUST be here) ===== -->
+
+  <a id="waFloat" class="float-btn whatsapp-float"
+     href="https://wa.me/919567863206"
+     target="_blank" rel="noopener"
+     title="WhatsApp" aria-label="WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+         alt="WhatsApp" class="float-icon">
+  </a>
+
+  <a id="backToTop" class="float-btn backtotop"
+     href="javascript:void(0)"
+     title="Back to top" aria-label="Back to top">
+    <svg class="float-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor"
+            d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </a>
+
+  <!-- ===== /Global Floating Buttons ===== -->
+
+  <!-- rest of your page continues... -->
+    <div id="scrollProgress"></div>
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="./res/jquery-2.1.1.min.js.download"></script>
+     <script type="text/javascript" src="./res/materialize.min.js.download"></script>
+     <script>
+     jQuery(document).ready(function(){
+         $('.materialboxed').materialbox();
+         $(".button-collapse").sideNav();
+          $('ul.tabs').tabs({
+  swipeable: false
+});
+      /* ===== Resume Modal Init ===== */
+if ($.fn.modal) {
+  $('.modal').modal();
+} else if ($.fn.leanModal) {
+  $('.modal').leanModal();
+}
+/* ===== /Resume Modal Init ===== */
+
+/* HARD STOP: prevent Materialize from behaving like a carousel */
+var $tc = $('.tabs-content');
+$tc.removeClass('carousel carousel-slider initialized');
+
+/* If a carousel instance exists, destroy it */
+try {
+  if (window.M && M.Carousel && $tc.length) {
+    var inst = M.Carousel.getInstance($tc[0]);
+    if (inst) inst.destroy();
+  }
+} catch(e) {}
+
+/* Neutralize any leftover transform that causes sliding */
+$tc.css({ transform: 'none' });
+
+
+/* Also neutralize any leftover transform that causes sliding */
+$tc.css({ transform: 'none' });
+      /* ===== Process 16: Scroll Progress Logic ===== */
+function updateScrollProgress(){
+  var doc = document.documentElement;
+  var scrollTop = window.pageYOffset || doc.scrollTop || document.body.scrollTop || 0;
+  var scrollHeight = (doc.scrollHeight || document.body.scrollHeight) - (doc.clientHeight || window.innerHeight);
+  var scrolled = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+
+  var bar = document.getElementById("scrollProgress");
+  if(bar){
+    bar.style.width = scrolled + "%";
+  }
+}
+
+updateScrollProgress();
+window.addEventListener("scroll", updateScrollProgress);
+setTimeout(updateScrollProgress, 250);
+/* ===== /Process 16 ===== */
+      /* ===== SAFE THEME TOGGLE ===== */
+var btn = document.getElementById("themeToggle");
+
+if(btn){
+  btn.addEventListener("click", function(){
+    var current = document.documentElement.getAttribute("data-theme");
+    if(current === "light"){
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      btn.textContent = "🌙";
+    }else{
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+      btn.textContent = "☀️";
+    }
+   /* ===== Process 31: Activate Reveal ===== */
+function activateReveal(){
+  document.querySelectorAll('.reveal-fade').forEach(function(el){
+    el.classList.add('active');
+  });
+}
+
+setTimeout(activateReveal, 150);
+/* ===== /Process 31 ===== */
+   /* ===== Process 2: Apply Fade on Tab Change ===== */
+function fadeActiveTab(){
+  // remove old states
+  document.querySelectorAll('.tabs-content > div').forEach(function(el){
+    el.classList.remove('tab-fade', 'show');
+    el.classList.add('tab-fade');
+  });
+
+  // show active tab content
+  var active = document.querySelector('.tabs-content > div.active');
+  if(active){
+    // small delay so transition triggers
+    setTimeout(function(){ active.classList.add('show'); }, 30);
+  }
+}
+
+// run on load and on tab click
+fadeActiveTab();
+document.querySelectorAll('.tabs .tab a').forEach(function(a){
+  a.addEventListener('click', function(){
+    setTimeout(fadeActiveTab, 60);
+  });
+});
+/* ===== /Process 2 ===== */
+   /* ===== Process 3: Cursor Glow Logic ===== */
+var glow = document.getElementById("cursorGlow");
+
+function moveGlow(x, y){
+  if(!glow) return;
+  glow.style.left = x + "px";
+  glow.style.top = y + "px";
+}
+
+document.addEventListener("mousemove", function(e){
+  moveGlow(e.clientX, e.clientY);
+});
+
+document.addEventListener("touchmove", function(e){
+  if(!e.touches || !e.touches[0]) return;
+  moveGlow(e.touches[0].clientX, e.touches[0].clientY);
+}, {passive:true});
+/* ===== /Process 3 ===== */
+   /* ===== Process 45: Trigger Page Entrance ===== */
+document.body.classList.add("page-enter");
+/* ===== /Process 45 ===== */
+  });
+}
+/* ===== Safe Navbar Shrink ===== */
+function handleNavbar(){
+  var nav = document.querySelector("nav.nav-extended");
+  if(!nav) return;
+
+  if(window.scrollY > 40){
+    nav.classList.add("shrink");
+  } else {
+    nav.classList.remove("shrink");
+  }
+}
+
+handleNavbar();
+window.addEventListener("scroll", handleNavbar);
+/* ===== /Safe Navbar Shrink ===== */
+/* Load saved theme */
+var saved = localStorage.getItem("theme");
+if(saved){
+  document.documentElement.setAttribute("data-theme", saved);
+  if(btn){
+    btn.textContent = (saved === "light") ? "☀️" : "🌙";
+  }
+}
+   /* ===== Process 18: Back To Top Logic ===== */
+var topBtn = document.getElementById("backToTop");
+
+function toggleTopBtn(){
+  if(!topBtn) return;
+  if(window.pageYOffset > 50){
+    topBtn.classList.add("show");
+  }else{
+    topBtn.classList.remove("show");
+  }
+}
+
+toggleTopBtn();
+window.addEventListener("scroll", toggleTopBtn);
+
+if(topBtn){
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+/* ===== /Process 18 ===== */
+     });
+     </script>
+ 
+
+
+
+     <!-- navigation bar -->
+     <nav class="nav-extended">
+  <div class="nav-wrapper grey darken-4">
+    <a href="#" class="brand-logo" style="margin-left:15px;">Aswin A</a>
+<a id="themeToggle" class="theme-toggle" href="javascript:void(0)" title="Toggle theme">🌙</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Experience</a></li>
+      <li>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aswina30@gmail.com"
+     target="_blank"
+     rel="noopener"
+     title="Send me an email"
+     class="gmail-link">
+
+    <img src="./res/gm.png"
+         alt="Gmail"
+         class="gmail-icon">
+
+    Contact
+  </a>
+</li>
+    </ul>
+  </div>
+<div class="hero-role">
+L2 Desktop Support Engineer | IT Infrastructure | Enterprise Technical Support
+</div>
+<!-- Tech Stack Strip (Elite) -->
+<div class="center-align" style="margin-top:10px;">
+  <span style="display:inline-block; padding:7px 14px; border-radius:999px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    color:#ffffff; font-weight:700; font-size:13px; line-height:1.8;">
+
+    Windows 10/11 • Microsoft Outlook & Email Support • Active Directory (User & Password Management) • VPN & RDP Support • LAN / DNS / DHCP Troubleshooting • Ticketing Systems • Printer & Peripheral Support • Remote Desktop Support
+  </span>
+</div>
+
+     
+       <div style="text-align:center;">
+  <span class="avail-badge">✅ Open to Onsite Roles | Kochi / Bangalore | Immediate Joiner</span>
+       </div>
+<ul class="tabs tabs-transparent">
+  <li class="tab"><a class="active" href="#home">Home</a></li>
+  <li class="tab"><a href="#projects">Experience</a></li>
+ <li class="tab"><a href="#proficiencies">TECHNICAL PROFICIENCIES</a></li>
+  <li class="tab"><a href="#softskills">Soft Skills</a></li>
+  <li class="tab"><a href="#contact">Contact</a></li>
+</ul>
+  </div>
+     </nav>
+        <div class="row">
+  <div class="col s12">
+       </div>
+        </div>
+
+<!-- Contact Tab -->
+<div id="contact" class="reveal-fade">
+
+<div class="contact-grid">
+
+  <a href="https://wa.me/919567863206" target="_blank" class="contact-item">
+    <div class="contact-icon">
+  <i class="material-icons">chat</i>
+    </div>
+    <div>
+      <div class="contact-title">WhatsApp</div>
+      <div class="contact-sub">Chat instantly</div>
+    </div>
+  </a>
+
+  <a href="mailto:aswina30@gmail.com" class="contact-item">
+    <div class="contact-icon">
+  <i class="material-icons">email</i>
+    </div>
+    <div>
+      <div class="contact-title">Email</div>
+      <div class="contact-sub">aswina30@gmail.com</div>
+    </div>
+  </a>
+
+  <a href="https://in.linkedin.com/in/aswin-a-arangil"
+     target="_blank"
+     class="contact-item">
+    <div class="contact-icon">
+  <i class="material-icons">link</i>
+    </div>
+    <div>
+      <div class="contact-title">LinkedIn</div>
+      <div class="contact-sub">View Profile</div>
+    </div>
+  </a>
+
+</div>
+          </div>
+
+        </div>
+
+      </div> <!-- card-panel -->
+
+    </div> <!-- col -->
+  </div> <!-- row -->
+
+</div> <!-- /contact -->
+
+    
+    <div id="proficiencies" class="reveal-fade tab-content">
+  <div class="row pad20top">
+    <div class="col s12 m10 offset-m1">
+      <div class="card-panel grey darken-4 premium-card glass-card">
+        <h4 class="white-text section-title center-align">TECHNICAL PROFICIENCIES</h4>
+        <div class="divider teal" style="margin:20px 0;"></div>
+        
+        <div class="case-study" style="border-left: 4px solid #4caf50; margin-bottom: 30px; background: rgba(76, 175, 80, 0.05);">
+            <h3 class="project-title" style="color: #a5d6a7; margin-top:0;">🛡️ Multi-Branch Endpoint Security & Control</h3>
+            <p><strong>Expertise:</strong> Implementing layered security controls across branch systems in <b>Malappuram, Kozhikode, and Sultan Bathery</b>.</p>
+            <div class="troubleshooting-steps">
+                <ul style="list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem;">
+                    <li>✅ GPO Background Restrictions</li>
+                    <li>✅ USB Storage Block (Anti-Theft)</li>
+                    <li>✅ Registry & Control Panel Lock</li>
+                    <li>✅ BIOS Password Protection</li>
+                    <li>✅ Application Usage Restrictions</li>
+                    <li>✅ Enterprise Software Auditing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="case-study" style="border-left: 4px solid #2196f3; margin-bottom: 30px; background: rgba(33, 150, 243, 0.05);">
+            <h3 class="project-title" style="color: #90caf9; margin-top:0;">📦 Asset Management & Inventory Systems</h3>
+            <p><strong>Expertise:</strong> Managing high-volume hardware deployments and secure asset allocation.</p>
+            <div class="troubleshooting-steps">
+                <ul style="list-style: none; padding-left: 0; font-size: 0.9rem;">
+                    <li>📋 <b>Allocation Checklist:</b> Executing standardized verification for serial numbers and user assignments.</li>
+                    <li>🖥️ <b>Inventory Management:</b> Utilizing centralized systems for real-time tracking and audit readiness.</li>
+                    <li>🛠️ <b>Compliance:</b> Ensuring all endpoints meet OS and application patch standards before deployment.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="case-study" style="border-left: 4px solid #b0bec5; margin-bottom: 30px;">
+            <h3 class="project-title" style="color: #b0bec5; margin-top:0;">🌐 Network Access (NAC) & Security Operations</h3>
+            <p><strong>Focus:</strong> Maintaining zero-trust integrity in NAC-controlled banking environments.</p>
+            <div class="troubleshooting-steps">
+                <ul style="list-style: none; padding-left: 0; font-size: 0.9rem;">
+                    <li>🔹 <b>NAC Support:</b> Troubleshooting endpoint compliance failures to resolve network authentication issues.</li>
+                    <li>🔹 <b>McAfee Encryption:</b> Implementing full-disk encryption to prevent unauthorized data access.</li>
+                    <li>🔹 <b>Mobile@Work:</b> Managing secure enrollment and certificate-based authentication for mobile devices.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="case-study" style="border-left: 4px solid #ff9800; margin-bottom: 30px;">
+            <h3 class="project-title" style="color: #ff9800; margin-top:0;">🔐 Active Directory Trust & Recovery</h3>
+            <p><strong>Scenario:</strong> Resolving workstation domain trust failures without re-imaging.</p>
+            <div class="troubleshooting-steps">
+                <ul style="list-style: none; padding-left: 0; font-size: 0.9rem;">
+                    <li>🚀 <b>PowerShell:</b> Utilized <code>Test-ComputerSecureChannel</code> to repair broken secure channels.</li>
+                    <li>🚨 <b>Emergency Access:</b> Expert in WinRE techniques for local admin password resets during lockout events.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="case-study" style="border-left: 4px solid #00bcd4;">
+            <h3 class="project-title" style="color: #4dd0e1; margin-top:0;">🖵 Biometric Setup (SBI/Finacle)</h3>
+            <p><strong>Scenario:</strong> End-to-end installation and network configuration of biometric authentication systems.</p>
+            <div class="troubleshooting-steps">
+                <ul style="list-style: none; padding-left: 0; font-size: 0.9rem;">
+                    <li>✅ <b>Installation:</b> Managed driver deployment and troubleshooting for secure banking access.</li>
+                </ul>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+    
+        
+      <div class="section-divider"></div>
+        <!-- Soft Skills Section -->
+<div id="softskills" class="reveal-fade">
+  <div class="row pad20top">
+    <div class="col s12 m8 offset-m2">
+      <div class="card-panel grey darken-4">
+
+        <h4 class="white-text section-title">SOFT SKILLS</h4>
+        <div class="divider teal" style="margin:20px 0;"></div>
+
+        <ul class="exp-bullets">
+  <li>• Strong End-User Communication</li>
+  <li>• Technical Troubleshooting & Problem Solving</li>
+  <li>• Customer-Focused IT Support</li>
+  <li>• SLA & Incident Resolution Management</li>
+  <li>• Cross-Team Collaboration</li>
+  <li>• Quick Adaptation to New Technologies</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="section-divider"></div>
+ <div id="home" class="reveal-fade">
+   <!-- Page Layout here -->
+
+   <div class="row pad20top #333333">
+
+     <div class="col s12 m7 l6">
+
+       <div class="row">
+         <div class="card grey darken-4 z-index-4 pad20top premium-card glass-card hero-glass">
+            
+         <div class="card grey darken-4 z-index-4 pad20top premium-card glass-card hero-glass">
+            
+<div class="center-align" style="padding-top:16px;">
+  <img src="./res/aswn.jpg"
+     alt="Aswin Arangil"
+     class="responsive-img profile-pic">
+       
+</div>
+ </div>
+            
+              <!-- Action Buttons -->
+<div style="display:flex; 
+            justify-content:center; 
+            gap:18px; 
+            flex-wrap:wrap; 
+            margin-top:18px;">
+
+<a href="./res/resume.pdf" target="_blank" class="action-btn main-btn">
+  📄 Resume
+</a>
+
+<a href="https://youtu.be/CU93QiVJ6O0?si=yTnC9E8paNJEwZKC" target="_blank" class="action-btn main-btn">
+  🎥 Video
+</a>
+
+
+<a href="https://aswinarangil.github.io" target="_blank" class="action-btn main-btn">
+  🌐 Portfolio
+</a>
+
+</div>
+
+<div class="card-content" style="padding-top:12px;">
+
+  <h1 class="hero-name center-align">Aswin Arangil</h1>
+<p class="hero-role center-align">Senior IT Support Engineer</p>
+ 
+
+<div class="center-align" style="margin-top:12px;">
+  <span class="green-pill">
+  L2 Desktop Support Engineer | 8+ Years Experience | Banking & Enterprise IT Infrastructure
+</span>
+</div>
+
+<div class="center-align" style="margin-top:10px;">
+  <span style="display:inline-block; padding:6px 16px; border-radius:50px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); color:#cccccc; font-size:13px; font-weight:500;">
+    Supporting 100+ End Users | SLA-Driven Incident Resolution | Enterprise Desktop, Network & End-User Support
+  </span>
+</div>
+
+
+<!-- 🔥 ADD THIS HERE -->
+<div class="center-align" style="margin-top:10px;">
+  <span style="display:inline-block; padding:6px 12px; border-radius:999px;
+    background:rgba(38,166,154,0.12);
+    border:1px solid rgba(38,166,154,0.35);
+    color:#26a69a;
+    font-weight:800;
+    font-size:13px;">
+    98% SLA Compliance | 100+ End Users Supported | 8+ Years in Enterprise IT Support
+  </span>
+</div>
+
+<div style="margin-top:10px;">
+  <span class="domain-badge enterprise">
+    Open to L2 Desktop Support Engineer / IT Support Engineer Opportunities
+  </span>
+</div>
+    <!-- PASTE COUNTER HERE -->
+    <div class="center-align" style="margin-top:10px;">
+  <span style="display:inline-flex;
+               align-items:center;
+               gap:8px;
+               padding:8px 14px;
+               border-radius:999px;
+               background:rgba(255,255,255,0.08);
+               border:1px solid rgba(255,255,255,0.15);">
+
+    <span id="expCount"
+          style="color:#26a69a;
+                 font-size:20px;
+                 font-weight:900;">0</span>
+
+    <span style="color:#ffffff;
+                 font-size:16px;
+                 font-weight:800;">
+      Years Experienced
+    </span>
+
+  </span>
+    </div>
+
+ 
+
+</div>
+<p style="color:#ffffff; font-size:15px; line-height:1.9; margin:14px 0 0 0; letter-spacing:0.2px;">
+     <div style="margin-top:20px; padding:16px; background:#1e1e1e; border-radius:10px;">
+<div class="card home-card premium-card">
+
+
+  
+
+  <!-- Name -->
+  <div class="card-content" style="padding:18px 6px 6px 6px;">
+
+       <div style="text-align:center; margin-top:10px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+
+  <span style="display:inline-block; padding:6px 12px; border-radius:999px; background:#26a69a; color:#ffffff; font-weight:700; font-size:13px;">
+    ✅ Immediate Joiner
+  </span>
+
+  
+
+       </div>
+
+    <!-- Core Competencies (Modern) -->
+<div style="margin-top:18px; padding:14px 14px; border-radius:14px;
+            background:rgba(255,255,255,0.06);
+            border:1px solid rgba(255,255,255,0.06);">
+
+  <div class="white-text" style="font-weight:900; font-size:15px; letter-spacing:0.3px;">
+    Core Competencies
+  </div>
+
+<div class="white-text" style="margin-top:10px; line-height:1.9; font-size:14px;">
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> L1 / L2 Desktop Support &nbsp;&nbsp;
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> Windows 10 / 11 Troubleshooting<br>
+
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> Outlook & Email Configuration &nbsp;&nbsp;
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> Active Directory (User Management)<br>
+
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> LAN / VPN / DNS / DHCP Support &nbsp;&nbsp;
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> Remote User Support (RDP / TeamViewer)<br>
+
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> SLA-based Ticket Handling &nbsp;&nbsp;
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> Hardware & Printer Troubleshooting<br>
+
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> IT Asset Management &nbsp;&nbsp;
+    <span class="teal-text text-lighten-2" style="font-weight:800;">•</span> Endpoint Security & Device Configuration
+</div>
+</div>
+
+    <!-- Professional Summary Highlight -->
+<div style="margin-top:18px; padding:16px 16px; border-radius:14px;
+            background:rgba(38,166,154,0.12);
+            border-left:4px solid #26a69a;">
+
+  <div class="white-text" style="font-size:15px; line-height:1.8; font-weight:500;">
+    Experienced <span style="font-weight:800;">IT Infrastructure & Desktop Support Engineer</span> with 8+ years of experience supporting enterprise and banking environments. 
+    Skilled in L1/L2 technical support, Windows 10/11 administration, Active Directory user management, Outlook/email configuration, and LAN/VPN connectivity. 
+    Strong background in incident management, SLA-based ticket resolution, and end-user support for large-scale organizations. 
+    Known for structured troubleshooting, minimizing downtime, and delivering reliable IT support with high user satisfaction.
+  </div>
+
+</div>
+<div style="margin-top:20px; display:flex; justify-content:space-between; flex-wrap:wrap; text-align:center;">
+<div style="margin-top:20px; display:flex; justify-content:space-between; flex-wrap:wrap; text-align:center;">
+
+  <div style="flex:1; min-width:120px; margin:10px;">
+    <div style="font-size:22px; font-weight:800; color:#26a69a;">8+ Years</div>
+    <div style="font-size:13px; color:#cccccc;">IT Support Experience</div>
+  </div>
+
+  <div style="flex:1; min-width:120px; margin:10px;">
+    <div style="font-size:22px; font-weight:800; color:#26a69a;">L1 / L2</div>
+    <div style="font-size:13px; color:#cccccc;">Desktop Support Expertise</div>
+  </div>
+
+  <div style="flex:1; min-width:120px; margin:10px;">
+    <div style="font-size:22px; font-weight:800; color:#26a69a;">SLA</div>
+    <div style="font-size:13px; color:#cccccc;">Incident Resolution</div>
+  </div>
+
+  <div style="flex:1; min-width:120px; margin:10px;">
+    <div style="font-size:22px; font-weight:800; color:#26a69a;">Enterprise</div>
+    <div style="font-size:13px; color:#cccccc;">Banking IT Environment</div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+             <div class="card-action center-align">
+               <div class="row center">
+                 <ul class="icons">
+                    <li class="icon"><a href="https://www.facebook.com/aswin.arangil"><img src="./res/facebook-logo.png" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://in.linkedin.com/in/aswin-a-arangil"><img src="./res/linkedin.png" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aswina30@gmail.com/"><img src="./res/gm.png" class="responsive-img"></a></li>
+                    <li class="icon"><a href="https://www.instagram.com/aswin_arangil/"><img src="./res/insta-logo.png" class="responsive-img"></a></li>
+                </ul>
+              </div>
+             </div>
+         </div>
+       </div>
+
+       <!-- skill set -->
+       <div class="row">
+         <div class="card grey darken-4 z-index-4">
+           <div class="card-content">
+             <p class="card-title white-text center-align">Skills</p>
+             <div class="skillbar clearfix " data-percent="85%">
+                  <div class="skillbar-title" style="background: #88cd2a;"><span>Outlook</span></div>
+                  <div class="skillbar-bar" style="background: rgb(136, 205, 42); width: 85%;"></div>
+                  <div class="skill-bar-percent">85%</div>
+                  </div>
+                  <!---  CSS --->
+                  <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #00a8ff;"><span>Lotus Notes</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 75%;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="50%">
+                  <div class="skillbar-title" style="background: #43a047;"><span>Active Directory basics</span></div>
+                  <div class="skillbar-bar" style="background: rgb(67, 160, 71); width: 50%;"></div>
+                  <div class="skill-bar-percent">50%</div>
+                  </div>
+                  <!-- /CSS --->
+                  <!--- jQuery  ------->
+                  <div class="skillbar clearfix " data-percent="65%">
+                  <div class="skillbar-title" style="background: #00695c;"><span>Remote Support (landesk, logmein, WebEx)</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 105, 92); width: 65%;"></div>
+                  <div class="skill-bar-percent">65%</div>
+                  </div>
+                  <!--- /jQuery  ------->
+                  <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #00acc1;"><span>Linux basics</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 172, 193); width: 75%;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="80%">
+                  <div class="skillbar-title" style="background: #00a8ff;"><span>Windows 10&11</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 80%;"></div>
+                  <div class="skill-bar-percent">80%</div>
+                  </div>
+
+                  
+
+                  <div class="skillbar clearfix " data-percent="80%">
+                  <div class="skillbar-title" style="background: #fb8c00;"><span>MS Office 2007,8,10</span></div>
+                  <div class="skillbar-bar" style="background: rgb(251, 140, 0); width: 80%;"></div>
+                  <div class="skill-bar-percent">80%</div>
+                  </div>
+
+               
+
+                  <div class="skillbar clearfix " data-percent="70%">
+                  <div class="skillbar-title" style="background: #01579b;"><span>Group Policy deployment in client system</span></div>
+                  <div class="skillbar-bar" style="background: rgb(1, 87, 155); width: 70%;"></div>
+                  <div class="skill-bar-percent">70%</div>
+                  </div>
+                <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #00a8ff;"><span>McAfee encryption&decryption</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 75%;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                </div>
+                <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #00a8ff;"><span>Asset management</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 75%;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                  </div>
+
+                  <div class="skillbar clearfix " data-percent="45%">
+                  <div class="skillbar-title" style="background: #00acc1;"><span>Sophos encryption&decryption</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 172, 193); width: 45%;"></div>
+                  <div class="skill-bar-percent">60%</div>
+                  </div>
+                   <div class="skillbar clearfix " data-percent="75%">
+                  <div class="skillbar-title" style="background: #00a8ff;"><span>BIOMETRIC DEVICE CONFIGURATION</span></div>
+                  <div class="skillbar-bar" style="background: rgb(0, 168, 255); width: 75%;"></div>
+                  <div class="skill-bar-percent">75%</div>
+                  </div>
+                  <div class="skillbar clearfix " data-percent="85%">
+                  <div class="skillbar-title" style="background: #fb8c00;"><span>Lan Desk</span></div>
+                  <div class="skillbar-bar" style="background: rgb(251, 140, 0); width: 85%;"></div>
+                  <div class="skill-bar-percent">85%</div>
+                  </div>
+
+
+           </div>
+         </div>
+       </div>
+
+   </div>
+
+<div class="col s12 m8 l9">
+  <div class="row">
+    <div class="card-panel grey darken-4 exp-meta">
+      <span class="white-text row">Expertise</span>
+      
+      <div class="row tabled">
+        <div class="col s12 m4 l4 celled">
+          <div class="card-panel hoverable premium-card" style="border-left:4px solid #26a69a; background:rgba(38,166,154,0.08); box-shadow:0 8px 25px rgba(0,0,0,0.35); border-radius:14px; min-height: 280px;">
+            <div class="row center">
+              <img src="./res/support.png" height="100px" width="100px">
+            </div>
+            <span class="white-text"><b>End User Support</b></span>
+            <span class="teal-text text-lighten-5"><br>Expert in structured troubleshooting and delivering high customer satisfaction in SLA-driven environments.</span>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4 celled">
+          <div class="card-panel hoverable premium-card" style="border-left:4px solid #26a69a; background:rgba(38,166,154,0.08); box-shadow:0 8px 25px rgba(0,0,0,0.35); border-radius:14px; min-height: 280px;">
+            <div class="row center">
+              <img src="./res/bfsi.png" height="100px" width="100px">
+            </div>
+            <span class="white-text"><b>BFSI IT Support</b></span>
+            <span class="teal-text text-lighten-5"><br>Supporting 1500+ users in banking environments with 97% SLA adherence for mission-critical apps.</span>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4 celled">
+          <div class="card-panel hoverable premium-card" style="border-left:4px solid #26a69a; background:rgba(38,166,154,0.08); box-shadow:0 8px 25px rgba(0,0,0,0.35); border-radius:14px; min-height: 280px;">
+            <div class="row center">
+              <img src="./res/os.png" height="100px" width="100px">
+            </div>
+            <span class="white-text"><b>Operating System</b></span>
+            <span class="teal-text text-lighten-5"><br>Troubleshooting expertise across Windows (XP–11) and Red Hat Certified Linux environments.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row tabled">
+        <div class="col s12 m4 l4 celled">
+          <div class="card-panel hoverable premium-card" style="border-left:4px solid #26a69a; background:rgba(38,166,154,0.08); box-shadow:0 8px 25px rgba(0,0,0,0.35); border-radius:14px; min-height: 280px;">
+            <div class="row center">
+              <img src="./res/ad.png" height="100px" width="100px">
+            </div>
+            <span class="white-text"><b>AD Administration</b></span>
+            <span class="teal-text text-lighten-5"><br>Managing user access, password resets, account unlocks, and basic group policy management.</span>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4 celled">
+          <div class="card-panel hoverable premium-card" style="border-left:4px solid #26a69a; background:rgba(38,166,154,0.08); box-shadow:0 8px 25px rgba(0,0,0,0.35); border-radius:14px; min-height: 280px;">
+            <div class="row center">
+              <img src="./res/security.png" height="100px" width="100px">
+            </div>
+            <span class="white-text"><b>Endpoint Security</b></span>
+            <span class="teal-text text-lighten-5"><br>Deployment of Sophos encryption, BIOS security, and regular software compliance audits.</span>
+          </div>
+        </div>
+
+        <div class="col s12 m4 l4 celled">
+          <div class="card-panel hoverable premium-card" style="border-left:4px solid #26a69a; background:rgba(38,166,154,0.08); box-shadow:0 8px 25px rgba(0,0,0,0.35); border-radius:14px; min-height: 280px;">
+            <div class="row center">
+              <img src="./res/imaging.png" height="100px" width="100px">
+            </div>
+            <span class="white-text"><b>System Imaging</b></span>
+            <span class="teal-text text-lighten-5"><br>Large-scale PC deployment using Norton Ghost and thin client network configuration.</span>
+          </div>
+        </div>
+      </div> 
+
+    </div>
+  </div>
+</div>
+      
+
+      
+      
+    
+       <div class="row">
+          <div class="card-panel grey darken-4">
+            <div>
+              <span class="white-text row">Education
+              </span>
+              <div class="row"><!--first card row begins -->
+                  <!-- first card --->
+                 <div class="col 12 m4">
+                   <div class="card-panel teal hoverable center premium-card">
+     
+                     <div class="row center">
+                        <img src="./res/graduation.svg" height="100px" width="100px">
+                     </div><span class="white-text">
+                       <b>Diploma in Applied Electronics</b></span><span class="teal-text text-lighten-5"><br>Model polytechnic College Vadakara 2008-2011 Batch
+                     </span>
+                   </div>
+                 </div>
+                 <!-- second card --->
+                 <div class="col s12 m4">
+                   
+                 <div class="card-panel teal hoverable center premium-card">
+
+                     <div class="row center">
+                        <img src="./res/preuniversity.svg" height="100px" width="100px">
+                     </div>
+                     <span class="white-text">
+                       <b>Class 12</b></span><span class="teal-text text-lighten-5"><br>JNM Govt HSS Puthuppanam class 2006 - 2008.
+                     </span>
+                   </div>
+                 </div>
+                 <!-- third card --->
+                 <div class="col s12 m4">
+                   <div class="card-panel teal hoverable center premium-card">
+     
+
+                     <div class="row center">
+                        <img src="./res/highschool.svg" height="100px" width="100px">
+                     </div>
+                     <span class="white-text">
+                       <b>HighSchool/SSLC</b></span><span class="teal-text text-lighten-5"><br>JNM Govt HSS Puthuppanam class 2005 - 2006.
+                     </span>
+                   </div>
+                 </div>
+              </div> <!--first card row ends -->
+            </div>
+
+
+        </div>
+      </div>
+
+</div>
+  </div>
+
+
+ <!-- end of home -->
+ </div>
+
+<div class="section-divider"></div>
+
+<div id="projects" class="reveal-fade">
+  <div class="timeline">
+    <h4 class="white-text left-align section-title">PROFESSIONAL EXPERIENCE</h4>
+    
+    <div class="row">
+      <div class="col s12 m6">
+        
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="card-panel grey darken-4 premium-card">
+            <div class="row" style="margin-bottom:0; display:flex; align-items:center;">
+              
+              <div class="col s4">
+                <img src="./res/prutech.jpg" class="circle responsive project-img">
+              </div>
+
+              <div class="col s8">
+                <div style="display:flex; flex-direction:column; gap:4px;">
+                  <div class="white-text" style="font-size:16px; font-weight:800; letter-spacing:0.2px;">
+                    Prudent Technologies Pvt Ltd
+                  </div>
+                  <div class="grey-text text-lighten-1" style="font-size:13px;">
+                    Mar 2012 – Aug 2014
+                  </div>
+                </div>
+              </div>
+
+            </div>
+              </div>
+            </div>
+<div class="exp-meta">
+<div class="exp-meta">
+
+<div class="white-text" style="margin-bottom:6px;">
+<b>Role:</b> <span class="muted">Desktop Support Engineer (L1/L2)</span>
+</div>
+
+<div class="white-text" style="margin-bottom:6px;">
+<b>Client:</b> <span style="font-weight:800;">Muthoot Fincorp Pvt. Ltd.</span>
+</div>
+
+<div class="white-text">
+<b>Environment:</b>
+<span class="muted">
+Windows 10/11 | MS Office | Outlook | LAN/VPN | Printers | Ticketing Systems
+</span>
+</div>
+
+<div class="exp-impact">
+Supported 100+ Financial Services Users | SLA-Driven Incident Resolution | Enterprise Desktop Environment
+</div>
+
+</div>
+
+
+<!-- Responsibilities -->
+
+<ul class="exp-bullets">
+
+<li>• Delivered L1/L2 desktop support to branch users across multiple locations, ensuring SLA compliance.</li>
+
+<li>• Diagnosed and resolved hardware, software, and LAN connectivity issues to minimize operational downtime.</li>
+
+<li>• Installed, configured, and troubleshot Windows OS, MS Office, printers, scanners, and financial applications.</li>
+
+<li>• Logged, tracked, and updated incidents in ticketing systems for timely resolution and documentation.</li>
+
+<li>• Coordinated with vendors for hardware replacement and ensured smooth IT operations at branch level.</li>
+
+<li>• Performed periodic system backups and maintained data integrity according to IT policies.</li>
+
+</ul>
+
+
+<!-- Impact -->
+
+<div class="exp-impact">
+
+<b>Impact:</b> Supported multi-branch IT infrastructure ensuring minimal downtime and uninterrupted financial operations.
+
+</div>
+
+
+<!-- Achievement -->
+
+<div class="achievement-badge">
+
+🏆 98% SLA Compliance | Zero Critical Downtime | 100+ Users Supported
+
+</div>
+<div class="timeline-item reveal">
+  <span class="timeline-dot"></span>
+  <div class="card-panel grey darken-4 premium-card">
+    <div class="row" style="margin-bottom:0; display:flex; align-items:center;">
+      
+      <div class="col s4">
+        <img src="./res/3I-Infotech.jpg" class="circle responsive project-img">
+      </div>
+
+      <div class="col s8">
+        <div style="display:flex; flex-direction:column; gap:4px;">
+          <div class="white-text" style="font-size:16px; font-weight:800; letter-spacing:0.2px;">
+            3i Infotech Pvt Ltd
+          </div>
+          <div class="grey-text text-lighten-1" style="font-size:13px;">
+            Mar 2015 – Aug 2016
+          </div>
+          <span class="teal-text text-lighten-3" style="font-size:12px; font-weight:600;">
+            Client: ICICI Bank
+          </span>
+        </div>
+      </div>
+
+    </div> </div>
+</div>
+
+
+
+<div class="exp-meta">
+
+  <div class="white-text" style="margin-bottom:6px;">
+    <b>Role:</b> <span class="muted">Desktop Support Engineer (L1/L2)</span>
+  </div>
+
+  <div class="white-text" style="margin-bottom:6px;">
+    <b>Client:</b> <span style="font-weight:800;">ICICI Bank</span>
+  </div>
+
+  <div class="white-text">
+    <b>Environment:</b>
+    <span class="muted">
+      Windows OS | MS Office | Outlook | LAN/VPN | Printers | Ticketing Systems
+    </span>
+  </div>
+
+  <div class="exp-impact">
+    Supported 100+ Banking Users | Core Banking IT Support | Production Environment
+  </div>
+
+</div>
+
+
+<span class="domain-badge banking">
+Banking Domain
+</span>
+
+
+<ul class="exp-bullets">
+
+<li>• Delivered L1/L2 desktop and remote support to branch users ensuring SLA-based resolution.</li>
+
+<li>• Installed, configured and troubleshot Windows OS, MS Office and Outlook applications.</li>
+
+<li>• Performed email configuration, Outlook profile troubleshooting and mailbox issue resolution.</li>
+
+<li>• Diagnosed LAN connectivity issues and supported network printers and scanners.</li>
+
+<li>• Logged, tracked and updated incidents in ticketing systems ensuring service transparency.</li>
+
+<li>• Maintained IT asset inventory and documentation for hardware lifecycle management.</li>
+
+<li>• Supported endpoint protection and disk encryption management using Sophos.</li>
+
+</ul>
+
+
+<div class="exp-impact">
+
+<b>Impact:</b> Resolved 25–30+ incidents daily while maintaining SLA compliance above 95%.
+
+</div>
+
+
+<div class="achievement-badge">
+
+🏆 Core Banking IT Support | High Volume Ticket Resolution | SLA Delivery
+
+</div>
+
+
+  </div>
+
+</div>
+<!-- Vara -->
+<div class="col s12 m6 timeline-item reveal">
+
+  <span class="timeline-dot"></span>
+
+  <div class="card-panel grey darken-4 premium-card" style="padding:22px;">
+
+    <!-- Header -->
+    <div style="display:flex; align-items:center; gap:18px;">
+
+      <img src="./res/vara.png"
+           class="circle responsive-img"
+           style="width:80px; height:80px; object-fit:cover;">
+
+      <div>
+        <div class="white-text" style="font-size:18px; font-weight:700;">
+          Vara Infotech Pvt Ltd
+        </div>
+
+        <div class="grey-text text-lighten-1" style="font-size:14px; margin-top:4px;">
+          Aug 2016 – Jan 2018
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider teal" style="margin:16px 0;"></div>
+
+
+<div class="exp-meta">
+
+  <div class="white-text" style="margin-bottom:6px;">
+    <b>Role:</b> <span class="muted">Desktop Support Engineer (L1/L2)</span>
+  </div>
+
+  <div class="white-text" style="margin-bottom:6px;">
+    <b>Client:</b> <span style="font-weight:800;">ICICI Bank</span>
+  </div>
+
+  <div class="white-text">
+    <b>Environment:</b>
+    <span class="muted">
+      Windows OS | MS Office | Outlook | LAN/VPN | Printers | Ticketing Systems
+    </span>
+  </div>
+
+  <div class="exp-impact">
+    Delivered L2 Desktop Support | 80+ Corporate Users | Banking IT Environment
+  </div>
+
+</div>
+
+
+<span class="domain-badge banking">
+Banking Domain
+</span>
+
+
+<ul class="exp-bullets">
+
+<li>• Delivered L1/L2 desktop and helpdesk support to banking users ensuring SLA-based issue resolution.</li>
+
+<li>• Installed, configured and troubleshot Windows OS, MS Office and banking applications.</li>
+
+<li>• Managed basic Active Directory support including user account access and password related requests.</li>
+
+<li>• Resolved LAN and VPN connectivity issues and supported network printers and scanners.</li>
+
+<li>• Logged and tracked incidents in ticketing systems ensuring proper documentation and audit compliance.</li>
+
+<li>• Coordinated with infrastructure and network teams for escalations to minimize operational downtime.</li>
+
+</ul>
+
+
+<div class="exp-impact">
+
+<b>Impact:</b> Handled 25–30+ incidents daily while maintaining SLA compliance above 95%.
+
+</div>
+
+
+<div class="achievement-badge">
+
+🏆 Banking IT Support | 80+ Corporate Users | SLA-Driven Service Delivery
+
+</div>
+
+
+  </div>
+
+</div>
+
+  <!-- Linksys (put your Linksys card here as the 2nd column) -->
+  <!-- <div class="col s12 m6">...Linksys card...</div> -->
+
+</div>
+<div class="col s12 m6 timeline-item reveal">
+
+<span class="timeline-dot"></span>
+
+<div class="card-panel grey darken-4 premium-card" style="padding:22px;">
+
+<!-- Header -->
+<div style="display:flex; align-items:center; gap:18px;">
+
+<img src="./res/linksys.jpg"
+class="circle responsive-img"
+style="width:80px; height:80px; object-fit:cover;">
+
+<div>
+
+<div class="white-text" style="font-size:18px; font-weight:700;">
+Linksys Technologies Pvt Ltd
+</div>
+
+<div class="grey-text text-lighten-1" style="font-size:14px; margin-top:4px;">
+Jan 2018 – Mar 2020
+</div>
+
+</div>
+</div>
+
+<div class="divider teal" style="margin:16px 0;"></div>
+
+
+<div class="exp-meta">
+
+<div class="white-text" style="margin-bottom:6px;">
+<b>Role:</b> <span class="muted">Remote Desktop Support Engineer</span>
+</div>
+
+<div class="white-text" style="margin-bottom:6px;">
+<b>Client:</b> <span style="font-weight:800;">State Bank of India (SBI)</span>
+</div>
+
+<div class="white-text">
+<b>Environment:</b>
+<span class="muted">
+Windows OS | Active Directory (Basics) | VPN/RDP | Network Printers | Biometric Devices | DSC Tokens | Ticketing Systems
+</span>
+</div>
+
+<div class="exp-impact">
+SBI Branch IT Support | Secure Banking Infrastructure | SLA-Based Incident Handling
+</div>
+
+</div>
+
+
+<span class="domain-badge banking">
+Banking Domain
+</span>
+
+
+<ul class="exp-bullets">
+
+<li>• Provided L1/L2 desktop support to banking users resolving hardware, software and network issues within SLA timelines.</li>
+
+<li>• Performed system configuration including Windows updates, domain joining and basic Active Directory user account management.</li>
+
+<li>• Installed and configured network printers, biometric devices, DSC tokens and GCC devices for secure banking operations.</li>
+
+<li>• Diagnosed LAN and VPN connectivity issues and coordinated with network teams for escalations.</li>
+
+<li>• Logged and tracked incidents in ticketing systems ensuring documentation and audit compliance.</li>
+
+<li>• Supported branch IT infrastructure ensuring minimal downtime and uninterrupted banking services.</li>
+
+</ul>
+
+
+<div class="exp-impact">
+
+<b>Impact:</b> Managed high-priority banking IT incidents ensuring uninterrupted branch operations.
+
+</div>
+
+
+<div class="achievement-badge">
+
+🏆 SBI Banking IT Support | Secure Endpoint & Biometric Infrastructure
+
+</div>
+
+
+</div>
+</div>
+<div class="col s12 m6 timeline-item reveal">
+  <span class="timeline-dot"></span>
+
+  <div class="card-panel grey darken-4 premium-card">
+
+    <div class="row">
+
+      <!-- LEFT SIDE LOGO -->
+      <div class="col s4 m4 l4">
+        <img src="./res/team.jpeg" class="circle responsive project-img">
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="col s8 m8 l8">
+
+        <div style="display:flex; flex-direction:column; gap:4px;">
+          <div class="white-text" style="font-size:16px; font-weight:800; letter-spacing:0.2px;">
+            Team Computers Pvt Ltd
+          </div>
+
+          <div class="grey-text text-lighten-1" style="font-size:13px;">
+            April 2022 – January 2023
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="exp-meta">
+
+      <div class="white-text" style="margin-bottom:6px;">
+        <b>Role:</b> <span class="muted">IT Support Engineer (L1/L2)</span>
+      </div>
+
+      <div class="white-text" style="margin-bottom:6px;">
+        <b>Client:</b> <span style="font-weight:800;">Canara HSBC Life Insurance</span>
+      </div>
+
+      <div class="white-text">
+        <b>Environment:</b>
+        <span class="muted">Windows 10/11 | Outlook | AD (Basics) | LAN/VPN | Sophos | Ticketing</span>
+      </div>
+
+      <div class="exp-impact">
+        Onsite IT Support | Asset Lifecycle Management | Enterprise Desktop & Network Support
+      </div>
+
+    </div>
+
+    <!-- RESPONSIBILITIES -->
+    <ul class="exp-bullets">
+      <li>• Delivered L1/L2 desktop and remote support within defined SLA timelines.</li>
+      <li>• Installed and troubleshot Windows OS, MS Office, and insurance applications.</li>
+      <li>• Supported email configuration, VPN connectivity, and access-related issues.</li>
+      <li>• Diagnosed LAN and peripheral device issues.</li>
+      <li>• Maintained accurate incident records in ticketing systems.</li>
+    </ul>
+
+    <div class="white-text" style="margin-top:10px;">
+      <div class="exp-impact">
+        <b>Impact:</b> Maintained high service availability and user satisfaction.
+      </div>
+    </div>
+
+    <div class="achievement-badge">
+      🏆 Enterprise IT Support | Asset Lifecycle & Endpoint Security
+    </div>
+
+  </div>
+
+<div id="proficiencies" class="reveal-fade tab-content">
+  <div class="row pad20top">
+    <div class="col s12 m10 offset-m1">
+      <div class="card-panel grey darken-4 premium-card glass-card">
+        <h4 class="white-text section-title center-align">TECHNICAL PROFICIENCIES</h4>
+        <div class="divider teal" style="margin:20px 0;"></div>
+        
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="skill-card">
+              <i class="material-icons">laptop_windows</i>
+              <h4>OS & Desktop Support</h4>
+              <p>Windows 10/11 troubleshooting, system imaging with Norton Ghost, and thin client setup.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="skill-card">
+              <i class="material-icons">settings_input_component</i>
+              <h4>Infrastructure & Networking</h4>
+              <p>Active Directory management, LAN/VPN troubleshooting, and DNS/DHCP configuration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study" style="margin-top:30px;">
+            <h3 class="project-title" style="color: #00bcd4;">📩 Outlook Connectivity Resolution</h3>
+            <p><strong>Scenario:</strong> Outlook failed to sync despite active internet. Diagnosed a mail server IP mismatch in the local configuration.</p>
+            
+            <div class="troubleshooting-steps">
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>✅ <strong>Verification:</strong> Cross-checked the mail server IP by pinging 4 official site addresses provided by senior IT officials.</li>
+                    <li>✅ <strong>Identification:</strong> Confirmed the IP address mentioned in the official mail was incorrect after verification.</li>
+                    <li>✅ <strong>Resolution:</strong> Manually updated the <code>hosts</code> file with the correct IP mappings and performed a DNS flush.</li>
+                    <li>✅ <strong>Outcome:</strong> Restored immediate mail synchronization across VPN and LAN environments.</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+ 
+            
+ <script>
+(function () {
+  var target = 8;
+  var current = 0;
+
+  function startCount() {
+    var el = document.getElementById("expCount");
+    if (!el) return;
+
+    el.textContent = "0";
+    var timer = setInterval(function () {
+      current++;
+      if (current >= target) {
+        clearInterval(timer);
+        el.textContent = target + "+";
+      } else {
+        el.textContent = String(current);
+      }
+    }, 350);
+  }
+
+  window.addEventListener("load", function () {
+    setTimeout(startCount, 200);
+  });
+})();
+</script>
+
+<script>
+(function(){
+  function revealOnScroll(){
+    var els = document.querySelectorAll(".reveal");
+    var windowH = window.innerHeight;
+
+    for (var i = 0; i < els.length; i++){
+      var top = els[i].getBoundingClientRect().top;
+      if (top < windowH - 80){
+        els[i].classList.add("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+})();
+</script>
+
+<!-- ===== Process 15: Resume CTA Button + Modal ===== -->
+<div id="resumeModal" class="modal resume-modal">
+  <div class="modal-content">
+    <h5 style="margin-top:0;">Resume</h5>
+    <p style="margin-bottom:16px;">Choose an option:</p>
+
+    <div class="resume-actions">
+      <a class="waves-effect waves-light btn action-btn"
+         href="./res/Aswin_resume.pdf"
+         target="_blank"
+         rel="noopener">
+        <i class="material-icons left">visibility</i> View
+      </a>
+
+      <a class="waves-effect waves-light btn action-btn"
+         href="./res/Aswin_resume.pdf"
+         download>
+        <i class="material-icons left">download</i> Download
+      </a>
+    </div>
+
+    <div style="height:14px;"></div>
+
+    <p class="grey-text" style="margin:0;">
+      If the buttons don’t open, make sure
+      <b>Aswin_resume.pdf</b> is uploaded in the same folder as
+      <b>index.html</b>.
+    </p>
+  </div>
+
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
+  </div>
+</div>
+<!-- ===== /Process 15 ===== -->
+      
+   </body>
+   </html>
