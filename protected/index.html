@@ -367,48 +367,51 @@ L2 Desktop Support Engineer | IT Infrastructure | Enterprise Technical Support
         <h4 class="white-text section-title center-align">TECHNICAL PROFICIENCIES</h4>
         <div class="divider teal" style="margin:20px 0;"></div>
         
-        <div class="case-study" style="margin-bottom: 25px;">
-            <h3 class="project-title" style="color: #00bcd4; margin-top:0;">📩 Outlook Connectivity Resolution</h3>
-            <p><strong>Scenario:</strong> Outlook sync failure. Diagnosed a mail server IP mismatch in local configuration.</p>
+        <div class="case-study" style="margin-bottom: 30px;">
+            <h3 class="project-title" style="color: #00bcd4; margin-top:0;">📩 Outlook Connectivity & Mail Server Resolution</h3>
+            <p><strong>Challenge:</strong> Resolved a critical synchronization failure where Microsoft Outlook stopped functioning across VPN and LAN environments despite active internet connectivity.</p>
             <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0; font-size: 0.95rem;">
-                    <li>✅ <b>Verification:</b> Cross-checked mail server IP by pinging 4 official site addresses provided by senior officials.</li>
-                    <li>✅ <b>Resolution:</b> Updated <code>hosts</code> file with correct mappings and performed a DNS flush.</li>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">✅ <strong>Verification:</strong> Cross-checked the mail server IP by pinging 4 official site addresses provided by senior IT officials to ensure data accuracy.</li>
+                    <li style="margin-bottom: 10px;">✅ <strong>Identification:</strong> Discovered an IP mismatch—the address provided in the official communication was incorrect compared to live ping results from the server.</li>
+                    <li style="margin-bottom: 10px;">✅ <strong>Resolution:</strong> Manually updated the <code>hosts</code> file with the verified IP mappings and executed <code>ipconfig /flushdns</code> to refresh the resolver cache.</li>
+                    <li>✅ <strong>Result:</strong> Restored immediate mail flow and synchronization, ensuring zero downtime for user communication.</li>
                 </ul>
             </div>
         </div>
-       
-  <div class="case-study" style="border-left: 4px solid #4db6ac; margin-bottom: 25px;">
+       <div class="case-study" style="border-left: 4px solid #4db6ac; margin-bottom: 30px;">
             <h3 class="project-title" style="color: #4db6ac; margin-top:0;">🌐 Biometric Device Configuration (Banking Environment)</h3>
-            <p><strong>Scenario:</strong> End-to-end installation and network configuration of biometric systems for secure access control.</p>
+            <p><strong>Scenario:</strong> End-to-end installation, network integration, and troubleshooting of fingerprint biometric systems for secure access control and attendance.</p>
             <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0; font-size: 0.95rem;">
-                    <li>✅ <b>Setup:</b> Assigned static IPs and configured communication keys/port forwarding for real-time data sync.</li>
-                    <li>✅ <b>Installation:</b> Managed driver deployment and sensor calibration for security compliance.</li>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">✅ <strong>Network Setup:</strong> Assigned static IP addresses to biometric devices and configured communication keys and port forwarding to ensure real-time data sync with central servers.</li>
+                    <li style="margin-bottom: 10px;">✅ <strong>Software Integration:</strong> Managed driver deployment, configured middleware settings, and performed sensor calibration to achieve 100% device detection and security compliance.</li>
+                    <li>✅ <strong>Maintenance:</strong> Performed firmware updates and troubleshooting to reduce False Rejection Rates (FRR) in high-security zones.</li>
                 </ul>
             </div>
-  </div>
-       <div class="case-study" style="border-left: 4px solid #ff9800; margin-bottom: 25px;">
+       </div>
+       <div class="case-study" style="border-left: 4px solid #ff9800; margin-bottom: 30px;">
             <h3 class="project-title" style="color: #ff9800; margin-top:0;">🔐 Active Directory: Workstation Trust Resolution</h3>
-            <p><strong>Scenario:</strong> Resolved "Trust relationship failed" errors preventing domain logins in an enterprise environment.</p>
+            <p><strong>Scenario:</strong> Resolved the "Trust relationship between this workstation and primary domain failed" error that prevented enterprise users from logging into the network.</p>
             <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0; font-size: 0.95rem;">
-                    <li>🚀 <b>Method:</b> Utilized PowerShell (<code>Test-ComputerSecureChannel -Repair</code>) to restore secure channels without rejoining.</li>
-                    <li>🛡️ <b>Result:</b> Repaired machine-to-domain security links while ensuring zero risk to local user profiles.</li>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">🚀 <strong>Advanced Repair:</strong> Utilized PowerShell (<code>Test-ComputerSecureChannel -Repair</code>) to restore the secure channel between the workstation and Domain Controller without rejoining.</li>
+                    <li style="margin-bottom: 10px;">🛡️ <b>Profile Integrity:</b> Successfully repaired the machine-to-domain security link while ensuring zero risk to local user profiles, group memberships, or cached data.</li>
+                    <li>🛠️ <b>Lifecycle Management:</b> Expert in coordinating with AD Administrators for object resets and performing clean rejoins for persistent secure channel corruption issues.</li>
                 </ul>
             </div>
         </div>
 
         <div class="case-study" style="border-left: 4px solid #e91e63;">
             <h3 class="project-title" style="color: #e91e63; margin-top:0;">🛡️ System Hardening & Java Registry Optimization</h3>
-            <p><strong>Scenario:</strong> Core Banking application failed to launch after a required Java update during system hardening activity.</p>
+            <p><strong>Scenario:</strong> Core Banking application failed to launch after a mandatory Java version upgrade performed during a system hardening activity.</p>
             <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0; font-size: 0.95rem;">
-                    <li>🔍 <b>Root Cause:</b> Identified that the application was referencing incorrect paths due to residual old Java registry entries.</li>
-                    <li>✅ <b>Resolution:</b> Performed deep registry cleanup of legacy Java keys and revalidated environment variables.</li>
-                    <li>📈 <b>Outcome:</b> Restored application functionality and ensured compliance with updated security standards.</li>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 10px;">🔍 <strong>Root Cause Analysis:</strong> Identified that the application was referencing incorrect file paths due to residual legacy Java registry entries that were not removed during the standard update.</li>
+                    <li style="margin-bottom: 10px;">✅ <strong>Resolution:</strong> Performed a deep registry cleanup of legacy Java keys, re-configured environment variables, and executed a fresh validated installation.</li>
+                    <li>📈 <strong>Outcome:</strong> Restored full application functionality and ensured the workstation met the required security compliance standards.</li>
                 </ul>
-             </div>
+            </div>
         </div>
 
       </div>
