@@ -1258,33 +1258,49 @@ Banking Domain
 
   </div>
 
- <div class="case-study">
-    <h3 class="project-title" style="color: #00bcd4;">📩 Outlook Not Working – Host File Conflict Resolution</h3>
-    <p><strong>Scenario:</strong> Internet and VPN were active, but Microsoft Outlook stopped syncing across both VPN and LAN connections.</p>
-    
-    <div class="troubleshooting-steps">
-        <p><strong>Initial Diagnostics:</strong></p>
-        <ul style="list-style: none; padding-left: 0;">
-            <li>✅ Ping connectivity confirmed</li>
-            <li>✅ DNS resolution verified</li>
-            <li>❌ Outlook connectivity failed</li>
-        </ul>
+<div id="proficiencies" class="reveal-fade tab-content">
+  <div class="row pad20top">
+    <div class="col s12 m10 offset-m1">
+      <div class="card-panel grey darken-4 premium-card glass-card">
+        <h4 class="white-text section-title center-align">TECHNICAL PROFICIENCIES</h4>
+        <div class="divider teal" style="margin:20px 0;"></div>
         
-        <p><strong>Root Cause:</strong> An outdated host file entry for VPN access mapped the mail server to an incorrect IP address, overriding standard DNS resolution.</p>
-        
-        <p><strong>The Fix:</strong></p>
-        <ol>
-            <li>Verified actual mail server IP using <code>nslookup</code></li>
-            <li>Updated the local <code>hosts</code> file with the correct IP mapping</li>
-            <li>Executed <code>ipconfig /flushdns</code></li>
-            <li>Restarted Outlook to restore immediate synchronization</li>
-        </ol>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="skill-card">
+              <i class="material-icons">laptop_windows</i>
+              <h4>OS & Desktop Support</h4>
+              <p>Expertise in Windows 10/11 troubleshooting, system imaging with Norton Ghost, and thin client setup.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="skill-card">
+              <i class="material-icons">settings_input_component</i>
+              <h4>Infrastructure & Networking</h4>
+              <p>Hands-on experience with Active Directory, LAN/VPN troubleshooting, and DNS/DHCP configuration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study" style="margin-top:30px;">
+            <h3 class="project-title" style="color: #00bcd4;">📩 Outlook & Email Troubleshooting</h3>
+            <p><strong>Case Study:</strong> Resolved a critical sync issue where Outlook failed across VPN and LAN despite active internet.</p>
+            
+            <div class="troubleshooting-steps">
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>✅ Used <code>nslookup</code> to verify mail server IP.</li>
+                    <li>✅ Corrected outdated <code>hosts</code> file entries.</li>
+                    <li>✅ Flushed DNS and restored synchronization.</li>
+                </ul>
+            </div>
+        </div>
+
+      </div>
     </div>
-    
-    <p class="lesson" style="background: rgba(0, 188, 212, 0.1); padding: 10px; border-radius: 4px; border: 1px dashed #00bcd4;">
-        <em>"Troubleshooting is not guessing; it’s isolating layer by layer."</em>
-    </p>
- </div>
+  </div>
+</div>
+ 
  
             
  <script>
