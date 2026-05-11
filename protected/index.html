@@ -1258,6 +1258,33 @@ Banking Domain
 
   </div>
 
+ <div class="case-study">
+    <h3 class="project-title" style="color: #00bcd4;">📩 Outlook Not Working – Host File Conflict Resolution</h3>
+    <p><strong>Scenario:</strong> Internet and VPN were active, but Microsoft Outlook stopped syncing across both VPN and LAN connections.</p>
+    
+    <div class="troubleshooting-steps">
+        <p><strong>Initial Diagnostics:</strong></p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li>✅ Ping connectivity confirmed</li>
+            <li>✅ DNS resolution verified</li>
+            <li>❌ Outlook connectivity failed</li>
+        </ul>
+        
+        <p><strong>Root Cause:</strong> An outdated host file entry for VPN access mapped the mail server to an incorrect IP address, overriding standard DNS resolution.</p>
+        
+        <p><strong>The Fix:</strong></p>
+        <ol>
+            <li>Verified actual mail server IP using <code>nslookup</code></li>
+            <li>Updated the local <code>hosts</code> file with the correct IP mapping</li>
+            <li>Executed <code>ipconfig /flushdns</code></li>
+            <li>Restarted Outlook to restore immediate synchronization</li>
+        </ol>
+    </div>
+    
+    <p class="lesson" style="background: rgba(0, 188, 212, 0.1); padding: 10px; border-radius: 4px; border: 1px dashed #00bcd4;">
+        <em>"Troubleshooting is not guessing; it’s isolating layer by layer."</em>
+    </p>
+ </div>
  
             
  <script>
