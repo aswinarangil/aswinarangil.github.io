@@ -2846,26 +2846,34 @@ body{
     font-size: 0.9rem;
     line-height: 1.4;
 }
-/* Container for technical case studies */
+
+
+/* Outlook Case Study Section - Glassmorphism Style */
 .case-study {
-    background-color: #f9f9f9;
-    border-left: 5px solid #0078d4; /* Outlook Blue */
+    background-color: rgba(26, 26, 26, 0.8); /* Dark transparent background */
+    border-left: 4px solid #00bcd4; /* Cyan accent matching your profile */
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 4px;
+    margin: 20px auto;
+    max-width: 90%; 
+    border-radius: 8px;
+    text-align: left;
+    backdrop-filter: blur(10px); /* Glass effect to match your navigation and cards */
+    color: #e0e0e0; /* Ensures text is readable on the dark background */
 }
 
-/* Styling for technical steps or code */
-code {
-    background-color: #eee;
+/* Styling for technical commands and code snippets */
+.case-study code {
+    background: #333;
+    color: #ffca28; /* Gold color to make commands stand out */
     padding: 2px 5px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 3px;
 }
 
-/* Highlight for project titles */
+/* Highlight for the case study title */
 .project-title {
     font-weight: bold;
-    color: #333;
+    color: #00bcd4; /* Matches your profile's primary accent color */
     font-size: 1.2rem;
+    margin-top: 0;
 }
