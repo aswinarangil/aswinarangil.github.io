@@ -365,60 +365,66 @@ L2 Desktop Support Engineer | IT Infrastructure | Enterprise Technical Support
     <div class="col s12 m10 offset-m1">
       <div class="card-panel grey darken-4 premium-card glass-card">
         <h4 class="white-text section-title center-align">TECHNICAL PROFICIENCIES</h4>
-        <div class="divider teal" style="margin:20px 0;"></div>
+        <div class="divider teal" style="margin-bottom:30px;"></div>
         
-        <div class="case-study" style="margin-bottom: 30px;">
-            <h3 class="project-title" style="color: #00bcd4; margin-top:0;">📩 Outlook Connectivity & Mail Server Resolution</h3>
-            <p><strong>Challenge:</strong> Resolved a critical synchronization failure where Microsoft Outlook stopped functioning across VPN and LAN environments despite active internet connectivity.</p>
-            <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px;">✅ <strong>Verification:</strong> Cross-checked the mail server IP by pinging 4 official site addresses provided by senior IT officials to ensure data accuracy.</li>
-                    <li style="margin-bottom: 10px;">✅ <strong>Identification:</strong> Discovered an IP mismatch—the address provided in the official communication was incorrect compared to live ping results from the server.</li>
-                    <li style="margin-bottom: 10px;">✅ <strong>Resolution:</strong> Manually updated the <code>hosts</code> file with the verified IP mappings and executed <code>ipconfig /flushdns</code> to refresh the resolver cache.</li>
-                    <li>✅ <strong>Result:</strong> Restored immediate mail flow and synchronization, ensuring zero downtime for user communication.</li>
-                </ul>
+        <div class="row">
+          <div class="col s12 l6">
+            <div class="case-study-card" style="border-top: 3px solid #00bcd4; padding: 20px; background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 20px; min-height: 380px;">
+                <h5 style="color: #00bcd4; font-size: 1.3rem;"><i class="material-icons left">email</i> Outlook Resolution</h5>
+                <p class="grey-text text-lighten-2" style="font-size: 0.9rem;">Resolved critical sync failure across VPN/LAN environments.</p>
+                <div class="steps" style="font-size: 0.85rem; border-top: 1px solid #333; pt-10;">
+                    <p><b>Verification:</b> Cross-checked mail server IP by pinging 4 official site addresses provided by senior IT officials.</p>
+                    <p><b>Identification:</b> Discovered IP mismatch between official communication and live server ping results.</p>
+                    <p><b>Resolution:</b> Updated <code>hosts</code> file and executed <code>ipconfig /flushdns</code>.</p>
+                </div>
+                <span class="new badge cyan darken-2 left" data-badge-caption="L2 Support" style="margin-top:10px;"></span>
             </div>
-        </div>
-       <div class="case-study" style="border-left: 4px solid #4db6ac; margin-bottom: 30px;">
-            <h3 class="project-title" style="color: #4db6ac; margin-top:0;">🌐 Biometric Device Configuration (Banking Environment)</h3>
-            <p><strong>Scenario:</strong> End-to-end installation, network integration, and troubleshooting of fingerprint biometric systems for secure access control and attendance.</p>
-            <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px;">✅ <strong>Network Setup:</strong> Assigned static IP addresses to biometric devices and configured communication keys and port forwarding to ensure real-time data sync with central servers.</li>
-                    <li style="margin-bottom: 10px;">✅ <strong>Software Integration:</strong> Managed driver deployment, configured middleware settings, and performed sensor calibration to achieve 100% device detection and security compliance.</li>
-                    <li>✅ <strong>Maintenance:</strong> Performed firmware updates and troubleshooting to reduce False Rejection Rates (FRR) in high-security zones.</li>
-                </ul>
+          </div>
+         <div class="col s12 l6">
+            <div class="case-study-card" style="border-top: 3px solid #4db6ac; padding: 20px; background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 20px; min-height: 380px;">
+                <h5 style="color: #4db6ac; font-size: 1.3rem;"><i class="material-icons left">fingerprint</i> Biometric Setup</h5>
+                <p class="grey-text text-lighten-2" style="font-size: 0.9rem;">End-to-end integration for secure banking access control.</p>
+                <div class="steps" style="font-size: 0.85rem; border-top: 1px solid #333; pt-10;">
+                    <p><b>Network Setup:</b> Assigned static IPs and configured port forwarding for real-time central server sync.</p>
+                    <p><b>Software:</b> Managed driver deployment and sensor calibration for 100% detection compliance.</p>
+                    <p><b>Maintenance:</b> Performed firmware updates to reduce False Rejection Rates (FRR).</p>
+                </div>
+                <span class="new badge teal darken-2 left" data-badge-caption="Infrastructure" style="margin-top:10px;"></span>
             </div>
-       </div>
-       <div class="case-study" style="border-left: 4px solid #ff9800; margin-bottom: 30px;">
-            <h3 class="project-title" style="color: #ff9800; margin-top:0;">🔐 Active Directory: Workstation Trust Resolution</h3>
-            <p><strong>Scenario:</strong> Resolved the "Trust relationship between this workstation and primary domain failed" error that prevented enterprise users from logging into the network.</p>
-            <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px;">🚀 <strong>Advanced Repair:</strong> Utilized PowerShell (<code>Test-ComputerSecureChannel -Repair</code>) to restore the secure channel between the workstation and Domain Controller without rejoining.</li>
-                    <li style="margin-bottom: 10px;">🛡️ <b>Profile Integrity:</b> Successfully repaired the machine-to-domain security link while ensuring zero risk to local user profiles, group memberships, or cached data.</li>
-                    <li>🛠️ <b>Lifecycle Management:</b> Expert in coordinating with AD Administrators for object resets and performing clean rejoins for persistent secure channel corruption issues.</li>
-                </ul>
-            </div>
+          </div>
         </div>
 
-        <div class="case-study" style="border-left: 4px solid #e91e63;">
-            <h3 class="project-title" style="color: #e91e63; margin-top:0;">🛡️ System Hardening & Java Registry Optimization</h3>
-            <p><strong>Scenario:</strong> Core Banking application failed to launch after a mandatory Java version upgrade performed during a system hardening activity.</p>
-            <div class="troubleshooting-steps">
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px;">🔍 <strong>Root Cause Analysis:</strong> Identified that the application was referencing incorrect file paths due to residual legacy Java registry entries that were not removed during the standard update.</li>
-                    <li style="margin-bottom: 10px;">✅ <strong>Resolution:</strong> Performed a deep registry cleanup of legacy Java keys, re-configured environment variables, and executed a fresh validated installation.</li>
-                    <li>📈 <strong>Outcome:</strong> Restored full application functionality and ensured the workstation met the required security compliance standards.</li>
-                </ul>
+        <div class="row">
+          <div class="col s12 l6">
+            <div class="case-study-card" style="border-top: 3px solid #ff9800; padding: 20px; background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 20px; min-height: 380px;">
+                <h5 style="color: #ff9800; font-size: 1.3rem;"><i class="material-icons left">security</i> Domain Trust Fix</h5>
+                <p class="grey-text text-lighten-2" style="font-size: 0.9rem;">Resolved workstation "Trust Relationship" failures.</p>
+                <div class="steps" style="font-size: 0.85rem; border-top: 1px solid #333; pt-10;">
+                    <p><b>Method:</b> Used <code>Test-ComputerSecureChannel -Repair</code> via PowerShell to restore link without rejoining.</p>
+                    <p><b>Integrity:</b> Repaired security links with zero risk to local user profiles or group memberships.</p>
+                    <p><b>Lifecycle:</b> Skilled in AD Admin coordination for clean object resets and rejoins.</p>
+                </div>
+                <span class="new badge orange darken-4 left" data-badge-caption="Active Directory" style="margin-top:10px;"></span>
             </div>
+          </div>
+         <div class="col s12 l6">
+            <div class="case-study-card" style="border-top: 3px solid #e91e63; padding: 20px; background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 20px; min-height: 380px;">
+                <h5 style="color: #e91e63; font-size: 1.3rem;"><i class="material-icons left">build</i> System Hardening</h5>
+                <p class="grey-text text-lighten-2" style="font-size: 0.9rem;">Java dependency and registry optimization for Core Banking.</p>
+                <div class="steps" style="font-size: 0.85rem; border-top: 1px solid #333; pt-10;">
+                    <p><b>Analysis:</b> Identified application launch failures caused by residual legacy Java registry entries.</p>
+                    <p><b>Resolution:</b> Performed deep registry cleanup and fresh validated Java installation.</p>
+                    <p><b>Outcome:</b> Restored application functionality while meeting strict hardening security standards.</p>
+                </div>
+                <span class="new badge pink darken-3 left" data-badge-caption="Troubleshooting" style="margin-top:10px;"></span>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
   </div>
    </div>
-
         
       <div class="section-divider"></div>
         <!-- Soft Skills Section -->
