@@ -2981,5 +2981,20 @@ html {
   background-color: rgba(0, 229, 255, 0.2);
   color: #00e5ff;
 }
+/* ===== Process 3: Project Card Hover Effects ===== */
+.project-card {
+  /* Ensure your cards have a smooth transition base */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(38, 166, 154, 0.2); /* Subtle teal border base */
+}
+
+/* Hover State */
+.project-card:hover {
+  transform: translateY(-6px); /* Smoothly lifts the card up */
+  border-color: #00e5ff; /* Sharp cyan border on hover */
+  /* Creates a high-end, diffused glow underneath */
+  box-shadow: 0 10px 25px -5px rgba(0, 229, 255, 0.15), 
+              0 8px 10px -6px rgba(38, 166, 154, 0.2);
+}
 
 
