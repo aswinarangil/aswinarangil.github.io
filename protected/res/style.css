@@ -3234,5 +3234,95 @@ html {
 .form-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
+/* ===== Process 14: Terminal Log Layout ===== */
+.console-box {
+  background: rgba(7, 9, 12, 0.8);
+  border-left: 3px solid #26a69a;
+  padding: 16px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.console-box:hover {
+  border-left-color: #00e5ff;
+  background: rgba(7, 9, 12, 0.95);
+  box-shadow: inset 5px 0 15px rgba(0, 229, 255, 0.05);
+}
+
+.console-box::before {
+  content: 'SYSTEM //';
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #26a69a;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.console-box:hover::before {
+  color: #00e5ff;
+}
+/* ===== Process 15: 3D Isometric Lift ===== */
+.isometric-card {
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+
+.isometric-card:hover {
+  transform: perspective(1000px) rotateX(6deg) rotateY(-6deg) scale3d(1.02, 1.02, 1.02);
+  box-shadow: 
+    -10px 15px 30px rgba(0, 229, 255, 0.15),
+    10px -5px 20px rgba(38, 166, 154, 0.05);
+}
+/* ===== Process 16: Cyber-Glow Switches ===== */
+.cyber-switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.cyber-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(38, 166, 154, 0.3);
+  border-radius: 34px;
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #26a69a;
+  border-radius: 50%;
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Checked States */
+input:checked + .switch-slider {
+  background-color: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+}
+
+input:checked + .switch-slider:before {
+  transform: translateX(24px);
+  background-color: #00e5ff;
+  box-shadow: 0 0 10px #00e5ff;
+}
 
 
