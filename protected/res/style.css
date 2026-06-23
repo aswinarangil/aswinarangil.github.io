@@ -2996,5 +2996,24 @@ html {
   box-shadow: 0 10px 25px -5px rgba(0, 229, 255, 0.15), 
               0 8px 10px -6px rgba(38, 166, 154, 0.2);
 }
+/* ===== Process 4: Neon Header Pulse ===== */
+.neon-text {
+  color: #ffffff;
+  /* Base text shadow for crisp sharpness */
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+  animation: neonPulse 3s ease-in-out infinite alternate;
+}
+
+/* Smooth pulsing animation */
+@keyframes neonPulse {
+  0% {
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.3), 
+                 0 0 20px rgba(38, 166, 154, 0.1);
+  }
+  100% {
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.6), 
+                 0 0 30px rgba(38, 166, 154, 0.3);
+  }
+}
 
 
