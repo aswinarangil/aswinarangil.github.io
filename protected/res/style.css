@@ -2969,5 +2969,17 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #26a69a #07090c;
 }
+/* ===== Process 2: Premium Text Selection ===== */
+/* Targets highlighted text across the entire site */
+::selection {
+  background-color: rgba(0, 229, 255, 0.2); /* Subtle cyan glow background */
+  color: #00e5ff; /* Crisp cyan text color */
+}
+
+/* Firefox compatibility */
+::-moz-selection {
+  background-color: rgba(0, 229, 255, 0.2);
+  color: #00e5ff;
+}
 
 
