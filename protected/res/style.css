@@ -3015,5 +3015,19 @@ html {
                  0 0 30px rgba(38, 166, 154, 0.3);
   }
 }
+/* ===== Process 5: Glassmorphic Nav Bar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Dark background with heavy transparency */
+  background: rgba(7, 9, 12, 0.7); 
+  /* The magic blur effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* Ultra-faint border to define the edge */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
 
 
