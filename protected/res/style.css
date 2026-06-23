@@ -2944,3 +2944,30 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* ===== Process 1: Premium Custom Scrollbar ===== */
+/* Target the scrollbar track (background) */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #07090c; /* Matches your --bg0 token */
+}
+
+/* Target the draggable thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #26a69a, #00e5ff);
+  border-radius: 999px;
+  border: 2px solid #07090c; /* Creates a clean padding effect */
+}
+
+/* Hover effect on the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00e5ff, #26a69a);
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+}
+
+/* For Firefox compatibility */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #26a69a #07090c;
+}
+
+
