@@ -3081,5 +3081,17 @@ html {
   color: #00e5ff;
   border-color: #00e5ff;
 }
+/* ===== Process 8: Cyberpunk Grid Background ===== */
+.hero-section, .main-container {
+  position: relative;
+  /* Adjust background color to match your base */
+  background-color: #07090c; 
+  /* Creates a precise 40px x 40px technical grid lines pattern */
+  background-image: 
+    linear-gradient(rgba(38, 166, 154, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 166, 154, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+}
 
 
