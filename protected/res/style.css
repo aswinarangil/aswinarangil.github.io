@@ -3427,6 +3427,118 @@ input:checked + .switch-slider:before {
     opacity: 0;
   }
 }
+/* ===== Process 20: Cyber Tooltips ===== */
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip-box {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #07090c;
+  border: 1px solid #26a69a;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0, 229, 255, 0.1);
+}
+
+/* Micro corner accent for engineering aesthetic */
+.tooltip-box::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #26a69a transparent transparent transparent;
+}
+
+.tooltip-wrapper:hover .tooltip-box {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+/* ===== Process 21: Holographic Corner Brackets ===== */
+.bracket-card {
+  position: relative;
+  background: rgba(7, 9, 12, 0.5);
+  border: 1px solid rgba(38, 166, 154, 0.1);
+  padding: 30px;
+}
+
+/* Top-Left Bracket */
+.bracket-card::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px;
+  width: 12px; height: 12px;
+  border-top: 2px solid #00e5ff;
+  border-left: 2px solid #00e5ff;
+}
+
+/* Bottom-Right Bracket */
+.bracket-card::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; right: -2px;
+  width: 12px; height: 12px;
+  border-bottom: 2px solid #26a69a;
+  border-right: 2px solid #26a69a;
+}
+/* ===== Process 22: Kinetic Slanted Shimmer ===== */
+.btn-shimmer {
+  position: relative;
+  padding: 12px 28px;
+  background: transparent;
+  color: #26a69a;
+  border: 1px solid #26a69a;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -150%;
+  width: 50%; height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 229, 255, 0.4),
+    transparent    
+  );
+  transform: skewX(-20deg);
+}
+
+/* Animation run on hover */
+.btn-shimmer:hover {
+  color: #00e5ff;
+  border-color: #00e5ff;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.btn-shimmer:hover::before {
+  animation: kineticFlash 0.75s ease-out;
+}
+
+@keyframes kineticFlash {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
 
 
 
