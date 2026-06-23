@@ -3118,5 +3118,35 @@ html {
 .gradient-card:hover::before {
   opacity: 1;
 }
+/* ===== Process 10: Smooth Image Glaze ===== */
+.project-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #07090c;
+}
+
+.project-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(40%) contrast(110%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+/* On hover, unlock full color depth and add a subtle zooming motion */
+.project-img-wrapper:hover img {
+  filter: grayscale(0%) contrast(100%);
+  transform: scale(1.03);
+}
+
+/* Adds a tech overlay tint on top of the image */
+.project-img-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, transparent 60%, rgba(0, 229, 255, 0.15));
+  pointer-events: none;
+}
 
 
