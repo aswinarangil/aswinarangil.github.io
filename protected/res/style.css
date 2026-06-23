@@ -3183,5 +3183,32 @@ html {
   0% { background-position: 0 0; }
   100% { background-position: 30px 0; }
 }
+/* ===== Process 12: Cyberpunk Dividers ===== */
+.tech-divider {
+  height: 1px;
+  width: 100%;
+  margin: 40px 0;
+  position: relative;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(38, 166, 154, 0.2) 20%, 
+    rgba(0, 229, 255, 0.6) 50%, 
+    rgba(38, 166, 154, 0.2) 80%, 
+    transparent 100%
+  );
+}
+
+/* Tiny central core point for an engineering aesthetic */
+.tech-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: #00e5ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00e5ff;
+}
 
 
