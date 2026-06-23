@@ -3063,5 +3063,23 @@ html {
 .btn-primary:hover::before {
   left: 100%;
 }
+/* ===== Process 7: Tech Stack Badges ===== */
+.tech-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(38, 166, 154, 0.05);
+  color: #26a69a;
+  border: 1px solid rgba(38, 166, 154, 0.2);
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace; /* Coding vibe */
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+  background: rgba(0, 229, 255, 0.1);
+  color: #00e5ff;
+  border-color: #00e5ff;
+}
 
 
