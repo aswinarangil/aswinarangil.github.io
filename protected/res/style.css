@@ -3671,4 +3671,29 @@ input:checked + .switch-slider:before {
   color: var(--accent-cyan);
 }
 
+/* Enhanced Animations & Glow Effects */
+.skill-tag {
+  transition: all 0.25s ease-in-out;
+}
+
+.skill-tag:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+  transform: translateY(-2px);
+}
+
+.action-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+/* Smooth Navigation Scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 
