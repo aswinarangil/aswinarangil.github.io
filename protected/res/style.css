@@ -4655,3 +4655,44 @@ body {
   70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(0, 229, 255, 0); }
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 229, 255, 0); }
 }
+
+/* Core Technical Skills Styling */
+.skills-section {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+.skills-heading {
+  color: #00e5ff;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  color: #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(0, 229, 255, 0.15);
+  border-color: #00e5ff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
