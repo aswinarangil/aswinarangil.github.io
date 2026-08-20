@@ -4624,3 +4624,34 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+/* Availability Banner Styling */
+.availability-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  color: #e2e8f0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin: 20px auto;
+  max-width: max-content;
+  text-align: center;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #00e5ff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00e5ff;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(0, 229, 255, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 229, 255, 0); }
+}
