@@ -4578,3 +4578,49 @@ body {
   opacity: 1;
   bottom: 50px;
 }
+
+
+
+/* Highlights Cards Styling */
+.highlights-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 900px;
+  padding: 0 15px;
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px 25px;
+  text-align: center;
+  flex: 1 1 200px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  border-color: #00e5ff;
+  box-shadow: 0 6px 20px rgba(0, 229, 255, 0.2);
+}
+
+.highlight-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00e5ff;
+  margin-bottom: 5px;
+}
+
+.highlight-label {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
