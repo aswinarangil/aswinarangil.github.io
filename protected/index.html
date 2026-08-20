@@ -1674,6 +1674,22 @@ Banking Domain
     document.getElementById('scroll-progress').style.width = scrolled + '%';
   });
  </script>
+ <script>
+  function filterItems(category) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    const items = document.querySelectorAll('[data-category]');
+    items.forEach(item => {
+      if (category === 'all' || item.getAttribute('data-category') === category) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+ </script>
  
    </body>
    </html>
