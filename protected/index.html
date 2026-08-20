@@ -1407,7 +1407,13 @@ Banking Domain
   <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title">Key Projects & Deployments</h2>
-
+       <div class="filter-wrapper">
+  <button class="filter-btn active" onclick="filterItems('all')">All</button>
+  <button class="filter-btn" onclick="filterItems('network')">Networking</button>
+  <button class="filter-btn" onclick="filterItems('deploy')">Deployments</button>
+  <button class="filter-btn" onclick="filterItems('sysadmin')">SysAdmin</button>
+       </div>
+     
       <div class="projects-grid">
         <!-- Project 1 -->
         <div class="premium-card project-card">
