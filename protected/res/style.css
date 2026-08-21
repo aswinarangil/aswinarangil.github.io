@@ -4882,4 +4882,31 @@ body {
   font-weight: bold;
 }
 
+/* Download Resume Button Styling */
+.resume-action {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #00e5ff;
+  color: #0b0f19;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+}
+
+.download-btn:hover {
+  background: #ffffff;
+  color: #0b0f19;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
 
