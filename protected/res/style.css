@@ -5249,3 +5249,71 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 229, 255, 0.3);
 }
+/* Technical Capabilities Section Styling */
+.capabilities-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.capability-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.capability-card:hover {
+  border-color: rgba(0, 229, 255, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-3px);
+}
+
+.capability-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 10px;
+}
+
+.capability-icon {
+  font-size: 1.4rem;
+}
+
+.capability-header h4 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.capability-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.capability-list li {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  padding: 5px 0;
+  position: relative;
+  padding-left: 18px;
+}
+
+.capability-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #00e5ff;
+}
+
+
