@@ -4814,3 +4814,72 @@ body {
   border-radius: 12px;
   font-weight: 600;
 }
+
+/* Interactive Terminal Styling */
+.terminal-section {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #0d1117;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-header {
+  background: #161b22;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.t-dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.t-title {
+  color: #8b949e;
+  font-size: 0.85rem;
+  margin-left: 10px;
+}
+
+.terminal-body {
+  padding: 20px;
+  color: #e6edf3;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.prompt {
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+.cert-list {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.cert-item {
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.check {
+  color: #27c93f;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+
