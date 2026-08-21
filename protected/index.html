@@ -438,6 +438,47 @@ Contact
     <div class="skill-tag">Norton Ghost / Mass Disk Imaging</div>
     <div class="skill-tag">Network Troubleshooting & AP Setup</div>
   </div>
+             <!-- Interactive Skills Matrix -->
+<div class="skills-matrix-section">
+  <h3 class="section-title">Technical Skillset</h3>
+  
+  <div class="filter-tabs">
+    <button class="filter-btn active" onclick="filterSkills('all')">All</button>
+    <button class="filter-btn" onclick="filterSkills('sysadmin')">SysAdmin & OS</button>
+    <button class="filter-btn" onclick="filterSkills('cloud')">Cloud & Virtualization</button>
+    <button class="filter-btn" onclick="filterSkills('network')">Networking & Deployment</button>
+  </div>
+
+  <div class="skills-tags-container">
+    <span class="skill-chip" data-category="sysadmin">RHEL / CentOS</span>
+    <span class="skill-chip" data-category="sysadmin">Windows Server</span>
+    <span class="skill-chip" data-category="sysadmin">Bash Scripting</span>
+    <span class="skill-chip" data-category="cloud">Microsoft Azure (AZ-104)</span>
+    <span class="skill-chip" data-category="cloud">Thin Client Infrastructure</span>
+    <span class="skill-chip" data-category="network">Dual-Band Fiber ONTs</span>
+    <span class="skill-chip" data-category="network">Norton Ghost / Disk Imaging</span>
+    <span class="skill-chip" data-category="network">DNS / DHCP / Subnetting</span>
+  </div>
+</div>
+
+<script>
+  function filterSkills(category) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const chips = document.querySelectorAll('.skill-chip');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    chips.forEach(chip => {
+      if (category === 'all' || chip.getAttribute('data-category') === category) {
+        chip.style.display = 'inline-block';
+      } else {
+        chip.style.display = 'none';
+      }
+    });
+  }
+</script>
+             
            <!-- Featured Projects Section -->
 <div class="projects-section">
   <h3 class="projects-heading">Key Technical Deployment</h3>
