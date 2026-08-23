@@ -368,4 +368,30 @@ input[type="password"]:focus, input[type="text"]:focus {
   }
 }
 
+/* Button Active Click Elevation */
+button[type="submit"]:active {
+  transform: translateY(1px) scale(0.98) !important;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.8) !important;
+}
+
+button[type="submit"]:focus {
+  outline: 2px solid #00e5ff;
+  outline-offset: 3px;
+}
+
+/* Terminal Style Text Selection */
+::selection {
+  background: rgba(0, 229, 255, 0.3) !important;
+  color: #00e5ff !important;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+}
+
+::-moz-selection {
+  background: rgba(0, 229, 255, 0.3) !important;
+  color: #00e5ff !important;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+}
+
+
+
 
