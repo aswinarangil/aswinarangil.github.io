@@ -109,5 +109,19 @@
             });
         });
     </script>
+    <script>
+    // Existing script content remains...
+
+    // Quick Escape key reset listener
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") {
+            const passwordInput = document.getElementById("password");
+            const errorDiv = document.getElementById("error-message");
+            if (passwordInput) passwordInput.value = "";
+            if (errorDiv) errorDiv.style.display = "none";
+        }
+    });
+    </script>
+    
 </body>
 </html>
