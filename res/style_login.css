@@ -278,3 +278,94 @@ button[type="submit"]::after {
 button[type="submit"]:hover::after {
   left: 100%;
 }
+
+/* Precise Input & Eye Toggle Styling */
+input[type="password"], input[type="text"] {
+  padding-right: 42px !important;
+}
+
+#togglePassword {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  top: 15px !important;
+  right: 14px !important;
+}
+
+#togglePassword i {
+  font-size: 15px;
+  color: rgba(0, 229, 255, 0.7);
+  transition: all 0.25s ease;
+}
+
+#togglePassword:hover i {
+  color: #00e5ff;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.8));
+}
+
+/* Animated Cyber Grid Overlay */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: 
+    linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Password Field Active Glow Frame */
+.login-container form div {
+  position: relative;
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+  outline: none;
+  border-color: #00e5ff !important;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4), inset 0 0 10px rgba(0, 229, 255, 0.1) !important;
+}
+
+#error-message {
+  animation: shake 0.4s ease-in-out;
+}
+
+
+/* Container Elevation & Subtle Glass Reflection */
+.login-container {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 50px rgba(0, 229, 255, 0.18), 0 25px 60px rgba(0, 0, 0, 0.9) !important;
+}
+
+
+/* Responsive Viewport Optimizations */
+@media (max-width: 480px) {
+  .login-container {
+    width: 85% !important;
+    padding: 28px 20px !important;
+    border-radius: 18px !important;
+  }
+
+  h2 {
+    font-size: 1.2rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .user-profile {
+    width: 75px !important;
+    height: 75px !important;
+  }
+}
+
+
