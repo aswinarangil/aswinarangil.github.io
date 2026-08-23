@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aswin Arangil | Secure Access</title>
+    <title>Aswin Arangil | Secure Access Terminal</title>
     <link rel="stylesheet" href="./res/style_login.css">
+    <!-- FontAwesome Icons for Toggle -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="login-container">
+        <!-- Live System Indicator -->
+        <div style="font-size: 11px; color: #10b981; font-weight: 600; font-family: monospace; letter-spacing: 1.5px; margin-bottom: 15px; display: inline-flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.1); padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.3);">
+            <span style="height: 6px; width: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 6px #10b981;"></span>
+            SYSTEM ONLINE
+        </div>
+
         <img src="./res/aswn.jpg" class="user-profile" alt="Aswin Arangil">
 
         <h2>Workstation Login</h2>
 
-        <form id="login-form">
-            <div style="margin-bottom:15px; position: relative;">
-                <input type="password" id="password" placeholder="Enter Access Key" required>
+        <form id="login-form" autocomplete="off">
+            <div style="margin-bottom:20px; position: relative;">
+                <input type="password" id="password" placeholder="Enter Access Key" required autocomplete="current-password">
                 <button type="button" id="togglePassword" 
-                        style="position: absolute; right: 10px; top: 12px; background: none; border: none; color: #00e5ff; cursor: pointer; width: auto; padding: 0; font-size: 11px; font-weight: bold; letter-spacing: 1px;">
-                    SHOW
+                        aria-label="Toggle password visibility"
+                        style="position: absolute; right: 12px; top: 14px; background: none; border: none; color: #00e5ff; cursor: pointer; width: auto; padding: 0; font-size: 14px;">
+                    <i class="fa-solid fa-eye" id="toggleIcon"></i>
                 </button>
             </div>
 
             <button type="submit" id="submit-btn">
-                <span id="btn-text">Unlock Portfolio</span>
+                <span id="btn-text">Unlock Portfolio <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></span>
                 <div class="spinner" id="loader"></div>
             </button>
         </form>
 
-        <div id="error-message">Access Denied: Invalid Key</div>
+        <div id="error-message"><i class="fa-solid fa-triangle-exclamation" style="margin-right: 6px;"></i> Access Denied: Invalid Key</div>
     </div>
 
     <script>
@@ -44,6 +53,7 @@
             const form = document.getElementById("login-form");
             const passwordInput = document.getElementById("password");
             const togglePassword = document.getElementById("togglePassword");
+            const toggleIcon = document.getElementById("toggleIcon");
             const errorDiv = document.getElementById("error-message");
             const submitBtn = document.getElementById("submit-btn");
             const btnText = document.getElementById("btn-text");
@@ -51,14 +61,16 @@
 
             const correctPasswordHash = "eb9c28e32aec35dfb0233e540dc27587df61603ae7efa6f28753cb1dd1f4f43c";
 
-            // Show/Hide Toggle Logic
+            // Show/Hide Toggle Logic with Icon Flip
             togglePassword.addEventListener("click", function() {
                 if (passwordInput.type === "password") {
                     passwordInput.type = "text";
-                    togglePassword.textContent = "HIDE";
+                    toggleIcon.classList.remove("fa-eye");
+                    toggleIcon.classList.add("fa-eye-slash");
                 } else {
                     passwordInput.type = "password";
-                    togglePassword.textContent = "SHOW";
+                    toggleIcon.classList.remove("fa-eye-slash");
+                    toggleIcon.classList.add("fa-eye");
                 }
             });
 
@@ -75,7 +87,6 @@
                 const enteredPassword = passwordInput.value;
                 const enteredHash = await hashPassword(enteredPassword);
 
-                // Artificial delay to feel like a "secure check"
                 setTimeout(function() {
                     if (enteredHash === correctPasswordHash) {
                         window.location.href = "protected/index.html"; 
@@ -90,7 +101,7 @@
                         submitBtn.style.animation = "none";
                         setTimeout(() => { submitBtn.style.animation = "shake 0.4s"; }, 10);
                     }
-                }, 1200); 
+                }, 1000); 
             });
 
             passwordInput.addEventListener("input", () => {
