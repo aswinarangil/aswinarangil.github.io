@@ -5469,4 +5469,142 @@ html {
   background: #00e5ff;
   box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
+/* Entrance Keyframe Animations & Page Reveals */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.capabilities-section,
+.capability-card,
+.deployment-card,
+.cert-badge,
+.achievement-card {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Staggered entrance for capabilities grid */
+.capability-card:nth-child(1) { animation-delay: 0.1s; }
+.capability-card:nth-child(2) { animation-delay: 0.2s; }
+.capability-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Modern Footer Glass & Ambient Glow Upgrade */
+.site-footer {
+  position: relative;
+  background: rgba(11, 15, 25, 0.8) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-top: 1px solid rgba(0, 229, 255, 0.2) !important;
+  box-shadow: 0 -10px 25px -5px rgba(0, 229, 255, 0.05) !important;
+  padding: 30px 20px !important;
+}
+
+.footer-text {
+  color: #94a3b8 !important;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.copyright {
+  color: #64748b !important;
+  font-size: 0.85rem;
+}
+
+/* Responsive Mobile & Tablet Layout Enhancements */
+@media (max-width: 768px) {
+  body {
+    padding: 12px !important;
+  }
+  
+  .capabilities-grid,
+  .deployment-grid,
+  .cert-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .capability-card,
+  .deployment-card,
+  .cert-badge {
+    padding: 18px !important;
+  }
+
+  .social-links {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+}
+
+
+/* Section Container Framing & Elevation */
+section, .section-block, .content-wrapper {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+section:hover, .section-block:hover {
+  border-color: rgba(0, 229, 255, 0.25);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.05);
+}
+
+/* Terminal-Style Custom Bullet Points */
+ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+ul li {
+  position: relative;
+  padding-left: 24px !important;
+  margin-bottom: 10px !important;
+  color: #cbd5e1;
+}
+
+ul li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00e5ff;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(0, 229, 255, 0.6);
+  }
+
+/* Interactive Card Title Hover Accent */
+.capability-card h3,
+.deployment-card h3,
+.achievement-card h3 {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.capability-card h3::after,
+.deployment-card h3::after,
+.achievement-card h3::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #00e5ff;
+  box-shadow: 0 0 8px #00e5ff;
+  transition: width 0.3s ease;
+}
+
+.capability-card:hover h3::after,
+.deployment-card:hover h3::after,
+.achievement-card:hover h3::after {
+  width: 100%;
+}
