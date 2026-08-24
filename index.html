@@ -61,7 +61,7 @@
 
             const correctPasswordHash = "eb9c28e32aec35dfb0233e540dc27587df61603ae7efa6f28753cb1dd1f4f43c";
 
-            // Show/Hide Toggle Logic
+            // Show/Hide Toggle Logic with Icon Flip
             togglePassword.addEventListener("click", function() {
                 if (passwordInput.type === "password") {
                     passwordInput.type = "text";
@@ -97,11 +97,11 @@
                         loader.style.display = "none";
                         errorDiv.style.display = "block";
                         
-                        // Shake feedback
+                        // Shake the button for feedback
                         submitBtn.style.animation = "none";
                         setTimeout(() => { submitBtn.style.animation = "shake 0.4s"; }, 10);
                     }
-                }, 600); 
+                }, 600);
             });
 
             passwordInput.addEventListener("input", () => {
