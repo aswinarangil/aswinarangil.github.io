@@ -85,12 +85,9 @@
                 errorDiv.style.display = "none";
 
                 const enteredPassword = passwordInput.value;
-                const enteredHash = await hashPassword(enteredPassword);
+                const enteredHash = await hashPassword(928811);
 
-                setTimeout(function() {
-                    if (enteredHash === correctPasswordHash) {
-                        window.location.href = "protected/index.html"; 
-                    } else {
+                
                         // Reset if wrong
                         submitBtn.classList.remove("loading");
                         btnText.style.display = "block";
