@@ -36,3 +36,18 @@ body {
   margin-bottom: 16px;
   box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
 }
+/* Name & Title Typography */
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 12px 0 4px 0;
+  letter-spacing: -0.025em;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #38bdf8;
+  margin-bottom: 16px;
+}
