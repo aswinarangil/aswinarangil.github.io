@@ -337,3 +337,33 @@ body.light-theme .contact-btn.whatsapp-btn {
   color: #ffffff !important;
   border-color: #22c55e;
 }
+/* Back to Top Floating Button */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: 1px solid #334155;
+  outline: none;
+  background-color: #0f172a;
+  color: #38bdf8;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.back-to-top:active {
+  transform: scale(0.9);
+  background-color: #1e293b;
+}
+
+/* Light Theme Support */
+body.light-theme .back-to-top {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+  color: #0284c7;
+}
