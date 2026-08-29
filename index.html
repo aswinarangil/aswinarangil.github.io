@@ -235,6 +235,21 @@ function filterSkills() {
   });
 }
     
+    function filterExp(category, evt) {
+  const cards = document.querySelectorAll('.exp-card');
+  const buttons = document.querySelectorAll('.exp-filter-btn');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  evt.currentTarget.classList.add('active');
+
+  cards.forEach(card => {
+    if (category === 'all' || card.classList.contains(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+    }
     
   </script>
 <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆️</button>
