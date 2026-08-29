@@ -274,3 +274,47 @@ h1 {
     transform: translateY(0);
   }
 }
+/* Stats Counter Styling */
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 15px 0 20px 0;
+}
+
+.stat-box {
+  flex: 1;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+/* Light Theme Support for Stats */
+body.light-theme .stat-box {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+body.light-theme .stat-number {
+  color: #0284c7;
+}
+
+body.light-theme .stat-label {
+  color: #64748b;
+}
