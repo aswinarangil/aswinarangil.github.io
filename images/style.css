@@ -460,3 +460,62 @@ body.light-theme .copy-email-btn {
 body.light-theme .copy-email-btn:hover {
   background-color: #e2e8f0;
 }
+/* Save PDF / Print Button Styling */
+.print-btn {
+  background-color: #1e293b;
+  color: #38bdf8;
+  border: 1px solid #334155;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 6px;
+  transition: all 0.2s ease;
+}
+
+.print-btn:hover {
+  background-color: #334155;
+  border-color: #38bdf8;
+}
+
+/* Light Theme Support */
+body.light-theme .print-btn {
+  background-color: #f1f5f9;
+  color: #0284c7;
+  border-color: #cbd5e1;
+}
+
+body.light-theme .print-btn:hover {
+  background-color: #e2e8f0;
+}
+
+/* Print View Optimizations */
+@media print {
+  /* Hide non-printable interactive elements */
+  #theme-btn, 
+  .copy-email-btn, 
+  .print-btn, 
+  .exp-filter-container, 
+  #skills-search, 
+  #backToTopBtn {
+    display: none !important;
+  }
+
+  /* Force dark elements to render clearly on white paper */
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .tab-content {
+    display: block !important;
+    margin-bottom: 20px;
+  }
+
+  .exp-card {
+    display: block !important;
+    page-break-inside: avoid;
+  }
+}
