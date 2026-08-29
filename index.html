@@ -166,6 +166,16 @@
       document.getElementById(tabId).classList.add('active');
       evt.currentTarget.classList.add('active');
     }
+    function toggleTheme() {
+  document.body.classList.toggle('light-theme');
+  const btn = document.getElementById('theme-btn');
+  if (document.body.classList.contains('light-theme')) {
+    btn.textContent = '🌙 Dark Mode';
+  } else {
+    btn.textContent = '☀️ Light Mode';
+  }
+}
+
   </script>
 
 </body>
