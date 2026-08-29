@@ -27,18 +27,44 @@
             padding: 0;
         }
 
-        body {
-            font-family: var(--font-family);
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
+        <!-- Tab Buttons -->
+<div class="tab-container">
+  <button class="tab-btn active" onclick="switchTab('about')">About</button>
+  <button class="tab-btn" onclick="switchTab('experience')">Experience</button>
+  <button class="tab-btn" onclick="switchTab('contact')">Contact</button>
+</div>
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+<!-- Tab 1: About -->
+<div id="about" class="tab-content active">
+  <p class="bio">
+    IT Support Engineer with extensive experience supporting BFSI environments and end-user computing across multiple banking branches.
+  </p>
+</div>
+
+<!-- Tab 2: Experience -->
+<div id="experience" class="tab-content">
+  <p class="bio">
+    Skilled in desktop support, thin client configuration, endpoint troubleshooting, basic Active Directory administration, software audits, and patch updates while maintaining strict SLA compliance.
+  </p>
+</div>
+
+<!-- Tab 3: Contact -->
+<div id="contact" class="tab-content">
+  <p class="bio">📞 9567863206</p>
+  <p class="bio">✉️ aswin... [Your Email]</p>
+</div>
+
+<!-- Tab Switcher Script -->
+<script>
+  function switchTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    
+    document.getElementById(tabId).classList.add('active');
+    event.currentTarget.classList.add('active');
+  }
+</script>
+      
 
         /* Header / Profile Section */
         .profile-card {
