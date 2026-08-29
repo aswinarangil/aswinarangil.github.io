@@ -318,3 +318,22 @@ body.light-theme .stat-number {
 body.light-theme .stat-label {
   color: #64748b;
 }
+/* WhatsApp Action Button Styling */
+.contact-btn.whatsapp-btn {
+  background-color: #25d366;
+  color: #0f172a !important;
+  border-color: #22c55e;
+  font-weight: 600;
+}
+
+.contact-btn.whatsapp-btn:active {
+  background-color: #16a34a;
+  color: #ffffff !important;
+}
+
+/* Light Theme Support */
+body.light-theme .contact-btn.whatsapp-btn {
+  background-color: #25d366;
+  color: #ffffff !important;
+  border-color: #22c55e;
+}
