@@ -392,3 +392,42 @@ body.light-theme .search-input {
   border-color: #cbd5e1;
   color: #0f172a;
 }
+/* Experience Sub-Filter Buttons */
+.exp-filter-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.exp-filter-btn {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exp-filter-btn.active {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Light Theme Support */
+body.light-theme .exp-filter-btn {
+  background-color: #f8fafc;
+  color: #64748b;
+  border-color: #cbd5e1;
+}
+
+body.light-theme .exp-filter-btn.active {
+  background-color: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+}
