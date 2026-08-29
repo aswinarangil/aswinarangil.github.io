@@ -20,27 +20,54 @@
     <div class="tab-container">
       <button class="tab-btn active" onclick="switchTab(event, 'about')">About</button>
       <button class="tab-btn" onclick="switchTab(event, 'experience')">Experience</button>
+      <button class="tab-btn" onclick="switchTab(event, 'skills')">Skills</button>
       <button class="tab-btn" onclick="switchTab(event, 'contact')">Contact</button>
     </div>
 
     <!-- Tab 1: About -->
     <div id="about" class="tab-content active">
       <p class="bio">
-        IT Support Engineer with extensive experience supporting BFSI environments and end-user computing across multiple banking branches.
+        Senior IT Support Engineer with over 8 years of experience in IT infrastructure, desktop support, and end-user computing, primarily within the BFSI sector. Proven expertise in thin client configuration, endpoint troubleshooting, software audits, patch updates, and basic Active Directory administration while maintaining strict SLA compliance across multiple banking branches.
+      </p>
+      <p class="bio">
+        <strong>Education:</strong> Diploma in Applied Electronics (Kerala IHRD)
       </p>
     </div>
 
     <!-- Tab 2: Experience -->
     <div id="experience" class="tab-content">
-      <p class="bio">
-        Skilled in desktop support, thin client configuration, endpoint troubleshooting, basic Active Directory administration, software audits, and patch updates while maintaining strict SLA compliance.
-      </p>
+      <div class="bio">
+        <p><strong>Team Computers Pvt Ltd</strong> — Senior IT Support Engineer (2022 – 2023)</p>
+        <p>• Provided end-user computing and infrastructure support for BFSI environments.</p>
+        <p>• Managed OS deployment, patch updates, software audits, and SLA compliance across banking branch networks.</p>
+        
+        <p style="margin-top: 12px;"><strong>Linksys Technologies Pvt Ltd</strong> — Desktop Support Engineer (2019 – 2021)</p>
+        <p>• Handled hardware/software troubleshooting, thin client setups, network printer mapping, and remote access.</p>
+
+        <p style="margin-top: 12px;"><strong>Vara Solutions / 3i Infotech / Prudent Technologies</strong> — IT Support Specialist</p>
+        <p>• Endpoint troubleshooting, VPN setup, hardware maintenance, and user support.</p>
+      </div>
     </div>
 
-    <!-- Tab 3: Contact -->
+    <!-- Tab 3: Skills & Certifications -->
+    <div id="skills" class="tab-content">
+      <div class="skills-list">
+        <span class="skill-tag">Desktop Support</span>
+        <span class="skill-tag">Active Directory</span>
+        <span class="skill-tag">Thin Client Setup</span>
+        <span class="skill-tag">Endpoint Security</span>
+        <span class="skill-tag">VPN & Networking</span>
+        <span class="skill-tag">Patch Management</span>
+        <span class="skill-tag">RHCE Certified</span>
+        <span class="skill-tag">RHCSA</span>
+      </div>
+    </div>
+
+    <!-- Tab 4: Contact -->
     <div id="contact" class="tab-content">
       <p class="bio">📞 9567863206</p>
       <p class="bio">✉️ aswina30@gmail.com</p>
+      <p class="bio">📍 Location: Chennai / Kochi / Bangalore</p>
     </div>
 
   </div>
@@ -48,15 +75,12 @@
   <!-- Tab Switcher Script -->
   <script>
     function switchTab(evt, tabId) {
-      // Hide all tab contents
       const contents = document.querySelectorAll('.tab-content');
       contents.forEach(content => content.classList.remove('active'));
 
-      // Deactivate all tab buttons
       const buttons = document.querySelectorAll('.tab-btn');
       buttons.forEach(button => button.classList.remove('active'));
 
-      // Show current tab & activate current button
       document.getElementById(tabId).classList.add('active');
       evt.currentTarget.classList.add('active');
     }
