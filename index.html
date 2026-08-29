@@ -252,6 +252,16 @@ function filterSkills() {
     }
   });
     }
+    function copyEmail(btn) {
+  const email = "aswina.it@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    const originalText = btn.textContent;
+    btn.textContent = "✅ Copied!";
+    setTimeout(() => {
+      btn.textContent = originalText;
+    }, 2000);
+  });
+    }
     
   </script>
 <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆️</button>
