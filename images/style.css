@@ -125,3 +125,22 @@ h1 {
   border-radius: 20px;
   border: 1px solid #334155;
 }
+/* Download Resume Button */
+.btn-download {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 12px 0 20px 0;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+}
+
+.btn-download:active {
+  transform: scale(0.96);
+  background-color: #0284c7;
+  }
