@@ -208,6 +208,16 @@ window.onscroll = function() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+function filterSkills() {
+  const input = document.getElementById('skills-search').value.toLowerCase();
+  const items = document.querySelectorAll('.skill-item');
+
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(input) ? '' : 'none';
+  });
+}
+    
     
   </script>
 <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆️</button>
