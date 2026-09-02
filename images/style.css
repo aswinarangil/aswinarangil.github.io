@@ -640,3 +640,54 @@ body.light-theme .download-resume-btn:hover {
 .modal-content button.send-btn:hover {
   background-color: #0369a1;
 }
+/* Fixed Modal Layout & Alignment */
+.modal-content {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.modal-form .send-btn {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 10px;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-divider {
+  border: 0;
+  border-top: 1px solid #334155;
+  margin: 16px 0;
+}
+
+.contact-info p {
+  margin: 6px 0;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
