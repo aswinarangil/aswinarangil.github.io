@@ -301,16 +301,26 @@ window.onclick = function(event) {
     </form>
   </div>
 </div>
-    <!-- Quick Contact Popup -->
+  <!-- Quick Contact Modal -->
 <div id="contactModal" class="modal">
   <div class="modal-content">
     <span class="close-btn" onclick="closeModal()">&times;</span>
-    <h3>Contact Aswin</h3>
-    <p>📧 Email: <a href="mailto:aswina30@gmail.com">aswina30@gmail.com</a></p>
-    <p>📱 Phone: +91 9567863206</p>
-    <p>📍 Location: Kochi / Chennai / Bangalore</p>
+    <h3>Send a Message</h3>
+    <form class="modal-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+    <hr class="modal-divider">
+    <div class="contact-info">
+      <p>📧 Email: aswina.it@gmail.com</p>
+      <p>📱 Phone: +91 9567863206</p>
+      <p>📍 Location: Kochi / Chennai / Bangalore</p>
+    </div>
   </div>
 </div>
+
     
 </body>
                                                                                                      </html>
