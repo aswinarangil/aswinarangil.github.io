@@ -269,7 +269,23 @@ function filterSkills() {
     }, 2000);
   });
     }
-    
+    // Modal Toggle Functions
+function openModal() {
+  document.getElementById("contactModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("contactModal").style.display = "none";
+}
+
+// Close modal if user clicks outside the content box
+window.onclick = function(event) {
+  const modal = document.getElementById("contactModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+  
   </script>
 <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆️</button>
     <!-- Contact Form Modal -->
