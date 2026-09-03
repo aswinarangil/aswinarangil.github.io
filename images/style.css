@@ -562,3 +562,20 @@ body {
   color: #0f172a !important;
   border-color: #22c55e !important;
 }
+/* Company Logo Alignment inside Exp Cards */
+.exp-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.company-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
