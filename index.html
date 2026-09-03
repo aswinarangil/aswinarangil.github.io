@@ -302,13 +302,16 @@
       });
     }
 
-    function copyEmail(btn) {
+        function copyEmail(btn) {
       const email = "aswina.it@gmail.com";
       navigator.clipboard.writeText(email).then(() => {
         const originalText = btn.textContent;
         btn.textContent = "✅ Copied!";
+        btn.classList.add('copied');
+        
         setTimeout(() => {
           btn.textContent = originalText;
+          btn.classList.remove('copied');
         }, 2000);
       });
     }
