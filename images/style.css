@@ -458,3 +458,28 @@ body.light-theme .stat-box, body.light-theme .exp-card {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
 }
+/* Styling for Deployment Diagram */
+.architecture-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 0.8rem;
+}
+
+.diag-node {
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.diag-arrow {
+  color: #94a3b8;
+}
