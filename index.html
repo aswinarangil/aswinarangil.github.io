@@ -4,57 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aswin Arangil - Portfolio</title>
-  
-  
   <link rel="stylesheet" href="images/style.css">
 </head>
 <body>
 
   <!-- Main Card Container -->
   <div class="container">
-    <!-- Inside <div class="container"> -->
-<img src="images/profile.jpg" alt="Aswin Arangil" class="profile-img">
-<h1>Aswin Arangil</h1>
-    <button class="print-btn" onclick="window.print()">📄 Save PDF</button>
-    <a href="images/Aswin_resume1.pdf" download class="download-resume-btn">📥 Download Resume</a>
-    <button class="copy-email-btn" onclick="copyEmail(this)">📋 Copy Email</button>
-<button class="contact-trigger-btn" onclick="openModal()">💬 Quick Contact</button>
-    
 
-    
-<div class="title"> IT Support Engineer</div>
-    <div class="status-badge">
-  <span class="status-dot"></span> Available Immediately
+    <!-- Profile Header -->
+    <div class="theme-toggle-container">
+      <button id="theme-btn" class="theme-btn" onclick="toggleTheme()">☀️ Light Mode</button>
     </div>
-    
 
-<!-- Place Download Button Here -->
-<a href="images/Aswin_resume1.pdf" class="btn-download" download>
-  📄 Download Resume (PDF)
-</a>
-<!-- Interactive Key Metrics Counter -->
-<div class="stats-container">
-  <div class="stat-box">
-    <span class="stat-number">1500+</span>
-    <span class="stat-label">End Users</span>
-  </div>
-  <div class="stat-box">
-    <span class="stat-number">400+</span>
-    <span class="stat-label">Monthly Tickets</span>
-  </div>
-  <div class="stat-box">
-    <span class="stat-number">97%</span>
-    <span class="stat-label">SLA Adherence</span>
-  </div>
-</div>
-    
-<!-- Tab Navigation Buttons -->
-<div class="tab-container">
-  ...
-</div>
-    
+    <img src="images/profile.jpg" alt="Aswin Arangil" class="profile-img">
+    <h1>Aswin Arangil</h1>
+    <div class="title">IT Support Engineer</div>
 
-    
+    <div class="status-badge">
+      <span class="status-dot"></span> Available Immediately
+    </div>
+
+    <!-- Quick Utility Actions -->
+    <div class="action-buttons" style="margin-top: 15px;">
+      <button class="print-btn" onclick="window.print()">📄 Save PDF</button>
+      <a href="images/Aswin_resume1.pdf" download class="download-resume-btn">📥 Download Resume</a>
+      <button class="copy-email-btn" onclick="copyEmail(this)">📋 Copy Email</button>
+      <button class="contact-trigger-btn" onclick="openModal()">💬 Quick Contact</button>
+    </div>
+
+    <!-- Interactive Key Metrics Counter -->
+    <div class="stats-container">
+      <div class="stat-box">
+        <span class="stat-number">1500+</span>
+        <span class="stat-label">End Users</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">400+</span>
+        <span class="stat-label">Monthly Tickets</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">97%</span>
+        <span class="stat-label">SLA Adherence</span>
+      </div>
+    </div>
+
     <!-- Tab Navigation Buttons -->
     <div class="tab-container">
       <button class="tab-btn active" onclick="switchTab(event, 'about')">About</button>
@@ -62,11 +55,7 @@
       <button class="tab-btn" onclick="switchTab(event, 'skills')">Skills</button>
       <button class="tab-btn" onclick="switchTab(event, 'contact')">Contact</button>
     </div>
-<!-- Inside <div class="container"> right at the top -->
-<div class="theme-toggle-container">
-  <button id="theme-btn" class="theme-btn" onclick="toggleTheme()">☀️ Light Mode</button>
-</div>
-    
+
     <!-- Tab 1: About & Education -->
     <div id="about" class="tab-content active">
       <p class="bio">
@@ -84,119 +73,181 @@
       </div>
     </div>
 
-    <!-- Tab 2: Experience -->
-    
+    <!-- Tab 2: Experience & Deployments -->
+    <div id="experience" class="tab-content">
+      <div class="exp-filter-container">
+        <button class="exp-filter-btn active" onclick="filterExp('all', event)">All</button>
+        <button class="exp-filter-btn" onclick="filterExp('bfsi', event)">Banking / BFSI</button>
+        <button class="exp-filter-btn" onclick="filterExp('enterprise', event)">Enterprise</button>
+      </div>
 
+      <div id="experience-list" class="bio">
+        <div class="exp-card bfsi">
+          <p><strong>Team Computers Pvt Ltd | BFSI Client Environment</strong></p>
+          <p><em>IT Support Engineer (April 2022 – January 2023)</em></p>
+          <p>• Managed IT support for 1500+ end users across banking branches, resolving 400+ monthly tickets with 97% SLA adherence.</p>
+          <p>• Performed basic Active Directory administration (password resets, account unlocks, user access).</p>
+          <p>• Provided support for thin clients, desktops, quarterly software audits, patch updates, and system health checks.</p>
+        </div>
 
-    
-<div id="experience" class="tab-content">
-  <div class="exp-filter-container">
-    <button class="exp-filter-btn active" onclick="filterExp('all', event)">All</button>
-    <button class="exp-filter-btn" onclick="filterExp('bfsi', event)">Banking / BFSI</button>
-    <button class="exp-filter-btn" onclick="filterExp('enterprise', event)">Enterprise</button>
-  </div>
+        <div class="exp-card bfsi" style="margin-top: 16px;">
+          <p><strong>Linksys Technologies Pvt Ltd | SBI Banking Environment</strong></p>
+          <p><em>IT Support Engineer (March 2019 – January 2021)</em></p>
+          <p>• Provided remote support for banking branch endpoints, biometric devices, and core banking system connectivity.</p>
+          <p>• Installed and configured VMware clients for secure application access.</p>
+        </div>
 
-  <div id="experience-list" class="bio">
-    <div class="exp-card bfsi">
-      <p><strong>Team Computers Pvt Ltd | BFSI Client Environment</strong></p>
-      <p><em>IT Support Engineer (April 2022 – January 2023)</em></p>
-      <p>• Managed IT support for 1500+ end users across banking branches, resolving 400+ monthly tickets with 97% SLA adherence.</p>
-      <p>• Performed basic Active Directory administration (password resets, account unlocks, user access).</p>
-      <p>• Provided support for thin clients, desktops, quarterly software audits, patch updates, and system health checks.</p>
+        <div class="exp-card bfsi" style="margin-top: 16px;">
+          <p><strong>Vara Infotech Pvt Ltd | Banking Support Environment</strong></p>
+          <p><em>IT Support Engineer (August 2016 – November 2017)</em></p>
+          <p>• Managed IT support for 1000+ end users across branches; configured thin clients to centralized servers.</p>
+          <p>• Performed software audits, Landesk policies implementation, group policy updates, and registry modifications.</p>
+        </div>
+
+        <div class="exp-card enterprise" style="margin-top: 16px;">
+          <p><strong>3i Infotech Pvt Ltd | Enterprise Endpoint Environment</strong></p>
+          <p><em>IT Support Engineer (March 2015 – July 2016)</em></p>
+          <p>• Deployed Sophos disk encryption, BIOS password configurations, and endpoint security compliance checks.</p>
+        </div>
+
+        <div class="exp-card enterprise" style="margin-top: 16px;">
+          <p><strong>Prudent Technologies | Finance Company Support</strong></p>
+          <p><em>L1 IT Support Engineer (September 2012 – August 2014)</em></p>
+          <p>• Provided L1 support for finance endpoints, batch file backup automation, MS Outlook PST setup, and hardware maintenance.</p>
+        </div>
+      </div>
+
+      <!-- Key Technical Deployments -->
+      <div class="projects-container">
+        <h3>🛠️ Key Technical Deployments</h3>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <h4>Automated Mass System Deployment</h4>
+            <span class="project-tag">Infrastructure</span>
+          </div>
+          <p class="project-desc">Cloned and configured 40+ workstation PCs in a single day using automated disk imaging tools, reducing standard deployment time by 60%.</p>
+          <div class="project-tech">
+            <span>Norton Ghost</span>
+            <span>PXE Boot</span>
+            <span>Windows OS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h4>Dual-Router Access Point Integration</h4>
+            <span class="project-tag">Networking</span>
+          </div>
+          <p class="project-desc">Configured and optimized dual-band XPON ONTs and secondary wireless routers to fix MTU packet fragmentation and stabilize local network bandwidth.</p>
+          <div class="project-tech">
+            <span>XPON ONT</span>
+            <span>D-Link AP</span>
+            <span>TCP/IP</span>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="exp-card bfsi" style="margin-top: 16px;">
-      <p><strong>Linksys Technologies Pvt Ltd | SBI Banking Environment</strong></p>
-      <p><em>IT Support Engineer (March 2019 – January 2021)</em></p>
-      <p>• Provided remote support for banking branch endpoints, biometric devices, and core banking system connectivity.</p>
-      <p>• Installed and configured VMware clients for secure application access.</p>
-    </div>
-
-    <div class="exp-card bfsi" style="margin-top: 16px;">
-      <p><strong>Vara Infotech Pvt Ltd | Banking Support Environment</strong></p>
-      <p><em>IT Support Engineer (August 2016 – November 2017)</em></p>
-      <p>• Managed IT support for 1000+ end users across branches; configured thin clients to centralized servers.</p>
-      <p>• Performed software audits, Landesk policies implementation, group policy updates, and registry modifications.</p>
-    </div>
-
-    <div class="exp-card enterprise" style="margin-top: 16px;">
-      <p><strong>3i Infotech Pvt Ltd | Enterprise Endpoint Environment</strong></p>
-      <p><em>IT Support Engineer (March 2015 – July 2016)</em></p>
-      <p>• Deployed Sophos disk encryption, BIOS password configurations, and endpoint security compliance checks.</p>
-    </div>
-
-    <div class="exp-card enterprise" style="margin-top: 16px;">
-      <p><strong>Prudent Technologies | Finance Company Support</strong></p>
-      <p><em>L1 IT Support Engineer (September 2012 – August 2014)</em></p>
-      <p>• Provided L1 support for finance endpoints, batch file backup automation, MS Outlook PST setup, and hardware maintenance.</p>
-    </div>
-  </div>
-</div>
-
 
     <!-- Tab 3: Skills -->
-<div id="skills" class="tab-content">
-  <input type="text" id="skills-search" class="search-input" placeholder="🔍 Search skills..." onkeyup="filterSkills()">
-  
-  <div class="skills-container">
-    
-    <div class="skill-item">
-      <div class="skill-info">
-        <span>Desktop Support & Troubleshooting</span>
-        <span>95%</span>
-      </div>
-      <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
-    </div>
+    <div id="skills" class="tab-content">
+      <input type="text" id="skills-search" class="search-input" placeholder="🔍 Search skills..." onkeyup="filterSkills()">
+      
+      <div class="skills-container">
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Desktop Support & Troubleshooting</span>
+            <span>95%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+        </div>
 
-    <div class="skill-item">
-      <div class="skill-info">
-        <span>Active Directory Administration</span>
-        <span>85%</span>
-      </div>
-      <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-    </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Active Directory Administration</span>
+            <span>85%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
 
-    <div class="skill-item">
-      <div class="skill-info">
-        <span>Thin Client & Terminal Support</span>
-        <span>90%</span>
-      </div>
-      <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-    </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Thin Client & Terminal Support</span>
+            <span>90%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+        </div>
 
-    <div class="skill-item">
-      <div class="skill-info">
-        <span>Endpoint Security & Patch Audits</span>
-        <span>88%</span>
-      </div>
-      <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
-    </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>Endpoint Security & Patch Audits</span>
+            <span>88%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+        </div>
 
-    <div class="skill-item">
-      <div class="skill-info">
-        <span>SLA & Incident Management</span>
-        <span>92%</span>
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>SLA & Incident Management</span>
+            <span>92%</span>
+          </div>
+          <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress" style="width: 92%;"></div></div>
     </div>
-
-  </div>
-</div>
-    
 
     <!-- Tab 4: Contact -->
+    <div id="contact" class="tab-content">
+      <div class="social-cards">
+        <a href="https://wa.me/919567863206" target="_blank" class="social-card whatsapp">
+          💬 Chat on WhatsApp
+        </a>
+        <a href="tel:+919567863206" class="social-card">
+          📞 Call Me
+        </a>
+        <a href="mailto:aswina.it@gmail.com" class="social-card">
+          ✉️ Send Email
+        </a>
+        <a href="https://linkedin.com/in/aswin-arangil" target="_blank" class="social-card">
+          💼 LinkedIn Profile
+        </a>
+        <a href="https://github.com/aswinarangil" target="_blank" class="social-card">
+          💻 GitHub Portfolio
+        </a>
+      </div>
+    </div>
 
-          </div> <!-- End of contact-links -->
-    </div> <!-- End of Contact Tab -->
+    <!-- Quick Contact Modal -->
+    <div id="contactModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3>Send a Message</h3>
+        <form id="contactForm" class="modal-form" onsubmit="handleFormSubmit(event)">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+        <div id="formSuccess" style="display: none; color: #4ade80; text-align: center; margin-top: 10px;">
+          ✅ Message sent successfully!
+        </div>
+        <hr class="modal-divider">
+        <div class="contact-info">
+          <p>📧 Email: aswina.it@gmail.com</p>
+          <p>📱 Phone: +91 9567863206</p>
+          <p>📍 Location: Kochi / Chennai / Bangalore</p>
+        </div>
+      </div>
+    </div>
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top-btn" onclick="scrollToTop()">⬆️</button>
 
   </div> <!-- End of Main Container -->
 
-  <!-- Complete Script Block -->
+  <!-- JavaScript Functions -->
   <script>
-    // Tab Switcher Function
+    // Tab Switcher
     function switchTab(evt, tabId) {
       const contents = document.querySelectorAll('.tab-content');
       contents.forEach(content => content.classList.remove('active'));
@@ -208,7 +259,7 @@
       evt.currentTarget.classList.add('active');
     }
 
-    // Light / Dark Theme Toggle
+    // Theme Toggle
     function toggleTheme() {
       document.body.classList.toggle('light-theme');
       const btn = document.getElementById('theme-btn');
@@ -286,7 +337,24 @@
       if (modal) modal.style.display = "none";
     }
 
-    // Global Click Event for Closing Modal Outside Bounds
+    // Form Submission Logic
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const form = document.getElementById("contactForm");
+      const successMsg = document.getElementById("formSuccess");
+
+      form.style.display = "none";
+      successMsg.style.display = "block";
+
+      setTimeout(() => {
+        form.reset();
+        form.style.display = "flex";
+        successMsg.style.display = "none";
+        closeModal();
+      }, 2500);
+    }
+
+    // Modal Outside Click Close
     window.addEventListener('click', function(event) {
       const modal = document.getElementById("contactModal");
       if (event.target === modal) {
@@ -296,4 +364,3 @@
   </script>
 </body>
 </html>
-                                                                                                 
