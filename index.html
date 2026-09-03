@@ -306,14 +306,26 @@
     }
 
     function filterSkills() {
-      const input = document.getElementById('skills-search').value.toLowerCase();
-      const items = document.querySelectorAll('.skill-item');
+  const input = document.getElementById('skills-search').value.toLowerCase();
+  const items = document.querySelectorAll('.skill-item');
+  let visibleCount = 0;
 
-      items.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        item.style.display = text.includes(input) ? '' : 'none';
-      });
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    if (text.includes(input)) {
+      item.style.display = '';
+      visibleCount++;
+    } else {
+      item.style.display = 'none';
     }
+  });
+
+  const countDisplay = document.getElementById('skills-count');
+  if (countDisplay) {
+    countDisplay.textContent = `Showing ${visibleCount} of ${items.length} skills`;
+  }
+}
+
 
     function filterExp(category, event) {
       const buttons = document.querySelectorAll('.exp-filter-btn');
