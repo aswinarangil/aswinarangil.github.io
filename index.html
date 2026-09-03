@@ -363,6 +363,29 @@
         }
       });
     }
+    function filterExp(category, event) {
+  // Update active state on buttons
+  const buttons = document.querySelectorAll('.exp-filter-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  if (event && event.target) {
+    event.target.classList.add('active');
+  }
+
+  // Filter cards
+  const cards = document.querySelectorAll('.exp-card');
+  cards.forEach(card => {
+    if (category === 'all') {
+      card.style.display = 'block';
+    } else {
+      if (card.classList.contains(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    }
+  });
+    }
+    
 
         function copyEmail(btn) {
       const email = "aswina.it@gmail.com";
