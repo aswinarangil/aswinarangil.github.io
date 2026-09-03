@@ -556,3 +556,9 @@ body {
   border-color: #38bdf8;
   font-weight: 600;
 }
+/* Copy Email Success Animation */
+.copy-email-btn.copied {
+  background-color: #22c55e !important;
+  color: #0f172a !important;
+  border-color: #22c55e !important;
+}
