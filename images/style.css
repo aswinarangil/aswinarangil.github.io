@@ -579,3 +579,21 @@ body {
   padding: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+/* Larger Experience Text & Header Styles */
+.exp-card {
+  font-size: 0.98rem; /* Increases body bullet text size */
+  line-height: 1.6;
+}
+
+.exp-header p strong {
+  font-size: 1.15rem; /* Larger company title */
+}
+
+.exp-header p em {
+  font-size: 0.95rem; /* Larger job title and date */
+  color: #cbd5e1;
+}
+
+.exp-card p {
+  margin-bottom: 6px;
+}
