@@ -205,8 +205,9 @@
     
     
 
-  <!-- Tab Switcher Script -->
+    <!-- Complete Script Block -->
   <script>
+    // Tab Switcher Function
     function switchTab(evt, tabId) {
       const contents = document.querySelectorAll('.tab-content');
       contents.forEach(content => content.classList.remove('active'));
@@ -217,79 +218,94 @@
       document.getElementById(tabId).classList.add('active');
       evt.currentTarget.classList.add('active');
     }
+
+    // Light / Dark Theme Toggle
     function toggleTheme() {
-  document.body.classList.toggle('light-theme');
-  const btn = document.getElementById('theme-btn');
-  if (document.body.classList.contains('light-theme')) {
-    btn.textContent = '🌙 Dark Mode';
-  } else {
-    btn.textContent = '☀️ Light Mode';
-  }
-}
-window.onscroll = function() {
-  const btn = document.getElementById("backToTop");
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-};
+      document.body.classList.toggle('light-theme');
+      const btn = document.getElementById('theme-btn');
+      if (document.body.classList.contains('light-theme')) {
+        btn.textContent = '🌙 Dark Mode';
+      } else {
+        btn.textContent = '☀️ Light Mode';
+      }
+    }
 
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-function filterSkills() {
-  const input = document.getElementById('skills-search').value.toLowerCase();
-  const items = document.querySelectorAll('.skill-item');
+    // Scroll & Back to Top Logic
+    window.onscroll = function() {
+      const btn = document.getElementById("backToTop");
+      if (btn) {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      }
+    };
 
-  items.forEach(item => {
-    const text = item.textContent.toLowerCase();
-    item.style.display = text.includes(input) ? '' : 'none';
-  });
-}
-    
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Live Skills Filter
+    function filterSkills() {
+      const input = document.getElementById('skills-search').value.toLowerCase();
+      const items = document.querySelectorAll('.skill-item');
+
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+
+    // Experience Filter
     function filterExp(category, evt) {
-  const cards = document.querySelectorAll('.exp-card');
-  const buttons = document.querySelectorAll('.exp-filter-btn');
+      const cards = document.querySelectorAll('.exp-card');
+      const buttons = document.querySelectorAll('.exp-filter-btn');
 
-  buttons.forEach(btn => btn.classList.remove('active'));
-  evt.currentTarget.classList.add('active');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      evt.currentTarget.classList.add('active');
 
-  cards.forEach(card => {
-    if (category === 'all' || card.classList.contains(category)) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
+      cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
     }
-  });
-    }
+
+    // Copy Email to Clipboard
     function copyEmail(btn) {
-  const email = "aswina.it@gmail.com";
-  navigator.clipboard.writeText(email).then(() => {
-    const originalText = btn.textContent;
-    btn.textContent = "✅ Copied!";
-    setTimeout(() => {
-      btn.textContent = originalText;
-    }, 2000);
-  });
+      const email = "aswina.it@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        const originalText = btn.textContent;
+        btn.textContent = "✅ Copied!";
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 2000);
+      });
     }
-    // Modal Toggle Functions
-function openModal() {
-  document.getElementById("contactModal").style.display = "flex";
-}
 
-function closeModal() {
-  document.getElementById("contactModal").style.display = "none";
-}
+    // Modal Controls
+    function openModal() {
+      const modal = document.getElementById("contactModal");
+      if (modal) modal.style.display = "flex";
+    }
 
-// Close modal if user clicks outside the content box
-window.onclick = function(event) {
-  const modal = document.getElementById("contactModal");
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
-  
+    function closeModal() {
+      const modal = document.getElementById("contactModal");
+      if (modal) modal.style.display = "none";
+    }
+
+    // Global Click Event for Closing Modal Outside Bounds
+    window.addEventListener('click', function(event) {
+      const modal = document.getElementById("contactModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+    
     
 
     
