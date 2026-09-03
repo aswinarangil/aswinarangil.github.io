@@ -483,3 +483,19 @@ body.light-theme .stat-box, body.light-theme .exp-card {
 .diag-arrow {
   color: #94a3b8;
 }
+/* Modern Button Hover & Glow Effects */
+.print-btn, .copy-email-btn, .contact-trigger-btn, .download-resume-btn {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.print-btn:hover, .copy-email-btn:hover, .contact-trigger-btn:hover, .download-resume-btn:hover {
+  background-color: #38bdf8 !important;
+  color: #0f172a !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+  transform: translateY(-2px);
+}
+
+.tab-btn:hover {
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.25);
+}
