@@ -879,3 +879,60 @@ body {
     background-position: 0% 50%;
   }
 }
+
+/* Company Logo Styling & Glow */
+.company-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.6);
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.25s ease-in-out;
+}
+
+.company-logo:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+  transform: scale(1.05);
+}
+
+/* Technical Architecture Flowchart Nodes */
+.flow-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+  padding: 10px;
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 6px;
+  border: 1px dashed rgba(56, 189, 248, 0.3);
+}
+
+.flow-node {
+  background: #1e293b;
+  color: #38bdf8;
+  border: 1px solid #334155;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.flow-node:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+}
+
+.flow-arrow {
+  color: #64748b;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+
+
+
