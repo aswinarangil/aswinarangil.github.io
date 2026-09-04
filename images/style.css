@@ -597,3 +597,42 @@ body {
 .exp-card p {
   margin-bottom: 6px;
 }
+/* Print-Optimized Layout for PDF Export */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .theme-toggle-container,
+  .header-actions,
+  .tab-container,
+  .search-input,
+  #skills-count,
+  .exp-filter-container,
+  #backToTop,
+  .modal,
+  footer,
+  div[style*="text-align: center"] {
+    display: none !important;
+  }
+
+  .container {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .tab-content {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  .exp-card, .bio {
+    page-break-inside: avoid;
+    border: 1px solid #e2e8f0 !important;
+    color: #000000 !important;
+  }
+}
