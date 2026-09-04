@@ -271,6 +271,82 @@
     </div>
 
     
+    <!-- Detailed Troubleshooting Tab -->
+<div id="troubleshooting" class="tab-content" style="display: none;">
+  <div class="bio" style="padding: 20px; background: rgba(30, 41, 59, 0.7); border-radius: 8px; margin-bottom: 24px;">
+    
+    <!-- Header -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 12px;">
+      <div>
+        <h2 style="margin: 0; color: #f8fafc; font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
+          📧 Outlook Synchronization Failure (DNS / Hosts Override)
+        </h2>
+        <span style="font-size: 0.8rem; color: #94a3b8;">Incident Category: Application & Network Connectivity</span>
+      </div>
+      <span style="font-size: 0.75rem; color: #38bdf8; background: rgba(56, 189, 248, 0.1); padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.3); font-weight: 600;">
+        RESOLVED
+      </span>
+    </div>
+
+    <!-- Overview -->
+    <div style="margin-bottom: 18px;">
+      <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.95rem;">System Symptoms</h4>
+      <ul style="font-size: 0.88rem; color: #cbd5e1; margin: 0; padding-left: 20px; line-height: 1.6;">
+        <li>Internet connectivity verified and operational.</li>
+        <li>VPN connection successfully established.</li>
+        <li>Public DNS resolution functioning normally.</li>
+        <li><strong>Issue:</strong> Microsoft Outlook continuously failed to synchronize mailbox data and displayed a disconnected status.</li>
+      </ul>
+    </div>
+
+    <!-- Root Cause Analysis -->
+    <div style="margin-bottom: 18px;">
+      <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.95rem;">Root Cause Analysis</h4>
+      <p style="font-size: 0.88rem; color: #94a3b8; margin: 0; line-height: 1.5;">
+        A legacy manual entry was previously injected into the local Windows <code>hosts</code> file (<code>C:\Windows\System32\drivers\etc\hosts</code>) during a VPN configuration setup. The static IP specified in that email guide differed from the active, dynamically resolved IP returned by the mail server’s real-time DNS records. Because the local <code>hosts</code> file takes precedence over DNS resolution, Outlook attempted to communicate with an invalid/outdated destination endpoint.
+      </p>
+    </div>
+
+    <!-- Troubleshooting Diagram Flow -->
+    <div style="margin-bottom: 18px;">
+      <h4 style="color: #38bdf8; margin: 0 0 8px 0; font-size: 0.95rem;">Diagnostic Workflow</h4>
+      <div class="flow-container">
+        <span class="flow-node">Verify Internet & VPN</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">nslookup mailserver</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Inspect hosts file</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Correct IP Mapping</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">ipconfig /flushdns</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-node">Restart Outlook</span>
+      </div>
+    </div>
+
+    <!-- Resolution Steps -->
+    <div style="margin-bottom: 18px;">
+      <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.95rem;">Step-by-Step Resolution</h4>
+      <ol style="font-size: 0.88rem; color: #cbd5e1; margin: 0; padding-left: 20px; line-height: 1.6;">
+        <li>Executed <code>nslookup</code> and <code>ping</code> commands via terminal to determine actual mail server IP address.</li>
+        <li>Cross-referenced live DNS query outputs against static entries inside the local Windows <code>hosts</code> file.</li>
+        <li>Removed/updated outdated static IP mapping from the <code>hosts</code> file.</li>
+        <li>Flushed local DNS cache via command line: <code>ipconfig /flushdns</code>.</li>
+        <li>Relaunched Microsoft Outlook; client successfully authenticated and resumed real-time mail synchronization.</li>
+      </ol>
+    </div>
+
+    <!-- Key Takeaway -->
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 12px 16px; border-left: 3px solid #38bdf8; border-radius: 4px;">
+      <strong style="color: #f8fafc; font-size: 0.85rem;">Key Engineering Takeaway:</strong>
+      <p style="font-size: 0.85rem; color: #94a3b8; margin: 4px 0 0 0;">
+        Systematic layer-by-layer isolation outperforms trial-and-error troubleshooting. Overriding native DNS via local static host files should be tracked and audited to prevent unexpected application failures during infrastructure changes.
+      </p>
+    </div>
+
+  </div>
+</div>
     
 
     
